@@ -10,15 +10,48 @@
     <style>
     </style>
 </head>
-    <body>
+<body>
+    <h1 class="header-dividing">Heading1 一级标题</h1>
+    <div class="container">
         <div class="input-control search-box search-box-circle has-icon-left has-icon-right" id="searchboxExample">
             <input id="inputSearchExample1" type="search" class="form-control search-input" placeholder="搜索">
             <label for="inputSearchExample1" class="input-control-icon-left search-icon"><i class="icon icon-search"></i></label>
             <a href="#" class="input-control-icon-right search-clear-btn"><i class="icon icon-remove"></i></a>
         </div>
 
-    </body>
-    
+        <hr>
+
+        <div class="row">
+            <div class="col-xs-3">
+                <ul class="nav nav-tabs nav-stacked">
+                    <li class="active"><a href="###" data-target="#tab3Content1" data-toggle="tab">超级福利</a></li>
+                    <li><a href="###" data-target="#tab3Content2" data-toggle="tab">随心绝配</a></li>
+                    <li><a href="###" data-target="#tab3Content3" data-toggle="tab">标签3</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-9">
+                <div class="tab-content col-xs-9">
+                    <div class="tab-pane fade active in" id="tab3Content1">
+                        <img src="http://liteap.com/docs/img/img1.jpg" width="30%" height="auto"  class="img-rounded" style="aspect-ratio: 1 / 1;" alt="圆角图片">
+                        <p>小份试吃</p>
+                        <p>￥4.5</p>
+                    </div>
+                    <div class="tab-pane fade" id="tab3Content2">
+                        <p>【双人餐】2荤2素 自选套餐</p>
+                        <p>￥4.5</p>
+                    </div>
+                    <div class="tab-pane fade" id="tab3Content3">
+                        <p>这是标签3的内容。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
     <script>
         // 初始化搜索框，并在选项中指定搜索文本变更事件回调函数，这样当搜索框文本发送变化时获得通知。
         $('#searchboxExample').searchBox({
@@ -28,5 +61,5 @@
             }
         });
     </script>
-
+</body>
 </html>
