@@ -16,6 +16,7 @@
         td {
             padding-left: 1em; /* 设置左边的填充 */
         }
+
         .whmax {
             padding: 0; /* 设置所有单元格的内部填充为 0 */
             padding-left: 1em; /* 设置左边的填充 */
@@ -113,7 +114,146 @@
                                         <del style="color: gray;font-size: 0.7em;">￥15.8</del>
                                     </td>
 
-                                    <td><button class="btn btn-mini btn-warning" type="button" >选规格</button></td>
+                                    <td>
+                                        <button type="button" class="btn btn-mini btn-warning" data-position="center" data-toggle="modal" data-scroll-inside="true" data-target="#myModal">选规格</button>
+                                        <!-- 对话框HTML -->
+                                        <div class="modal fade" id="myModal">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">关闭</span></button>
+                                                        <h4 class="modal-title">2荤2素 自选套餐</h4>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <h5>分量</h5>
+                                                        <div class="btn-group" data-toggle="buttons">
+                                                            <label class="btn btn-sm active" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option0" checked> 1人份  ￥29.9
+                                                            </label>
+                                                        </div>
+
+                                                        <h5>荤菜1</h5>
+                                                        <div class="btn-group" data-toggle="buttons">
+                                                            <label class="btn btn-sm active" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option1" checked> 黑鸭鸭脖120g
+                                                            </label>
+                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option2"> 黑鸭鸭掌120g
+                                                            </label>
+                                                            <br /> <br />
+                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option3"> 黑鸭鸭翅中120g
+                                                            </label>
+                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option4"> 黑鸭鸭锁骨120g
+                                                            </label>
+
+                                                            <br /> <br />
+                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option5"> 藤椒鸡翅尖120g
+                                                            </label>
+                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option6"> 招牌鸭肠20g
+                                                            </label>
+                                                        </div>
+
+                                                        <h5>荤菜2</h5>
+                                                        <div class="btn-group" data-toggle="buttons">
+                                                            <label class="btn btn-sm active" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option1" checked> 黑鸭鸭脖120g
+                                                            </label>
+                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option2"> 黑鸭鸭掌120g
+                                                            </label>
+                                                            <br /> <br />
+                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option3"> 黑鸭鸭翅中120g
+                                                            </label>
+                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option4"> 黑鸭鸭锁骨120g
+                                                            </label>
+
+                                                            <br /> <br />
+                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option5"> 藤椒鸡翅尖120g
+                                                            </label>
+                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option6"> 招牌鸭肠20g
+                                                            </label>
+                                                        </div>
+
+                                                        <h5>素菜1</h5>
+                                                        <div class="btn-group" data-toggle="buttons">
+                                                            <label class="btn btn-sm active" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option1" checked> 黑鸭鸭脖120g
+                                                            </label>
+                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option2"> 黑鸭鸭掌120g
+                                                            </label>
+                                                            <br /> <br />
+                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option3"> 黑鸭鸭翅中120g
+                                                            </label>
+                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option4"> 黑鸭鸭锁骨120g
+                                                            </label>
+
+                                                            <br /> <br />
+                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option5"> 藤椒鸡翅尖120g
+                                                            </label>
+                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option6"> 招牌鸭肠20g
+                                                            </label>
+                                                        </div>
+
+                                                        <h5>素菜2</h5>
+                                                        <div class="btn-group" data-toggle="buttons">
+                                                            <label class="btn btn-sm active" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option1" checked> 黑鸭鸭脖120g
+                                                            </label>
+                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option2"> 黑鸭鸭掌120g
+                                                            </label>
+                                                            <br /> <br />
+                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option3"> 黑鸭鸭翅中120g
+                                                            </label>
+                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option4"> 黑鸭鸭锁骨120g
+                                                            </label>
+
+                                                            <br /> <br />
+                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option5"> 藤椒鸡翅尖120g
+                                                            </label>
+                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
+                                                                <input type="radio" name="options" id="option6"> 招牌鸭肠20g
+                                                            </label>
+                                                        </div>
+
+
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <div style="float: left; margin-left: 10px; display: flex; align-items: center;">
+                                                            <h3 style="margin: 0;">总计</h3>
+                                                            <h3 style="margin: 0; margin-left: 10px;color:red;">￥188.35</h3>
+                                                            <del style="color: gray; font-size: 0.9em; margin-left: 10px;">￥258.8</del>
+                                                        </div>
+
+
+                                                        <button type="button" class="btn btn-mini btn-warning" data-dismiss="modal">+ 加入购物车</button>
+                                                        <!--<div class="btn-group" style="margin-left: 2em; ">
+                                                            <button class="btn btn-mini btn-warning">-</button>
+                                                            <button class="btn btn-mini">&nbsp&nbsp 2 &nbsp&nbsp</button>
+                                                            <button class="btn btn-mini btn-warning">+</button>
+                                                        </div>-->
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table>
@@ -122,8 +262,8 @@
 
                         <table border="0" cellspacing="0" style="padding: 0;" width="100%">
                             <tbody>
-                                <tr  class="whmax">
-                                    <td rowspan="5" width="38%" height="auto" style="aspect-ratio: 1 / 1;"><img data-toggle="lightbox"  data-group="image-group-2" data-image="img/商品列表图/一荤两素随心配.jpg" src="img/商品列表图/一荤两素随心配.jpg" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片"></td>
+                                <tr class="whmax">
+                                    <td rowspan="5" width="38%" height="auto" style="aspect-ratio: 1 / 1;"><img data-toggle="lightbox" data-group="image-group-2" data-image="img/商品列表图/一荤两素随心配.jpg" src="img/商品列表图/一荤两素随心配.jpg" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片"></td>
                                     <td><strong>1荤2素 自选套餐</strong></td>
                                 </tr>
                                 <tr>
@@ -135,7 +275,7 @@
                                 <tr>
                                     <td><span class="label label-danger">7.66折</span>  <span class="label label-danger">限2份</span></td>
                                 </tr>
-                                <tr  class="whmax">
+                                <tr class="whmax">
                                     <td style="color: red;">
                                         <strong>￥41.2</strong>
                                         <del style="color: gray;font-size: 0.7em;">￥15.8</del>
@@ -153,8 +293,8 @@
 
                         <table border="0" cellspacing="0" style="padding: 0;" width="100%">
                             <tbody>
-                                <tr  class="whmax">
-                                    <td rowspan="5" width="38%" height="auto" style="aspect-ratio: 1 / 1;"><img data-toggle="lightbox"  data-group="image-group-3" data-image="img/商品列表图/鸭掌(口味任选一个).jpg" src="img/商品列表图/鸭掌(口味任选一个).jpg" width="110%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片"></td>
+                                <tr class="whmax">
+                                    <td rowspan="5" width="38%" height="auto" style="aspect-ratio: 1 / 1;"><img data-toggle="lightbox" data-group="image-group-3" data-image="img/商品列表图/鸭掌(口味任选一个).jpg" src="img/商品列表图/鸭掌(口味任选一个).jpg" width="110%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片"></td>
                                     <td><strong>鸭掌(口味任选一个)</strong></td>
                                 </tr>
                                 <tr>
@@ -166,12 +306,12 @@
                                 <tr>
                                     <td> <span class="label label-danger">单点不送</span></td>
                                 </tr>
-                                <tr  class="whmax">
+                                <tr class="whmax">
                                     <td style="color: red;">
                                         <strong>￥41.2</strong>
                                         <del style="color: gray;font-size: 0.7em;">￥15.8</del>
                                         <div class="btn-group" style="margin-left: 2em; ">
-                                            <button class="btn btn-mini btn-warning" >+</button>
+                                            <button class="btn btn-mini btn-warning">+</button>
                                         </div>
                                     </td>
                                 </tr>
@@ -182,8 +322,8 @@
 
                         <table border="0" cellspacing="0" style="padding: 0;" width="100%">
                             <tbody>
-                                <tr  class="whmax">
-                                    <td rowspan="5" width="38%" height="auto" style="aspect-ratio: 1 / 1;"><img data-toggle="lightbox" data-group="image-group-4"  data-image="img/商品列表图/招牌毛豆.jpg" src="img/商品列表图/招牌毛豆.jpg" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片"></td>
+                                <tr class="whmax">
+                                    <td rowspan="5" width="38%" height="auto" style="aspect-ratio: 1 / 1;"><img data-toggle="lightbox" data-group="image-group-4" data-image="img/商品列表图/招牌毛豆.jpg" src="img/商品列表图/招牌毛豆.jpg" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片"></td>
                                     <td><strong>招牌毛豆</strong></td>
                                 </tr>
                                 <tr>
@@ -195,7 +335,7 @@
                                 <tr>
                                     <td><span class="label label-danger">7.66折</span>  <span class="label label-danger">限3份</span> </td>
                                 </tr>
-                                <tr  class="whmax">
+                                <tr class="whmax">
                                     <td><strong>￥12.3</strong></td>
                                 </tr>
                             </tbody>
@@ -205,8 +345,8 @@
 
                         <table border="0" cellspacing="0" style="padding: 0;" width="100%">
                             <tbody>
-                                <tr  class="whmax">
-                                    <td rowspan="5" width="38%" height="auto" style="aspect-ratio: 1 / 1;"><img data-toggle="lightbox" data-group="image-group-5"  data-image="img/商品列表图/素菜双拼随心配.jpg" src="img/商品列表图/素菜双拼随心配.jpg" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片"></td>
+                                <tr class="whmax">
+                                    <td rowspan="5" width="38%" height="auto" style="aspect-ratio: 1 / 1;"><img data-toggle="lightbox" data-group="image-group-5" data-image="img/商品列表图/素菜双拼随心配.jpg" src="img/商品列表图/素菜双拼随心配.jpg" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片"></td>
                                     <td><strong>素菜双拼随心配</strong></td>
                                 </tr>
                                 <tr>
@@ -218,7 +358,7 @@
                                 <tr>
                                     <td><span class="label label-danger">7.66折</span>  <span class="label label-danger">限1份</span> <span class="label label-danger">单点不送</span></td>
                                 </tr>
-                                <tr  class="whmax">
+                                <tr class="whmax">
                                     <td><strong>￥71.6</strong></td>
                                 </tr>
                             </tbody>
@@ -228,8 +368,8 @@
 
                         <table border="0" cellspacing="0" style="padding: 0;" width="100%">
                             <tbody>
-                                <tr  class="whmax">
-                                    <td rowspan="5" width="38%" height="auto" style="aspect-ratio: 1 / 1;"><img data-toggle="lightbox" data-group="image-group-6"  data-image="img/商品列表图/藤椒鸡翅尖.jpg" src="img/商品列表图/藤椒鸡翅尖.jpg" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片"></td>
+                                <tr class="whmax">
+                                    <td rowspan="5" width="38%" height="auto" style="aspect-ratio: 1 / 1;"><img data-toggle="lightbox" data-group="image-group-6" data-image="img/商品列表图/藤椒鸡翅尖.jpg" src="img/商品列表图/藤椒鸡翅尖.jpg" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片"></td>
                                     <td><strong>藤椒鸡翅尖</strong></td>
                                 </tr>
                                 <tr>
@@ -241,7 +381,7 @@
                                 <tr>
                                     <td><span class="label label-danger">7.66折</span>  <span class="label label-danger">限3份</span> </td>
                                 </tr>
-                                <tr  class="whmax">
+                                <tr class="whmax">
                                     <td><strong>￥22.5</strong></td>
                                 </tr>
                             </tbody>
@@ -257,8 +397,8 @@
                     <div class="tab-pane fade" id="tab3Content2">
                         <table border="0" cellspacing="0" style="padding: 0;" width="100%">
                             <tbody>
-                                <tr  class="whmax">
-                                    <td rowspan="5" width="38%" height="auto" style="aspect-ratio: 1 / 1;"><img data-toggle="lightbox" data-group="image-group-7"  data-image="img/商品列表图/2荤2素随心配.jpg" src="img/商品列表图/2荤2素随心配.jpg" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片"></td>
+                                <tr class="whmax">
+                                    <td rowspan="5" width="38%" height="auto" style="aspect-ratio: 1 / 1;"><img data-toggle="lightbox" data-group="image-group-7" data-image="img/商品列表图/2荤2素随心配.jpg" src="img/商品列表图/2荤2素随心配.jpg" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片"></td>
                                     <td><strong>2荤2素 自选套餐</strong></td>
                                 </tr>
                                 <tr>
@@ -270,7 +410,7 @@
                                 <tr>
                                     <td><span class="label label-danger">8.64折</span>  <span class="label label-danger">限2份</span></td>
                                 </tr>
-                                <tr  class="whmax">
+                                <tr class="whmax">
                                     <td><strong>￥38.9</strong></td>
                                 </tr>
                             </tbody>
@@ -280,8 +420,8 @@
                     <div class="tab-pane fade" id="tab3Content3">
                         <table border="0" cellspacing="0" style="padding: 0;" width="100%">
                             <tbody>
-                                <tr  class="whmax">
-                                    <td rowspan="5" width="38%" height="auto" style="aspect-ratio: 1 / 1;"><img data-toggle="lightbox" data-group="image-group-8"  data-image="img/商品列表图/一荤两素随心配.jpg" src="img/商品列表图/一荤两素随心配.jpg" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片"></td>
+                                <tr class="whmax">
+                                    <td rowspan="5" width="38%" height="auto" style="aspect-ratio: 1 / 1;"><img data-toggle="lightbox" data-group="image-group-8" data-image="img/商品列表图/一荤两素随心配.jpg" src="img/商品列表图/一荤两素随心配.jpg" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片"></td>
                                     <td><strong>2荤2素 自选套餐</strong></td>
                                 </tr>
                                 <tr>
@@ -293,7 +433,7 @@
                                 <tr>
                                     <td><span class="label label-danger">7.66折</span>  <span class="label label-danger">限2份</span></td>
                                 </tr>
-                                <tr  class="whmax">
+                                <tr class="whmax">
                                     <td><strong>￥38.9</strong></td>
                                 </tr>
                             </tbody>
