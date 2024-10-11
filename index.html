@@ -22,6 +22,49 @@
             padding-left: 1em; /* 设置左边的填充 */
         }
     </style>
+
+    <style>
+        /* 底部悬浮的 div */
+        .floating-div {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 8vh; /* 1/8 屏幕高度 */
+            background-color: #f7f7f7;
+            border-top: 1px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000; /* 确保它显示在最上层 */
+        }
+        /* 左侧区域 */
+        .left-area {
+            flex: 1;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        /* 右侧按钮 */
+        .right-btn {
+            flex: 1;
+            margin-left: 10px;
+            border-radius: 5px;
+        }
+        /* 自定义模态框样式 */
+        .modal-bottom {
+            position: fixed;
+            bottom: 8vh; /* 让模态框刚好衔接悬浮的 div */
+            width: 100%;
+            border-radius: 15px 15px 0 0;
+            z-index: 999; /* 确保模态框在悬浮 div 下面 */
+        }
+
+        /*.modal-content {
+            padding: 20px;
+        }*/
+    </style>
 </head>
 <body>
 
@@ -96,7 +139,9 @@
                         <table border="0" cellspacing="0" style="padding: 0;" width="100%">
                             <tbody>
                                 <tr class="whmax">
-                                    <td rowspan="5" width="65%" height="auto" style="aspect-ratio: 1 / 1;"><img data-toggle="lightbox" data-group="image-group-1" data-caption="两荤两素自选套餐" data-image="img/商品列表图/2荤2素随心配.jpg" src="img/商品列表图/2荤2素随心配.jpg" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片"></td>
+                                    <td rowspan="5" width="65%" height="auto" style="aspect-ratio: 1 / 1;">
+                                        <img data-toggle="lightbox" data-group="image-group-1" data-caption="两荤两素自选套餐" data-image="img/商品列表图/2荤2素随心配.jpg" src="img/商品列表图/2荤2素随心配.jpg" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片">
+                                    </td>
                                     <td colspan="2"><strong>2荤2素 自选套餐</strong></td>
                                 </tr>
                                 <tr>
@@ -439,14 +484,35 @@
                             </tbody>
                         </table>
                     </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部悬浮的 div -->
+        <div class="floating-div">
+            <!-- 左侧点击区域 -->
+            <div class="left-area" id="leftArea">
+                <i class="icon icon-10x icon-chevron-up"></i><br/>
+                <h3>总计 ￥188.35</h3>
+                <del style="color: gray; font-size: 0.7em; margin-left: 10px">￥15.8</del>
+            </div>
+            <!-- 右侧按钮 -->
+            <button class="btn btn-lg btn-warning right-btn">去结算</button>
+        </div>
+        <!-- 购物车模态框 -->
+        <div class="modal fade" id="chooseModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-bottom" role="document">
+                <div class="modal-content">
+                    <h3>选择商品</h3>
+                    <p>这里是商品的详细信息...</p>
+                    <button class="btn btn-primary">确认选择</button>
                 </div>
             </div>
         </div>
 
     </div>
-
-
-
 
     <script>
         // 初始化搜索框，并在选项中指定搜索文本变更事件回调函数，这样当搜索框文本发送变化时获得通知。
@@ -455,6 +521,11 @@
             onSearchChange: function (searchKey, isEmpty) {
                 console.log('搜索框文本变更：', searchKey);
             }
+        });
+
+        // 绑定点击事件，控制模态框的显示与隐藏
+        document.getElementById('leftArea').addEventListener('click', function () {
+            $('#chooseModal').modal('toggle'); // 点击左边区域时，模态框弹出或关闭
         });
 
     </script>
