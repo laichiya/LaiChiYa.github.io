@@ -85,19 +85,19 @@
                             <tbody>
                                 <tr>
                                     <td rowspan="5" width="38%" height="auto" style="aspect-ratio: 1 / 1;"><img src="img/商品列表图/2荤2素随心配.jpg" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片"></td>
-                                    <td class="dynamic-font"><b>2荤2素 自选套餐</b></td>
+                                    <td ><b>2荤2素 自选套餐</b></td>
                                 </tr>
                                 <tr>
-                                    <td class="dynamic-font"><span class="label">月售12</span> <span class="label">2人份</span></td>
+                                    <td ><span class="label">月售12</span> <span class="label">2人份</span></td>
                                 </tr>
                                 <tr>
-                                    <td class="dynamic-font"><span class="label">辣、鸭翅中、鸭脖、藕片</span></td>
+                                    <td ><span class="label">辣、鸭翅中、鸭脖、藕片</span></td>
                                 </tr>
                                 <tr>
-                                    <td class="dynamic-font"><span class="label label-danger">8.64折</span>  <span class="label label-danger">限2份</span></td>
+                                    <td ><span class="label label-danger">8.64折</span>  <span class="label label-danger">限2份</span></td>
                                 </tr>
                                 <tr>
-                                    <td class="dynamic-font"><b>￥13.7</b></td>
+                                    <td ><b>￥13.7</b></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -287,17 +287,6 @@
             }
         });
 
-        // 动态设置字体大小
-        function adjustFontSize() {
-            var cells = document.querySelectorAll('td');
-            cells.forEach(function (cell) {
-                var height = cell.offsetHeight; // 获取单元格的高度
-                cell.style.fontSize = (height * 0.5) + 'px'; // 设置字体大小为单元格高度的 50%
-            });
-        }
-
-        window.onload = adjustFontSize;
-        window.onresize = adjustFontSize;
     </script>
 </body>
 </html>
