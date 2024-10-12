@@ -624,16 +624,17 @@
                 }).show();
             });
 
-            //如果是第三方浏览器，跳转打开微信客户端
-            if (!isWeChatBrowser()) {
-                $("#OrderData3").html("保存图片 添加微信好友");
-                openWeChatApp();
-            }
-            else if (isSafari()) {
+
+            //如果是苹果Safari浏览器，跳转打开微信客户端
+            if (isSafari()) {
                 $("#OrderData3").html("保存图片 添加到“照片”");
                 openWeChatApp();
             }
-           
+            //如果是第三方浏览器，跳转打开微信客户端
+            else if (!isWeChatBrowser()) {
+                $("#OrderData3").html("保存图片 添加微信好友");
+                openWeChatApp();
+            }
 
             //if (isWeChatBrowser()) {
             //    new $.zui.Messager('10秒后自动关闭页面', {
@@ -654,41 +655,41 @@
 
         });
 
-            //// 复制订单 事件处理逻辑
-            //$("#copyOrderData").on("click", function () {
-            //    // 使用 clipboard API 复制
-            //    navigator.clipboard.writeText("来吃鸭订单\n详细信息:\n鸭架子 x2 \n共计￥100").then(function () {
-            //        new $.zui.Messager('复制订单信息成功!\n请前往微信发送订单消息', {
-            //            type: 'success' ,// 定义颜色主题
-            //            close: true,
-            //            icon:'ok-sign',
-            //        }).show();
+                //// 复制订单 事件处理逻辑
+                //$("#copyOrderData").on("click", function () {
+                //    // 使用 clipboard API 复制
+                //    navigator.clipboard.writeText("来吃鸭订单\n详细信息:\n鸭架子 x2 \n共计￥100").then(function () {
+                //        new $.zui.Messager('复制订单信息成功!\n请前往微信发送订单消息', {
+                //            type: 'success' ,// 定义颜色主题
+                //            close: true,
+                //            icon:'ok-sign',
+                //        }).show();
 
-            //    }).catch(function (err) {
-            //        new $.zui.Messager("复制失败: 请授于剪贴板权限" + err, {
-            //            type: 'danger',// 定义颜色主题
-            //            close: true,
-            //            icon: ' exclamation-sign',
-            //        }).show();
-            //    });
+                //    }).catch(function (err) {
+                //        new $.zui.Messager("复制失败: 请授于剪贴板权限" + err, {
+                //            type: 'danger',// 定义颜色主题
+                //            close: true,
+                //            icon: ' exclamation-sign',
+                //        }).show();
+                //    });
 
-            //    if (isWeChatBrowser()) {
-            //        new $.zui.Messager('10秒后自动关闭页面', {
-            //            type: 'warning',// 定义颜色主题
-            //            close: true,
-            //            icon: 'warning-sign',
-            //        }).show();
-            //        setTimeout(function () {
-            //            // 这里是延迟 10 秒后执行的代码
-            //            console.log("10秒后执行的操作");
-            //        }, 10000);
-            //        // 如果是微信内置浏览器，关闭当前页面
-            //        closeWeChatPage();
-            //    } else {
-            //        // 如果是第三方浏览器，跳转打开微信客户端
-            //        openWeChatApp();
-            //    }
-            //});
+                //    if (isWeChatBrowser()) {
+                //        new $.zui.Messager('10秒后自动关闭页面', {
+                //            type: 'warning',// 定义颜色主题
+                //            close: true,
+                //            icon: 'warning-sign',
+                //        }).show();
+                //        setTimeout(function () {
+                //            // 这里是延迟 10 秒后执行的代码
+                //            console.log("10秒后执行的操作");
+                //        }, 10000);
+                //        // 如果是微信内置浏览器，关闭当前页面
+                //        closeWeChatPage();
+                //    } else {
+                //        // 如果是第三方浏览器，跳转打开微信客户端
+                //        openWeChatApp();
+                //    }
+                //});
     </script>
 </body>
 </html>
