@@ -289,10 +289,10 @@
 
                                                         <button type="button" class="btn btn-mini btn-warning" data-dismiss="modal">+ 加入购物车</button>
                                                         <!--<div class="btn-group" style="margin-left: 2em; ">
-                                                        <button class="btn btn-mini btn-warning">-</button>
-                                                        <button class="btn btn-mini">&nbsp&nbsp 2 &nbsp&nbsp</button>
-                                                        <button class="btn btn-mini btn-warning">+</button>
-                                                    </div>-->
+                                                            <button class="btn btn-mini btn-warning">-</button>
+                                                            <button class="btn btn-mini">&nbsp&nbsp 2 &nbsp&nbsp</button>
+                                                            <button class="btn btn-mini btn-warning">+</button>
+                                                        </div>-->
 
                                                     </div>
                                                 </div>
@@ -494,20 +494,25 @@
         <div class="floating-div">
             <!-- 左侧点击区域 -->
             <div class="left-area" id="leftArea">
-                <i class="icon icon-10x icon-chevron-up"></i><br />
+                <i class="icon icon-10x icon-chevron-up"></i>
                 &nbsp;<h3>总计 ￥188.35</h3>
                 <del style="color: gray; font-size: 0.7em; margin-left: 10px">￥15.8</del>
             </div>
             <!-- 右侧按钮 -->
-            <button class="btn btn-lg btn-warning " type="button">去结算</button>
+
+            <button class="btn btn-lg btn-warning " onclick="handleButtonClick()" type="button"><i class="icon icon-10x icon-copy"></i> &nbsp; 复制订单</button>
         </div>
         <!-- 购物车模态框 -->
         <div class="modal fade" id="chooseModal" tabindex="-1" role="dialog">
             <div class="modal-dialog modal-bottom" role="document">
                 <div class="modal-content">
-                    <h3>选择商品</h3>
-                    <p>这里是商品的详细信息...</p>
-                    <button class="btn btn-primary">确认选择</button>
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">关闭</span></button>
+                        <h4 class="modal-title">标题</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>主题内容...</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -528,6 +533,38 @@
             $('#chooseModal').modal('toggle'); // 点击左边区域时，模态框弹出或关闭
         });
 
+    </script>
+
+    <script>
+        // 判断是否为微信内置浏览器
+        function isWeChatBrowser() {
+            var ua = navigator.userAgent.toLowerCase();
+            return ua.indexOf('micromessenger') !== -1;
+        }
+
+        // 关闭当前网页 (在微信内置浏览器中)
+        function closeWeChatPage() {
+            if (typeof WeixinJSBridge !== 'undefined') {
+                WeixinJSBridge.call('closeWindow'); // 关闭微信浏览器中的当前页面
+            }
+        }
+
+        // 跳转打开微信客户端
+        function openWeChatApp() {
+            window.location.href = "weixin://"; // 尝试打开微信客户端
+        }
+
+        // 按钮点击事件处理逻辑
+        function handleButtonClick() {
+            console.log("按钮点击事件处理逻辑");
+            if (isWeChatBrowser()) {
+                // 如果是微信内置浏览器，关闭当前页面
+                closeWeChatPage();
+            } else {
+                // 如果是第三方浏览器，跳转打开微信客户端
+                openWeChatApp();
+            }
+        }
     </script>
 </body>
 </html>
