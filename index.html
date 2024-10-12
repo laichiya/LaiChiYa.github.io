@@ -493,14 +493,19 @@
         <!-- 底部悬浮的 div -->
         <div class="floating-div">
             <!-- 左侧点击区域 -->
-            <div class="left-area" id="leftArea">
+            <!--<div class="left-area" id="leftArea">
+        <i class="icon icon-10x icon-chevron-up"></i>
+        &nbsp;<h3>总计 ￥188.35</h3>
+        <del style="color: gray; font-size: 0.7em; margin-left: 10px">￥15.8</del>
+    </div>-->
+            <!-- 左侧按钮 -->
+            <button id="leftArea" class="btn btn-success" type="button" data-toggle="popover" data-placement="top">
                 <i class="icon icon-10x icon-chevron-up"></i>
-                &nbsp;<h3>总计 ￥188.35</h3>
-                <del style="color: gray; font-size: 0.7em; margin-left: 10px">￥15.8</del>
-            </div>
+                &nbsp; 订单详细
+            </button>
 
-            <!-- 右侧按钮 -->
-            <button id="copyWechatData" class="btn btn-lg btn-success" type="button" data-toggle="popover" data-placement="top">
+            <!-- 中侧按钮 -->
+            <button id="copyWechatData" class="btn btn-success" type="button" data-toggle="popover" data-placement="top">
                 <i class="icon icon-10x icon-wechat"></i>
                 &nbsp; 加微信享折扣
             </button>
@@ -515,7 +520,8 @@
                 </div>
             </div>
 
-            <button id="copyOrderData" class="btn btn-lg btn-warning " type="button" data-toggle="tooltip" data-placement="top" title="添加微信:wxid_no0ncx4wbxwr12 发送订单信息">
+            <!-- 右侧按钮 -->
+            <button id="copyOrderData" class="btn btn-warning " type="button" data-toggle="tooltip" data-placement="top" title="添加微信:wxid_no0ncx4wbxwr12 发送订单信息">
                 <i class="icon icon-10x icon-copy"></i>
                 &nbsp; 复制订单
             </button>
@@ -596,7 +602,7 @@
                     icon: 'ok-sign',
                 }).show();
             }).catch(function (err) {
-                new $.zui.Messager("复制失败: " + err, {
+                new $.zui.Messager("复制失败: 请授于剪贴板权限" + err, {
                     type: 'danger',// 定义颜色主题
                     close: true,
                     icon: ' exclamation-sign',
@@ -616,7 +622,7 @@
                 }).show();
 
             }).catch(function (err) {
-                new $.zui.Messager("复制失败: " + err, {
+                new $.zui.Messager("复制失败: 请授于剪贴板权限" + err, {
                     type: 'danger',// 定义颜色主题
                     close: true,
                     icon: ' exclamation-sign',
