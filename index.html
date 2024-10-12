@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="css/zui.min.css">
     <script src="jquery-3.7.1.min.js"></script>
     <script src="js/zui.min.js"></script>
+    <script src="productData/来吃鸭商品数据.js"></script>
     <link rel="shortcut icon" type="image/x-icon" href="img/ic_logo.png" />
     <title>来吃鸭</title>
     <style>
@@ -13,9 +14,9 @@
             border-collapse: collapse; /* 合并边框，避免双线 */
         }
 
-        td {
-            padding-left: 1em; /* 设置左边的填充 */
-        }
+        /*td {
+            padding-left: 1em;*/ /* 设置左边的填充 */
+        /*}*/
 
         .whmax {
             padding: 0; /* 设置所有单元格的内部填充为 0 */
@@ -126,179 +127,49 @@
 
         <div class="row">
             <div class="col-xs-3">
-                <ul class="nav nav-tabs nav-stacked">
-                    <li class="active"><a href="###" data-target="#tab3Content1" data-toggle="tab">超级福利</a></li>
+                <ul id="tabAllContent" class="nav nav-tabs nav-stacked">
+                    <!--<li class="active"><a href="###" data-target="#tab3Content1" data-toggle="tab">超级福利</a></li>
                     <li><a href="###" data-target="#tab3Content2" data-toggle="tab">随心绝配</a></li>
                     <li><a href="###" data-target="#tab3Content3" data-toggle="tab">夜宵有味</a></li>
-                    <li><a href="###" data-target="#tab3Content4" data-toggle="tab">我的喜欢&nbsp;<i class="icon icon-heart" style="color:red"></i></a></li>
+                    <li><a href="###" data-target="#tab3Content4" data-toggle="tab">我的喜欢&nbsp;<i class="icon icon-heart" style="color:red"></i></a></li>-->
                 </ul>
             </div>
             <div class="col-xs-9">
-                <div class="tab-content">
+                <div id="tabContentSen" class="tab-content">
                     <div class="tab-pane fade active in" id="tab3Content1">
 
-                        <table border="0" cellspacing="0" style="padding: 0;" width="100%">
+                        <table border="1" cellspacing="0" style="padding: 0; " width="100%">
                             <tbody>
-                                <tr class="whmax">
+                                <tr>
                                     <td rowspan="5" width="65%" height="auto" style="aspect-ratio: 1 / 1;">
                                         <img data-toggle="lightbox" data-group="image-group-1" data-caption="两荤两素自选套餐" data-image="img/商品列表图/2荤2素随心配.jpg" src="img/商品列表图/2荤2素随心配.jpg" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片">
                                     </td>
-                                    <td colspan="2"><strong>2荤2素 自选套餐</strong></td>
+                                    <td colspan="2" class="whmax"><strong>2荤2素 自选套餐</strong></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2"><span class="label">月售12</span> <span class="label">2人份</span></td>
+                                    <td colspan="2" class="whmax"><span class="label">月售12</span> <span class="label">2人份</span></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2"><span class="label">辣、鸭翅中、鸭脖、藕片片</span></td>
+                                    <td colspan="2" class="whmax"><span class="label">辣、鸭翅中、鸭脖、藕片片</span></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2"><span class="label label-danger">8.64折</span>  <span class="label label-danger">限2份</span></td>
+                                    <td colspan="2" class="whmax"><span class="label label-danger">8.64折</span>  <span class="label label-danger">限2份</span></td>
                                 </tr>
-                                <tr class="whmax">
-                                    <td style="color: red;" width="50%">
+                                <tr>
+                                    <td class="whmax" style="color: red;" width="54%">
                                         <strong>￥13.7</strong>
                                         <del style="color: gray;font-size: 0.7em;">￥15.8</del>
                                     </td>
 
-                                    <td>
-                                        <button type="button" class="btn btn-mini btn-warning" data-position="center" data-toggle="modal" data-scroll-inside="true" data-target="#myModal">选规格</button>
-                                        <!-- 对话框HTML -->
-                                        <div class="modal fade" id="myModal">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">关闭</span></button>
-                                                        <h4 class="modal-title">2荤2素 自选套餐</h4>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <h5>分量</h5>
-                                                        <div class="btn-group" data-toggle="buttons">
-                                                            <label class="btn btn-sm active" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option0" checked> 1人份  ￥29.9
-                                                            </label>
-                                                        </div>
-
-                                                        <h5>荤菜1</h5>
-                                                        <div class="btn-group" data-toggle="buttons">
-                                                            <label class="btn btn-sm active" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option1" checked> 黑鸭鸭脖120g
-                                                            </label>
-                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option2"> 黑鸭鸭掌120g
-                                                            </label>
-                                                            <br /> <br />
-                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option3"> 黑鸭鸭翅中120g
-                                                            </label>
-                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option4"> 黑鸭鸭锁骨120g
-                                                            </label>
-
-                                                            <br /> <br />
-                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option5"> 藤椒鸡翅尖120g
-                                                            </label>
-                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option6"> 招牌鸭肠20g
-                                                            </label>
-                                                        </div>
-
-                                                        <h5>荤菜2</h5>
-                                                        <div class="btn-group" data-toggle="buttons">
-                                                            <label class="btn btn-sm active" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option1" checked> 黑鸭鸭脖120g
-                                                            </label>
-                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option2"> 黑鸭鸭掌120g
-                                                            </label>
-                                                            <br /> <br />
-                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option3"> 黑鸭鸭翅中120g
-                                                            </label>
-                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option4"> 黑鸭鸭锁骨120g
-                                                            </label>
-
-                                                            <br /> <br />
-                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option5"> 藤椒鸡翅尖120g
-                                                            </label>
-                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option6"> 招牌鸭肠20g
-                                                            </label>
-                                                        </div>
-
-                                                        <h5>素菜1</h5>
-                                                        <div class="btn-group" data-toggle="buttons">
-                                                            <label class="btn btn-sm active" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option1" checked> 黑鸭鸭脖120g
-                                                            </label>
-                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option2"> 黑鸭鸭掌120g
-                                                            </label>
-                                                            <br /> <br />
-                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option3"> 黑鸭鸭翅中120g
-                                                            </label>
-                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option4"> 黑鸭鸭锁骨120g
-                                                            </label>
-
-                                                            <br /> <br />
-                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option5"> 藤椒鸡翅尖120g
-                                                            </label>
-                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option6"> 招牌鸭肠20g
-                                                            </label>
-                                                        </div>
-
-                                                        <h5>素菜2</h5>
-                                                        <div class="btn-group" data-toggle="buttons">
-                                                            <label class="btn btn-sm active" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option1" checked> 黑鸭鸭脖120g
-                                                            </label>
-                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option2"> 黑鸭鸭掌120g
-                                                            </label>
-                                                            <br /> <br />
-                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option3"> 黑鸭鸭翅中120g
-                                                            </label>
-                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option4"> 黑鸭鸭锁骨120g
-                                                            </label>
-
-                                                            <br /> <br />
-                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option5"> 藤椒鸡翅尖120g
-                                                            </label>
-                                                            <label class="btn btn-sm" style="margin-right: 10px; border-radius: 5px;">
-                                                                <input type="radio" name="options" id="option6"> 招牌鸭肠20g
-                                                            </label>
-                                                        </div>
-
-
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <div style="float: left; margin-left: 10px; display: flex; align-items: center;">
-                                                            <h3 style="margin: 0;">总计</h3>
-                                                            <h3 style="margin: 0; margin-left: 10px;color:red;">￥188.35</h3>
-                                                            <del style="color: gray; font-size: 0.9em; margin-left: 10px;">￥258.8</del>
-                                                        </div>
-
-
-                                                        <button type="button" class="btn btn-mini btn-warning" data-dismiss="modal">+ 加入订单</button>
-                                                        <!--<div class="btn-group" style="margin-left: 2em; ">
-                                                            <button class="btn btn-mini btn-warning">-</button>
-                                                            <button class="btn btn-mini">&nbsp&nbsp 2 &nbsp&nbsp</button>
-                                                            <button class="btn btn-mini btn-warning">+</button>
-                                                        </div>-->
-
-                                                    </div>
-                                                </div>
-                                            </div>
+                                    <td style="padding:0px;">
+                                        <div class="btn-group">
+                                            <button class="btn btn-mini btn-warning">-</button>
+                                            <button class="btn btn-mini">&nbsp 99 &nbsp</button>
+                                            <button class="btn btn-mini btn-warning">+</button>
                                         </div>
+
+                                        <button class="btn btn-mini btn-warning" style="float:right; margin-right:1px;">+</button>
+
                                     </td>
                                 </tr>
                             </tbody>
@@ -525,10 +396,10 @@
                                 <td rowspan="5" width="35%" height="auto" style="aspect-ratio: 1 / 1;">
                                     <img data-toggle="lightbox" data-group="image-group-1" data-caption="两荤两素自选套餐" data-image="img/商品列表图/2荤2素随心配.jpg" src="img/商品列表图/2荤2素随心配.jpg" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片">
                                 </td>
-                                <td colspan="2" ><strong>2荤2素 自选套餐</strong></td>
+                                <td colspan="2"><strong>2荤2素 自选套餐</strong></td>
                             </tr>
                             <tr>
-                                <td colspan="2" ><span class="label">月售12</span> <span class="label">2人份</span></td>
+                                <td colspan="2"><span class="label">月售12</span> <span class="label">2人份</span></td>
                             </tr>
                             <tr>
                                 <td colspan="2"><span class="label">辣、鸭翅中、鸭脖、藕片片</span></td>
@@ -543,10 +414,10 @@
                                 </td>
 
                                 <td>
-                                    <div class="btn-group" >
-                                        <button class="btn btn-sm btn-warning" >-</button>
+                                    <div class="btn-group">
+                                        <button class="btn btn-sm btn-warning">-</button>
                                         <button class="btn btn-sm">&nbsp&nbsp 2 &nbsp&nbsp</button>
-                                        <button class="btn btn-sm btn-warning" >+</button>
+                                        <button class="btn btn-sm btn-warning">+</button>
                                     </div>
                                 </td>
                             </tr>
@@ -654,6 +525,129 @@
     </div>
 
     <script>
+        $(document).ready(function () {
+            //填充数据  商品分类
+            var ClassConHtml = "";
+            var tabContentDes = "";
+            var tableList = "";
+            $.each(LaiChiYaData, function (index, value) {
+                if (value.默认选中) {
+                    ClassConHtml += `<li class="active"><a href="###" data-target="#tab3Content${index}" data-toggle="tab">${value.分类名称}</a></li>`;
+                }
+                else {
+                    ClassConHtml += `<li><a href="###" data-target="#tab3Content${index}" data-toggle="tab">${value.分类名称}</a></li>`;
+                }
+
+                tableList += `<div class="tab-pane fade${value.默认选中 ? ' active in' : ''}" id="tab3Content${index}">`;
+                $.each(value.分类内容, function (inx, item) {
+                    var spanText1 = item.标签1;
+                    if (spanText1.indexOf(" ") !== -1) {
+                        spanText1 = spanText1.split(" ");
+                        spanText1 = spanText1.map(text => `<span class="label">${text}</span>`).join(" ");
+                    }
+                    else {
+                        spanText1 = `<span class="label">${spanText1}</span>`
+                    }
+                    var spanText2 = item.标签2;
+                    if (spanText2.indexOf(" ") !== -1) {
+                        spanText2 = spanText2.split(" ");
+                        spanText2 = spanText2.map(text => `<span class="label">${text}</span>`).join(" ");
+                    } else {
+                        spanText2 = `<span class="label">${spanText2}</span>`
+                    }
+                    var spanText3 = item.标签3;
+                    if (spanText3.indexOf(" ") !== -1) {
+                        spanText3 = spanText3.split(" ");
+                        spanText3 = spanText3.map(text => `<span class="label label-danger">${text}</span>`).join(" ");
+                    } else {
+                        spanText3 = `<span class="label label-danger">${spanText3}</span>`
+                    }
+
+                    tableList += `<table border="0" cellspacing="0" style="padding: 0; " width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="5" width="65%" height="auto" style="aspect-ratio: 1 / 1;">
+                                                    <img data-toggle="lightbox" data-group="image-group-${index}-${inx}" data-caption="两荤两素自选套餐" data-image="${item.高清图}" src="${item.缩略图}" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片">
+                                                </td>
+                                                <td colspan="2" class="whmax"><strong>${item.标题}</strong></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="whmax">${spanText1}</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="whmax">${spanText2}</td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" class="whmax">${spanText3}</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="whmax" style="color: red;" width="54%">
+                                                    <strong>￥${item.售价}</strong>
+                                                    <del style="color: gray;font-size: 0.7em;">￥${item.售价}</del>
+                                                </td>
+
+                                                <td style="padding:0px;"  name="AddOrderDesTd" coninx="${index}" tabinx="${inx}" width="50%">
+
+                                                    <button name="AddOrderDes" class="btn btn-sm btn-warning" style="float:right; margin-right:1px;"  coninx="${index}" tabinx="${inx}"><i class="icon icon-plus"></i></button>
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br />`
+
+                });
+                tableList += `</div>`;
+            });
+            $("#tabAllContent").html(ClassConHtml);
+            $("#tabContentSen").html(tableList);
+
+            //重新初始化浏览图片
+            $('[data-toggle="lightbox"]').lightbox({
+                image: $(this).attr("data-image"),
+                caption: $(this).attr("data-caption")
+            });
+
+            //加入订单
+            $(".tab-content").on("click","[name='AddOrderDes']" ,function () {
+                var coninx = $(this).attr("coninx");
+                var tabinx = $(this).attr("tabinx");
+                LaiChiYaData[coninx].分类内容[tabinx].购买数量 = 1;
+                $(`td[name="AddOrderDesTd"][coninx="${coninx}"][tabinx="${tabinx}"]`).html(
+                    `<div class="btn-group">
+                        <button name="DelOrderDes" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-minus-sign"></i></button>
+                        <button name="NumOrderDes" class="btn btn-mini" coninx="${coninx}" tabinx="${tabinx}" > 1 </button>
+                        <button name="AddOrderDesEd" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-plus-sign"></i></button>
+                    </div>`
+                );
+            })
+
+            //订单商品数量增加
+            $(".tab-content").on("click","[name='AddOrderDesEd']" ,function () {
+                var coninx = $(this).attr("coninx");
+                var tabinx = $(this).attr("tabinx");
+                LaiChiYaData[coninx].分类内容[tabinx].购买数量 += 1;
+                $(`button[name="NumOrderDes"][coninx="${ coninx }"][tabinx="${ tabinx }"`).text(LaiChiYaData[coninx].分类内容[tabinx].购买数量);
+            })
+
+            //订单商品数量减少
+            $(".tab-content").on("click", "[name='DelOrderDes']", function () {
+                var coninx = $(this).attr("coninx");
+                var tabinx = $(this).attr("tabinx");
+                LaiChiYaData[coninx].分类内容[tabinx].购买数量 -= 1;
+                if (LaiChiYaData[coninx].分类内容[tabinx].购买数量 == 0)
+                {
+                    $(`td[name="AddOrderDesTd"][coninx="${coninx}"][tabinx="${tabinx}"]`).html(
+                        ` <button name="AddOrderDes" class="btn btn-sm btn-warning" style="float:right; margin-right:1px;"  coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-plus"></i></button>`
+                    );
+                }
+                else
+                {
+                    $(`button[name="NumOrderDes"][coninx="${coninx}"][tabinx="${tabinx}"`).text(LaiChiYaData[coninx].分类内容[tabinx].购买数量);
+                }
+            })
+
+        });
         // 提示消息 需要手动初始化工具提示
         //$('[data-toggle="tooltip"]').tooltip();
         //// 弹出面板 需要手动进行初始化
@@ -771,5 +765,7 @@
         });
 
     </script>
+
+
 </body>
 </html>
