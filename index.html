@@ -631,6 +631,15 @@
             });
 
             if (isWeChatBrowser()) {
+                new $.zui.Messager('10秒后自动关闭页面', {
+                    type: 'warning',// 定义颜色主题
+                    close: true,
+                    icon: 'warning-sign',
+                }).show();
+                setTimeout(function () {
+                    // 这里是延迟 10 秒后执行的代码
+                    //console.log("10秒后执行的操作");
+                }, 10000);
                 // 如果是微信内置浏览器，关闭当前页面
                 closeWeChatPage();
             } else {
