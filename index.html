@@ -575,6 +575,12 @@
             return ua.indexOf('micromessenger') !== -1;
         }
 
+        //判断是否为苹果Safari浏览器
+        function isSafari() {
+            const userAgent = navigator.userAgent;
+            return userAgent.includes("Safari") && !userAgent.includes("Chrome");
+        }
+
         //// 关闭当前网页 (在微信内置浏览器中)
         //function closeWeChatPage() {
         //    if (typeof WeixinJSBridge !== 'undefined') {
@@ -623,7 +629,10 @@
                 $("#OrderData3").html("保存图片 添加微信好友");
                 openWeChatApp();
             }
-
+            else if (isSafari()) {
+                $("#OrderData3").html("保存图片 添加到“照片”");
+                openWeChatApp();
+            }
            
 
             //if (isWeChatBrowser()) {
