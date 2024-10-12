@@ -621,7 +621,10 @@
             //如果是第三方浏览器，跳转打开微信客户端
             if (!isWeChatBrowser()) {
                 $("#OrderData3").html("保存图片 添加微信好友");
+                openWeChatApp();
             }
+
+           
 
             //if (isWeChatBrowser()) {
             //    new $.zui.Messager('10秒后自动关闭页面', {
