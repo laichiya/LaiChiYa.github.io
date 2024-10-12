@@ -599,8 +599,13 @@
         // 添加微信按钮
         $("#copyWechatData").on("click", function () {
             // 使用 clipboard API 复制
-            navigator.clipboard.writeText("wxid_no0ncx4wbxwr12").then(function () {
-                new $.zui.Messager('复制微信号成功    可前往微信添加好友', {
+            navigator.clipboard.writeText("来吃鸭订单\n详细信息:\n鸭架子 x2 \n共计￥100").then(function () {
+                new $.zui.Messager('复制订单信息成功!', {
+                    type: 'success',// 定义颜色主题
+                    close: true,
+                    icon: 'ok-sign',
+                }).show();
+                new $.zui.Messager('请前往微信发送订单消息!', {
                     type: 'success',// 定义颜色主题
                     close: true,
                     icon: 'ok-sign',
@@ -615,8 +620,7 @@
 
             //如果是第三方浏览器，跳转打开微信客户端
             if (!isWeChatBrowser()) {
-                $("#OrderData3").html("保存图中的二维码 添加微信好友");
-                console.log(1232132132);
+                $("#OrderData3").html("保存图片 添加微信好友");
             }
 
             //if (isWeChatBrowser()) {
