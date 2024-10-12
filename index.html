@@ -55,10 +55,10 @@
         /* 自定义模态框样式 */
         /*.modal-bottom {
             position: fixed;
-            bottom: 8vh;*/ /* 让模态框刚好衔接悬浮的 div */
+            bottom: 8vh;*/  /*让模态框刚好衔接悬浮的 div */
             /*width: 100%;
             border-radius: 15px 15px 0 0;
-            z-index: 999;*/ /* 确保模态框在悬浮 div 下面 */
+            z-index: 999;*/  /*确保模态框在悬浮 div 下面 */
         /*}*/
 
         /*.modal-content {
@@ -506,26 +506,26 @@
         </div>
 
         <!-- 发送订单 模态框 -->
-        <div class="modal fade" id="SendOrderModal" tabindex="-1" role="dialog">
-            <div class="modal-dialog modal-bottom" role="document">
+        <div class="modal fade" id="SendOrderModal" >
+            <div class="modal-dialog modal-bottom" >
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">关闭</span></button>
-                        <h4 class="modal-title">发送订单</h4>
+                        <h4 class="modal-title" style="color:green">发送订单</h4>
                     </div>
                     <div class="modal-body">
                         <div class="popover-content">
                             <div class="alert alert-success">
                                 <h3 style="text-align: center;">订单信息已复制到剪贴板</h3>
                                 <hr>
-                                <h4 style="text-align: center;">可长按下方图片</h4>
-                                <h4 id="OrderData3" style="text-align: center;">识别图中的二维码</h4>
-                                <h4 style="text-align: center;">在聊天输入框粘贴订单信息进行发送</h4>
+                                <h5 style="text-align: center;">可长按下方图片</h5>
+                                <h5 id="OrderData3" style="text-align: center;">识别图中的二维码</h5>
+                                <h5 style="text-align: center;">在聊天输入框粘贴订单信息进行发送</h5>
                             </div>
 
                             <!--<span class="label label-success">复制微信号成功! 可前往微信添加好友</span>-->
                             <!--<span class="label label-success">可长按下方图片 识别图中的二维码</span>-->
-                            <img src="img/微信二维码/来吃鸭_老板微信.jpg" alt="微信号:wxid_no0ncx4wbxwr12" />
+                            <img style="border-radius: 10px;" src="img/微信二维码/来吃鸭_老板微信.jpg" alt="微信号:wxid_no0ncx4wbxwr12" />
                             <br /> <br />
                             <button id="OpenWechatClient" class="btn btn-lg btn-success" style="width:100%" type="button">
                                 <i class="icon icon-10x icon-wechat"></i>
@@ -533,6 +533,7 @@
                             </button>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -542,19 +543,19 @@
         <div class="floating-div">
             <!-- 左侧点击区域 -->
             <!--<div class="left-area" id="leftArea">
-            <i class="icon icon-10x icon-chevron-up"></i>
-            &nbsp;<h3>总计 ￥188.35</h3>
-            <del style="color: gray; font-size: 0.7em; margin-left: 10px">￥15.8</del>
-        </div>-->
-            <!-- 左侧按钮 -->
+        <i class="icon icon-10x icon-chevron-up"></i>
+        &nbsp;<h3>总计 ￥188.35</h3>
+        <del style="color: gray; font-size: 0.7em; margin-left: 10px">￥15.8</del>
+    </div>-->
+            <!-- 订单明细 -->
             <button id="leftArea" class="btn btn-lg btn-primary" type="button" data-toggle="modal" data-target="#orderDetailsModal">
                 <i class="icon icon-10x icon-th-list"></i>
                 &nbsp; 订单明细
             </button>
 
 
-            <!-- 右侧按钮 -->
-            <button id="copyWechatData" class="btn btn-lg btn-success" type="button">
+            <!-- 发送订单 -->
+            <button id="copyWechatData" class="btn btn-lg btn-success" type="button"  data-scroll-inside="true">
                 <i class="icon icon-10x icon-wechat"></i>
                 &nbsp; 发送订单
             </button>
@@ -562,23 +563,23 @@
 
             <!--点击添加微信弹出的面板-->
             <!--<div id="AddWechatImgCode" class="popover top">
-        <div class="arrow"></div>
-        <h3 class="popover-title">从上方弹出</h3>
-        <div class="popover-content">
-            <h4 style="text-align: center;">订单信息已复制到剪贴板</h4>
-            <h4 style="text-align: center;">可长按下方图片</h4>
-            <h4 id="OrderData3" style="text-align: center;">识别图中的二维码</h4>-->
+    <div class="arrow"></div>
+    <h3 class="popover-title">从上方弹出</h3>
+    <div class="popover-content">
+        <h4 style="text-align: center;">订单信息已复制到剪贴板</h4>
+        <h4 style="text-align: center;">可长按下方图片</h4>
+        <h4 id="OrderData3" style="text-align: center;">识别图中的二维码</h4>-->
             <!--<span class="label label-success">复制微信号成功! 可前往微信添加好友</span>-->
             <!--<span class="label label-success">可长按下方图片 识别图中的二维码</span>-->
             <!--<img src="img/微信二维码/来吃鸭_老板微信.jpg" alt="微信号:wxid_no0ncx4wbxwr12" />
-                <h4 style="text-align: center;">在聊天输入框粘贴订单信息</h4>
-            </div>
-        </div>-->
+            <h4 style="text-align: center;">在聊天输入框粘贴订单信息</h4>
+        </div>
+    </div>-->
             <!-- 右侧按钮 -->
             <!--<button id="copyOrderData" class="btn btn-warning " type="button" data-toggle="tooltip" data-placement="top" title="添加微信:wxid_no0ncx4wbxwr12 发送订单信息">
-            <i class="icon icon-10x icon-copy"></i>
-            &nbsp; 复制订单
-        </button>-->
+        <i class="icon icon-10x icon-copy"></i>
+        &nbsp; 复制订单
+    </button>-->
         </div>
 
 
@@ -629,7 +630,7 @@
         //}
 
         // 跳转打开微信客户端
-        $("#OpenWechatClient").on(function () {
+        $("#OpenWechatClient").on("click",function () {
             window.location.href = "weixin://"; // 尝试打开微信客户端
         });
 
@@ -646,16 +647,17 @@
         $("#copyWechatData").on("click", function () {
             // 使用 clipboard API 复制
             navigator.clipboard.writeText("来吃鸭订单\n详细信息:\n鸭架子 x2 \n共计￥100").then(function () {
-                new $.zui.Messager('复制订单信息成功!', {
-                    type: 'success',// 定义颜色主题
-                    close: true,
-                    icon: 'ok-sign',
-                }).show();
-                new $.zui.Messager('可前往微信发送订单消息!', {
-                    type: 'success',// 定义颜色主题
-                    close: true,
-                    icon: 'ok-sign',
-                }).show();
+                console.log("复制订单信息成功");
+                //new $.zui.Messager('复制订单信息成功!', {
+                //    type: 'success',// 定义颜色主题
+                //    close: true,
+                //    icon: 'ok-sign',
+                //}).show();
+                //new $.zui.Messager('可前往微信发送订单消息!', {
+                //    type: 'success',// 定义颜色主题
+                //    close: true,
+                //    icon: 'ok-sign',
+                //}).show();
             }).catch(function (err) {
                 new $.zui.Messager("复制失败: 请授于剪贴板权限" + err, {
                     type: 'danger',// 定义颜色主题
