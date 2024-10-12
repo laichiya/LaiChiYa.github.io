@@ -498,9 +498,27 @@
                 &nbsp;<h3>总计 ￥188.35</h3>
                 <del style="color: gray; font-size: 0.7em; margin-left: 10px">￥15.8</del>
             </div>
-            <!-- 右侧按钮 -->
 
-            <button class="btn btn-lg btn-warning " onclick="handleButtonClick()" type="button"><i class="icon icon-10x icon-copy"></i> &nbsp; 复制订单</button>
+            <!-- 右侧按钮 -->
+            <button id="copyWechatData" class="btn btn-lg btn-success" type="button" data-toggle="popover" data-placement="top">
+                <i class="icon icon-10x icon-wechat"></i>
+                &nbsp; 加微信享折扣
+            </button>
+            <!--点击添加微信弹出的面板-->
+            <div id="AddWechatImgCode" class="popover top">
+                <div class="arrow"></div>
+                <h3 class="popover-title">从上方弹出</h3>
+                <div class="popover-content">
+                    <!--<p>复制微信号成功! 可以前往微信添加好友</p>-->
+                    <span class="label label-success">复制微信号成功! 可前往微信添加好友</span>
+                    <img src="img/微信二维码/来吃鸭_老板微信.jpg" alt="微信号:wxid_no0ncx4wbxwr12" />
+                </div>
+            </div>
+
+            <button id="copyOrderData" class="btn btn-lg btn-warning " type="button" data-toggle="tooltip" data-placement="top" title="添加微信:wxid_no0ncx4wbxwr12 发送订单信息">
+                <i class="icon icon-10x icon-copy"></i>
+                &nbsp; 复制订单
+            </button>
         </div>
         <!-- 购物车模态框 -->
         <div class="modal fade" id="chooseModal" tabindex="-1" role="dialog">
@@ -520,6 +538,11 @@
     </div>
 
     <script>
+        // 提示消息 需要手动初始化工具提示
+        $('[data-toggle="tooltip"]').tooltip();
+        //// 弹出面板 需要手动进行初始化
+        //$('[data-toggle="popover"]').popover();
+
         // 初始化搜索框，并在选项中指定搜索文本变更事件回调函数，这样当搜索框文本发送变化时获得通知。
         $('#searchboxExample').searchBox({
             escToClear: true, // 设置点击 ESC 键清空搜索框
@@ -551,14 +574,55 @@
 
         // 跳转打开微信客户端
         function openWeChatApp() {
-            //window.location.href = "weixin://"; // 尝试打开微信客户端
-            //window.location.href = "weixin://dl/chat?username=Yangfp02";
-            window.location.href = "weixin://dl/business/?ticket=ta428dhj739hg3efe6e";
+            window.location.href = "weixin://"; // 尝试打开微信客户端
         }
 
-        // 按钮点击事件处理逻辑
-        function handleButtonClick() {
-            console.log("按钮点击事件处理逻辑");
+
+        // 添加微信按钮 面板消息
+        $('#copyWechatData').popover({
+            animation:true,
+            tipClass: 'popover-success',
+            html: true,
+            content: function () { return $("#AddWechatImgCode").html()}
+        });
+
+        // 添加微信按钮
+        $("#copyWechatData").on("click", function () {
+            // 使用 clipboard API 复制
+            navigator.clipboard.writeText("wxid_no0ncx4wbxwr12").then(function () {
+                new $.zui.Messager('复制微信号成功    可前往微信添加好友', {
+                    type: 'success',// 定义颜色主题
+                    close: true,
+                    icon: 'ok-sign',
+                }).show();
+            }).catch(function (err) {
+                new $.zui.Messager("复制失败: " + err, {
+                    type: 'danger',// 定义颜色主题
+                    close: true,
+                    icon: ' exclamation-sign',
+                }).show();
+            });
+
+        });
+
+        // 复制订单 事件处理逻辑
+        $("#copyOrderData").on("click", function () {
+            // 使用 clipboard API 复制
+            navigator.clipboard.writeText("来吃鸭订单\n详细信息:\n鸭架子 x2 \n共计￥100").then(function () {
+                new $.zui.Messager('复制订单信息成功!\n请前往微信发送订单消息', {
+                    type: 'success' ,// 定义颜色主题
+                    close: true,
+                    icon:'ok-sign',
+                }).show();
+
+            }).catch(function (err) {
+                new $.zui.Messager("复制失败: " + err, {
+                    type: 'danger',// 定义颜色主题
+                    close: true,
+                    icon: ' exclamation-sign',
+                }).show();
+            });
+
             if (isWeChatBrowser()) {
                 // 如果是微信内置浏览器，关闭当前页面
                 closeWeChatPage();
@@ -566,7 +630,7 @@
                 // 如果是第三方浏览器，跳转打开微信客户端
                 openWeChatApp();
             }
-        }
+        });
     </script>
 </body>
 </html>
