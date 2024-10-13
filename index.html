@@ -905,18 +905,6 @@
                 $("#totalPrice").text("￥" + totalP[0]);
                 $("#totalUPrice").text("￥" + totalP[1]);
             });
-
-
-            //$.zui.store.set('name', 'catouse');                      // 使用本地存储设置'name'值为'catouse'
-            //$.zui.store.set('date', { year: 2014, month: 8, day: 6 }); // 将一个对象存储到本地存储
-
-            new $.zui.Messager($.zui.store.get('name') + $.zui.store.get('date').year, {
-                type: 'warning', // 定义颜色主题
-                icon: "warning-sign",
-            }).show();
-            console.log($.zui.store.get('name'));                    // 从本地存储获取'name'的值
-            console.log($.zui.store.get('date').year);               // 从本地存储获取'date'值的year属性
-
         });
 
 
@@ -964,7 +952,37 @@
             show: false
         })
 
+        var TheDegreeOfSpiciness = "加辣";
+        var PickUpOrDeliverAttheStore = "到店自取";
+        //从本地浏览器获取数据
+        var ProductOrderData = $.zui.store.get('ProductOrderData');
+        if (ProductOrderData) {
+            TheDegreeOfSpiciness = ProductOrderData.辣度;
+            PickUpOrDeliverAttheStore = ProductOrderData.是否配送;
+            $("#locationPone").val(ProductOrderData.联系电话);
+            $("#detailedAddress").val(ProductOrderData.配送地址);
+            $("#OrderRemarks").val(ProductOrderData.备注);
 
+            //自动选中用户喜好的辣度（根据浏览器本地存储的历史订单数据）
+            $.each($(`input[name="radioSpicy"]`), function (inx, item) {
+                var hoetC = $(this).parent().text().trim();
+                $(this).removeAttr("checked")
+                if (hoetC == TheDegreeOfSpiciness)
+                {
+                    $(this).attr("checked", "checked");
+                }
+            })
+
+            //自动选中用户喜好的配送方式（根据浏览器本地存储的历史订单数据）
+            $.each($(`input[name="radioOptionsExample"]`), function (inx, item) {
+                var hoetC = $(this).parent().text().trim();
+                $(this).removeAttr("checked")
+                if (hoetC == PickUpOrDeliverAttheStore) {
+                    $(this).attr("checked", "checked");
+                }
+            })
+            
+        }
 
     </script>
 
@@ -1019,7 +1037,7 @@
             return result;
         };
 
-        var TheDegreeOfSpiciness = "加辣";
+       
         // 监听单选按钮的变化
         $("input[name='radioSpicy']").on("change", function () {
             // 获取当前选中的辣度
@@ -1027,7 +1045,7 @@
             console.log("辣度:", TheDegreeOfSpiciness);
         });
 
-        var PickUpOrDeliverAttheStore = "到店自取";
+       
         // 监听单选按钮的变化
         $("input[name='radioOptionsExample']").on("change", function () {
             // 获取当前选中的辣度
@@ -1036,7 +1054,7 @@
         });
 
 
-        // 添加微信按钮
+        // 发送到微信 按钮
         $("[name='copyWechatData']").on("click", function () {
             var totalP = SumTotalPrice();
             if (totalP[0] < 1) {
@@ -1048,12 +1066,13 @@
             }
 
 
-            var magessData = `!!!来吃鸭!!!\n`;
+            var magessData = `----- 来吃鸭 -----\n`;
             magessData += `订单编号：${$.generateRandomString(5)} \n`;
             magessData += `老板我要点下面这些\n\n`;
             magessData += `===================== \n`;
             var totalPrice = 0;
             var totalUPrice = 0
+            var ProductSimDataList = [];
             $.each(LaiChiYaData, function (index, value) {
                 $.each(value.分类内容, function (inx, item) {
                     if (item.购买数量 < 1 || item.已售罄)
@@ -1061,6 +1080,7 @@
                     magessData += `${item.标题}  ￥${item.售价}  X${item.购买数量}\n`
                     totalPrice += item.售价 * item.购买数量;
                     totalUPrice += item.划线价格 * item.购买数量;
+                    ProductSimDataList.push({ 商品标题: item.标题, 购买数量: item.购买数量});
                 });
             });
 
@@ -1110,8 +1130,20 @@
                     close: true,
                     icon: ' exclamation-sign',
                 }).show();
+                return;
             });
 
+            
+            
+            //写入浏览器本地存储
+            $.zui.store.set('ProductOrderData', {
+                辣度: TheDegreeOfSpiciness,
+                是否配送: PickUpOrDeliverAttheStore,
+                备注:$("#OrderRemarks").val(),
+                联系电话: $("#locationPone").val(),
+                配送地址: $("#detailedAddress").val(),
+                商品列表: ProductSimDataList,
+            });
 
             //如果是苹果Safari浏览器，跳转打开微信客户端
             if (isSafari()) {
