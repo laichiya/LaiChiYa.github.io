@@ -451,16 +451,13 @@
                             <div class="tab-pane" id="tabFoodNotes">
                                 <br />
                                 <label class="radio-inline">
-                                    <input id="Spicy" type="radio" name="radioSpicy" checked="checked"> 微辣
+                                    <input id="Spicy" type="radio" name="radioSpicy" checked="checked"> 加辣
                                 </label>
                                 <label class="radio-inline">
-                                    <input id="Spicy2" type="radio" name="radioSpicy"> 中辣
+                                    <input id="Spicy2" type="radio" name="radioSpicy"> 加特辣
                                 </label>
                                 <label class="radio-inline">
-                                    <input id="Spicy3" type="radio" name="radioSpicy"> 特辣
-                                </label>
-                                <label class="radio-inline">
-                                    <input id="Spicy4" type="radio" name="radioSpicy"> 变态辣（慎选）
+                                    <input id="Spicy3" type="radio" name="radioSpicy"> 加变态辣
                                 </label>
                                 <br /><br />
                                 <div class="input-control has-label-left">
@@ -649,7 +646,7 @@
                     tableList += `<table border="0" cellspacing="0" style="padding: 0; " width="100%">
                                                                     <tbody>
                                                                         <tr>
-                                                                            <td rowspan="5" width="65%" height="auto" style="aspect-ratio: 1 / 1;">
+                                                                            <td rowspan="5" width="45%" height="auto" style="aspect-ratio: 1 / 1;">
                                                                                 <img data-toggle="lightbox" data-group="image-group-${index}-${inx}" data-caption="${item.标题}" data-image="${item.高清图}" src="${item.缩略图}" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="${item.标题}">
                                                                             </td>
                                                                             <td colspan="2" class="whmax"><strong>${item.标题}</strong></td>
@@ -664,12 +661,12 @@
                                                                             <td colspan="2" class="whmax">${spanText3}</td>
                                                                         </tr>
                                                                         <tr>
-                                                                            <td class="whmax" style="color: red;" width="45%">
+                                                                            <td class="whmax" style="color: red;" width="28%">
                                                                                 <strong>￥${item.售价}</strong>
                                                                                 <del style="color: gray;font-size: 0.7em;">￥${item.划线价格}</del>
                                                                             </td>
 
-                                                                            <td style="padding:0px;"  name="AddOrderDesTd" coninx="${index}" tabinx="${inx}" width="55%">
+                                                                            <td style="padding:0px;"  name="AddOrderDesTd" coninx="${index}" tabinx="${inx}" width="65%">
 
                                                                                 <button name="AddOrderDes" class="btn btn-sm btn-warning" style="float:right; margin-right:1px;"  coninx="${index}" tabinx="${inx}"><i class="icon icon-plus"></i></button>
 
@@ -680,7 +677,7 @@
                                                                 <br />`
 
                 });
-                tableList += `</div>`;
+                tableList += `<br/><span style="display: flex; justify-content: center; align-items: center; height: 100px;">已经到底啦~</span><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>`;
             });
             $("#tabAllContent").html(ClassConHtml);
             $("#tabContentSen").html(tableList);
@@ -1012,7 +1009,7 @@
             return result;
         };
 
-        var TheDegreeOfSpiciness = "微辣";
+        var TheDegreeOfSpiciness = "加辣";
         // 监听单选按钮的变化
         $("input[name='radioSpicy']").on("change", function () {
             // 获取当前选中的辣度
