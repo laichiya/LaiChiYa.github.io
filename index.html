@@ -387,64 +387,132 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">关闭</span></button>
-                        <h4 class="modal-title" style="text-align: center;">已选购美食</h4>
+                        <!--<h4 class="modal-title" style="text-align: center;">已选购美食</h4>-->
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a data-tab href="#tabOrderProductDetails">已选美食</a></li>
+                            <li><a data-tab href="#tabFoodNotes">美食备注</a></li>
+                            <li><a data-tab href="#tabOrderDeliveryAddress">收货地址</a></li>
+                        </ul>
                     </div>
 
-                    <table border="0" cellspacing="0" style="padding: 0;" width="100%">
-                        <tbody>
-                            <tr class="whmax">
-                                <td rowspan="5" width="35%" height="auto" style="aspect-ratio: 1 / 1;">
-                                    <img data-toggle="lightbox" data-group="image-group-1" data-caption="两荤两素自选套餐" data-image="img/商品列表图/2荤2素随心配.jpg" src="img/商品列表图/2荤2素随心配.jpg" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片">
-                                </td>
-                                <td colspan="2"><strong>2荤2素 自选套餐</strong></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2"><span class="label">月售12</span> <span class="label">2人份</span></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2"><span class="label">辣、鸭翅中、鸭脖、藕片片</span></td>
-                            </tr>
-                            <tr>
-                                <td colspan="2"><span class="label label-danger">8.64折</span>  <span class="label label-danger">限2份</span></td>
-                            </tr>
-                            <tr class="whmax">
-                                <td style="color: red;" width="30%">
-                                    <strong>￥13.7</strong>
-                                    <del style="color: gray;font-size: 0.7em;">￥15.8</del>
-                                </td>
 
-                                <td>
-                                    <div class="btn-group">
-                                        <button class="btn btn-sm btn-warning"><i class="icon icon-minus-sign"></i></button>
-                                        <button class="btn btn-sm">2</button>
-                                        <button class="btn btn-sm btn-warning"><i class="icon icon-plus-sign"></i></button>
-                                    </div>
-
-                                    <!--<div class="btn-group">
-                                        <button name="DelOrderDes" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-minus-sign"></i></button>
-                                        <button name="NumOrderDes" class="btn btn-mini" coninx="${coninx}" tabinx="${tabinx}"> 1 </button>
-                                        <button name="AddOrderDesEd" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-plus-sign"></i></button>
-                                    </div>-->
-
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
 
 
                     <div class="modal-body">
-                        <div class="input-control has-icon-left">
-                            <input id="locationAddr" type="text" class="form-control" placeholder="请输入您的详细地址">
-                            <label for="locationAddr" class="input-control-icon-left"><i class="icon icon-location-arrow"></i></label>
-                        </div>
 
-                        <br />
-                        <div class="input-control has-label-left">
-                            <textarea id="inputAccountExample3" class="form-control" placeholder="可在此处输入您的备注内容"></textarea>
-                            <label for="inputAccountExample3" class="input-control-icon-left"><i class="icon icon-hand-right"></i></label>
+
+
+                        <!--订单商品明细内容-->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="tabOrderProductDetails">
+                                <br />
+                                <table border="0" cellspacing="0" style="padding: 0;" width="100%">
+                                    <tbody>
+                                        <tr class="whmax">
+                                            <td rowspan="5" width="35%" height="auto" style="aspect-ratio: 1 / 1;">
+                                                <img data-toggle="lightbox" data-group="image-group-1" data-caption="两荤两素自选套餐" data-image="img/商品列表图/2荤2素随心配.jpg" src="img/商品列表图/2荤2素随心配.jpg" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片">
+                                            </td>
+                                            <td colspan="2"><strong>2荤2素 自选套餐</strong></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><span class="label">月售12</span> <span class="label">2人份</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><span class="label">辣、鸭翅中、鸭脖、藕片片</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2"><span class="label label-danger">8.64折</span>  <span class="label label-danger">限2份</span></td>
+                                        </tr>
+                                        <tr class="whmax">
+                                            <td style="color: red;" width="30%">
+                                                <strong>￥13.7</strong>
+                                                <del style="color: gray;font-size: 0.7em;">￥15.8</del>
+                                            </td>
+
+                                            <td>
+                                                <div class="btn-group">
+                                                    <button class="btn btn-sm btn-warning"><i class="icon icon-minus-sign"></i></button>
+                                                    <button class="btn btn-sm">2</button>
+                                                    <button class="btn btn-sm btn-warning"><i class="icon icon-plus-sign"></i></button>
+                                                </div>
+
+                                                <!--<div class="btn-group">
+                                                    <button name="DelOrderDes" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-minus-sign"></i></button>
+                                                    <button name="NumOrderDes" class="btn btn-mini" coninx="${coninx}" tabinx="${tabinx}"> 1 </button>
+                                                    <button name="AddOrderDesEd" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-plus-sign"></i></button>
+                                                </div>-->
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="tab-pane" id="tabFoodNotes">
+                                <br />
+                                <label class="radio-inline">
+                                    <input id="Spicy" type="radio" name="radioSpicy" checked="checked"> 微辣
+                                </label>
+                                <label class="radio-inline">
+                                    <input id="Spicy2" type="radio" name="radioSpicy"> 中辣
+                                </label>
+                                <label class="radio-inline">
+                                    <input id="Spicy3" type="radio" name="radioSpicy"> 特辣
+                                </label>
+                                <label class="radio-inline">
+                                    <input id="Spicy4" type="radio" name="radioSpicy"> 变态辣（慎选）
+                                </label>
+                                <br /><br />
+                                <div class="input-control has-label-left">
+                                    <textarea id="OrderRemarks" class="form-control" placeholder="如有其它需要 可在此处输入备注内容"></textarea>
+                                    <label for="OrderRemarks" class="input-control-icon-left"><i class="icon icon-hand-right"></i></label>
+                                </div>
+                                <br />
+                            </div>
+                            <!--收获地址内容-->
+                            <div class="tab-pane" id="tabOrderDeliveryAddress">
+                                <br />
+
+                                <label class="radio-inline">
+                                    <input id="PickUpAtTheStore" type="radio" name="radioOptionsExample" checked="checked"> 到店自取
+                                </label>
+                                <label class="radio-inline">
+                                    <input id="DeliveryRequired" type="radio" name="radioOptionsExample"> 需要配送
+                                </label>
+
+                                <br /><br />
+
+                                <div class="input-control has-icon-left">
+                                    <input id="locationPone" type="text" class="form-control" placeholder="如需配送 请输入联系电话">
+                                    <label for="locationPone" class="input-control-icon-left"><i class="icon icon-mobile"></i></label>
+                                </div>
+                                <br />
+                                <div class="input-control has-label-left">
+                                    <textarea id="detailedAddress" class="form-control" placeholder="如需配送 请输入详细收货地址"></textarea>
+                                    <label for="detailedAddress" class="input-control-icon-left"><i class="icon icon-location-arrow"></i></label>
+                                </div>
+                                <br />
+
+                                <br />
+                            </div>
                         </div>
 
                     </div>
+
+
+                    <div class="modal-footer">
+                        <div style="float: left; text-align: center; font-size: 1.2em; margin-top: 0.28em;">
+                            <strong>总计：</strong>
+                            <strong id="totalPrice" style="color: red;">￥13.7</strong>
+                            <del id="totalUPrice" style="color: gray;font-size: 0.7em;">￥15.8</del>
+                        </div>
+                        <!-- 发送订单 -->
+                        <button name="copyWechatData" class="btn btn-success" type="button">
+                            <i class="icon icon-10x icon-wechat"></i>
+                            &nbsp; 发送订单
+                        </button>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -493,14 +561,16 @@
                 <del style="color: gray; font-size: 0.7em; margin-left: 10px">￥15.8</del>
             </div>-->
             <!-- 订单明细 -->
-            <button id="leftArea" class="btn btn-lg btn-warning" type="button" data-toggle="modal" data-target="#orderDetailsModal">
+            <button id="leftArea" class="btn btn-lg btn-warning" type="button">
+                <!--data-toggle="modal" data-target="#orderDetailsModal"-->
                 <i class="icon icon-10x icon-th-list"></i>
                 &nbsp; 订单明细
             </button>
 
 
             <!-- 发送订单 -->
-            <button id="copyWechatData" class="btn btn-lg btn-success" type="button" data-scroll-inside="true">
+            <button name="copyWechatData" class="btn btn-lg btn-success" type="button">
+                <!--data-toggle="modal" data-target="#SendOrderModal"-->
                 <i class="icon icon-10x icon-wechat"></i>
                 &nbsp; 发送订单
             </button>
@@ -548,6 +618,11 @@
 
                 tableList += `<div class="tab-pane fade${value.默认选中 ? ' active in' : ''}" id="tab3Content${index}">`;
                 $.each(value.分类内容, function (inx, item) {
+                    if (item.已售罄) {
+                        // 相当于 continue
+                        return true;
+                    }
+
                     var spanText1 = item.标签1;
                     if (spanText1.indexOf(" ") !== -1) {
                         spanText1 = spanText1.split(" ");
@@ -572,37 +647,37 @@
                     }
 
                     tableList += `<table border="0" cellspacing="0" style="padding: 0; " width="100%">
-                                            <tbody>
-                                                <tr>
-                                                    <td rowspan="5" width="65%" height="auto" style="aspect-ratio: 1 / 1;">
-                                                        <img data-toggle="lightbox" data-group="image-group-${index}-${inx}" data-caption="两荤两素自选套餐" data-image="${item.高清图}" src="${item.缩略图}" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="圆角图片">
-                                                    </td>
-                                                    <td colspan="2" class="whmax"><strong>${item.标题}</strong></td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="2" class="whmax">${spanText1}</td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="2" class="whmax">${spanText2}</td>
-                                                </tr>
-                                                <tr>
-                                                    <td colspan="2" class="whmax">${spanText3}</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="whmax" style="color: red;" width="45%">
-                                                        <strong>￥${item.售价}</strong>
-                                                        <del style="color: gray;font-size: 0.7em;">￥${item.售价}</del>
-                                                    </td>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td rowspan="5" width="65%" height="auto" style="aspect-ratio: 1 / 1;">
+                                                                                <img data-toggle="lightbox" data-group="image-group-${index}-${inx}" data-caption="${item.标题}" data-image="${item.高清图}" src="${item.缩略图}" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="${item.标题}">
+                                                                            </td>
+                                                                            <td colspan="2" class="whmax"><strong>${item.标题}</strong></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td colspan="2" class="whmax">${spanText1}</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td colspan="2" class="whmax">${spanText2}</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td colspan="2" class="whmax">${spanText3}</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="whmax" style="color: red;" width="45%">
+                                                                                <strong>￥${item.售价}</strong>
+                                                                                <del style="color: gray;font-size: 0.7em;">￥${item.划线价格}</del>
+                                                                            </td>
 
-                                                    <td style="padding:0px;"  name="AddOrderDesTd" coninx="${index}" tabinx="${inx}" width="55%">
+                                                                            <td style="padding:0px;"  name="AddOrderDesTd" coninx="${index}" tabinx="${inx}" width="55%">
 
-                                                        <button name="AddOrderDes" class="btn btn-sm btn-warning" style="float:right; margin-right:1px;"  coninx="${index}" tabinx="${inx}"><i class="icon icon-plus"></i></button>
+                                                                                <button name="AddOrderDes" class="btn btn-sm btn-warning" style="float:right; margin-right:1px;"  coninx="${index}" tabinx="${inx}"><i class="icon icon-plus"></i></button>
 
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                        <br />`
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <br />`
 
                 });
                 tableList += `</div>`;
@@ -623,10 +698,10 @@
                 LaiChiYaData[coninx].分类内容[tabinx].购买数量 = 1;
                 $(`td[name="AddOrderDesTd"][coninx="${coninx}"][tabinx="${tabinx}"]`).html(
                     `<div class="btn-group">
-                            <button name="DelOrderDes" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-minus-sign"></i></button>
-                            <button name="NumOrderDes" class="btn btn-mini" coninx="${coninx}" tabinx="${tabinx}" > 1 </button>
-                            <button name="AddOrderDesEd" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-plus-sign"></i></button>
-                        </div>`
+                                                    <button name="DelOrderDes" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-minus-sign"></i></button>
+                                                    <button name="NumOrderDes" class="btn btn-mini" coninx="${coninx}" tabinx="${tabinx}" > 1 </button>
+                                                    <button name="AddOrderDesEd" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-plus-sign"></i></button>
+                                                </div>`
                 );
 
                 LaiChiYaData[coninx].订单商品数量 += 1;
@@ -636,7 +711,7 @@
 
             })
 
-            //订单商品数量增加
+            //订单商品数量 增加（商品页面）
             $(".tab-content").on("click", "[name='AddOrderDesEd']", function () {
                 var coninx = $(this).attr("coninx");
                 var tabinx = $(this).attr("tabinx");
@@ -649,7 +724,7 @@
                 );
             })
 
-            //订单商品数量减少
+            //订单商品数量 减少（商品页面）
             $(".tab-content").on("click", "[name='DelOrderDes']", function () {
                 var coninx = $(this).attr("coninx");
                 var tabinx = $(this).attr("tabinx");
@@ -676,7 +751,184 @@
                 }
             })
 
+            // 订单明细 按钮 单击事件
+            $("#leftArea").on("click", function (event) {
+
+
+
+
+                var tableList = "";
+                var totalPrice = 0;
+                var totalUPrice = 0;
+                $.each(LaiChiYaData, function (index, value) {
+                    $.each(value.分类内容, function (inx, item) {
+                        if (item.购买数量 < 1 || item.已售罄)
+                            return true;
+
+                        var spanText1 = item.标签1;
+                        if (spanText1.indexOf(" ") !== -1) {
+                            spanText1 = spanText1.split(" ");
+                            spanText1 = spanText1.map(text => `<span class="label">${text}</span>`).join(" ");
+                        }
+                        else {
+                            spanText1 = `<span class="label">${spanText1}</span>`
+                        }
+                        var spanText2 = item.标签2;
+                        if (spanText2.indexOf(" ") !== -1) {
+                            spanText2 = spanText2.split(" ");
+                            spanText2 = spanText2.map(text => `<span class="label">${text}</span>`).join(" ");
+                        } else {
+                            spanText2 = `<span class="label">${spanText2}</span>`
+                        }
+                        var spanText3 = item.标签3;
+                        if (spanText3.indexOf(" ") !== -1) {
+                            spanText3 = spanText3.split(" ");
+                            spanText3 = spanText3.map(text => `<span class="label label-danger">${text}</span>`).join(" ");
+                        } else {
+                            spanText3 = `<span class="label label-danger">${spanText3}</span>`
+                        }
+
+                        totalPrice += item.售价 * item.购买数量;
+                        totalUPrice += item.划线价格 * item.购买数量;
+
+                        tableList += `<table id="Order-${index}-${inx}" border="0" cellspacing="0" style="padding: 0;margin-top:1.5em;" width="100%">
+                                                            <tbody>
+                                                                <tr class="whmax">
+                                                                    <td rowspan="5" width="35%" height="auto" style="aspect-ratio: 1 / 1;">
+                                                                        <img data-toggle="lightbox" data-group="ord-image-group-${index}-${inx}" data-caption="${item.标题}" data-image="${item.高清图}" src="${item.缩略图}" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="${item.标题}">
+                                                                    </td>
+                                                                    <td colspan="2" class="whmax"><strong>${item.标题}</strong></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="2" class="whmax">${spanText1}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="2" class="whmax">${spanText2}</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td colspan="2" class="whmax">${spanText3}</td>
+                                                                </tr>
+                                                                <tr class="whmax">
+                                                                    <td style="color: red;" width="30%">
+                                                                        <strong>￥${item.售价}</strong>
+                                                                        <del style="color: gray;font-size: 0.7em;">￥${item.划线价格}</del>
+                                                                    </td>
+
+                                                                    <td style="padding:0px;"  coninx="${index}" tabinx="${inx}">
+                                                                        <div class="btn-group">
+                                                                            <button name = "DelOrderDesPro" class="btn btn-sm btn-warning" coninx="${index}" tabinx="${inx}"><i class="icon icon-minus-sign"></i></button>
+                                                                            <button name = "NumOrderDes" class="btn btn-sm" coninx="${index}" tabinx="${inx}">${item.购买数量}</button>
+                                                                            <button name = "AddOrderDesEdPro" class="btn btn-sm btn-warning" coninx="${index}" tabinx="${inx}"><i class="icon icon-plus-sign"></i></button>
+                                                                        </div>
+
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>`
+
+
+                    });
+
+                })
+
+                totalPrice = Math.round(totalPrice * 10) / 10;
+                totalUPrice = Math.round(totalUPrice * 10) / 10;
+                $("#tabOrderProductDetails").html(tableList);
+                $("#totalPrice").text("￥" + totalPrice);
+                $("#totalUPrice").text("￥" + totalUPrice);
+
+                if (totalPrice > 0) {
+                    //使用参数对象来初始化 订单详细内容 对话框
+                    $('#orderDetailsModal').modal({
+                        scrollInside: true,
+                        show: true
+                    })
+                }
+                else {
+                    new $.zui.Messager('请选购商品之后查看', {
+                        type: 'warning', // 定义颜色主题
+                        icon: "warning-sign",
+                    }).show();
+                }
+            })
+
+            //订单商品数量 增加（订单页面）
+            $(".tab-content").on("click", "[name='AddOrderDesEdPro']", function () {
+                var coninx = $(this).attr("coninx");
+                var tabinx = $(this).attr("tabinx");
+                LaiChiYaData[coninx].分类内容[tabinx].购买数量 += 1;
+                $(`button[name="NumOrderDes"][coninx="${coninx}"][tabinx="${tabinx}"`).text(LaiChiYaData[coninx].分类内容[tabinx].购买数量);
+
+                LaiChiYaData[coninx].订单商品数量 += 1;
+                $(`#tabAllContent li a[coninx="${coninx}"]`).html(
+                    `${LaiChiYaData[coninx].分类名称}<span class="label label-danger">${LaiChiYaData[coninx].订单商品数量}</span>`
+                );
+
+                var totalP = SumTotalPrice();
+                $("#totalPrice").text("￥" + totalP[0]);
+                $("#totalUPrice").text("￥" + totalP[1]);
+            });
+
+            //订单商品数量 减少（订单页面）
+            $(".tab-content").on("click", "[name='DelOrderDesPro']", function () {
+                var coninx = $(this).attr("coninx");
+                var tabinx = $(this).attr("tabinx");
+
+                LaiChiYaData[coninx].分类内容[tabinx].购买数量 -= 1;
+                if (LaiChiYaData[coninx].分类内容[tabinx].购买数量 < 1) {
+                    $(`td[name="AddOrderDesTd"][coninx="${coninx}"][tabinx="${tabinx}"]`).html(
+                        ` <button name="AddOrderDes" class="btn btn-sm btn-warning" style="float:right; margin-right:1px;"  coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-plus"></i></button>`
+                    );
+
+                    $(`#Order-${coninx}-${tabinx}`).remove();
+                }
+                else {
+                    $(`button[name="NumOrderDes"][coninx="${coninx}"][tabinx="${tabinx}"`).text(LaiChiYaData[coninx].分类内容[tabinx].购买数量);
+                }
+
+                LaiChiYaData[coninx].订单商品数量 -= 1;
+                if (LaiChiYaData[coninx].订单商品数量 < 1) {
+                    $(`#tabAllContent li a[coninx="${coninx}"]`).html(
+                        `${LaiChiYaData[coninx].分类名称}`
+                    );
+                }
+                else {
+                    $(`#tabAllContent li a[coninx="${coninx}"]`).html(
+                        `${LaiChiYaData[coninx].分类名称}<span class="label label-danger">${LaiChiYaData[coninx].订单商品数量}</span>`
+                    );
+                }
+
+
+
+
+                var totalP = SumTotalPrice();
+                $("#totalPrice").text("￥" + totalP[0]);
+                $("#totalUPrice").text("￥" + totalP[1]);
+            });
+
+
         });
+
+
+        //计算总价格
+        function SumTotalPrice() {
+            var totalPrice = 0;
+            var totalUPrice = 0
+            $.each(LaiChiYaData, function (index, value) {
+                $.each(value.分类内容, function (inx, item) {
+                    if (item.购买数量 < 1 || item.已售罄)
+                        return true;
+                    totalPrice += item.售价 * item.购买数量;
+                    totalUPrice += item.划线价格 * item.购买数量;
+                });
+            });
+
+            totalPrice = Math.round(totalPrice * 10) / 10;
+            totalUPrice = Math.round(totalUPrice * 10) / 10;
+
+            return [totalPrice, totalUPrice];
+        }
+
         // 提示消息 需要手动初始化工具提示
         //$('[data-toggle="tooltip"]').tooltip();
         //// 弹出面板 需要手动进行初始化
@@ -690,10 +942,18 @@
             }
         });
 
-        //// 绑定点击事件，控制模态框的显示与隐藏
-        //$("#leftArea").on("click", function () {
-        //    //$('#orderDetailsModal').modal('toggle'); // 点击左边区域时，模态框弹出或关闭
-        //})
+        //使用参数对象来初始化 订单详细内容 对话框
+        $('#orderDetailsModal').modal({
+            scrollInside: true,
+            show: false
+        })
+
+        //使用参数对象来初始化 发送订单 对话框
+        $('#SendOrderModal').modal({
+            scrollInside: true,
+            show: false
+        })
+
 
 
     </script>
@@ -732,11 +992,98 @@
         //    content: function () { return $("#AddWechatImgCode").html() }
         //});
 
+        // 生成随机字符串 用于订单编号
+        $.generateRandomString = function (length) {
+            // 可用字符集：大写字母 + 数字
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
+            let result = '';
+            // 使用当前时间作为随机种子
+            const seed = new Date().getTime();
+
+            // 基于时间的种子生成随机数
+            for (let i = 0; i < length; i++) {
+                // 获取当前的随机索引
+                const randomIndex = Math.floor(Math.random() * seed) % chars.length;
+                result += chars.charAt(randomIndex);
+            }
+            return result;
+        };
+
+        var TheDegreeOfSpiciness = "微辣";
+        // 监听单选按钮的变化
+        $("input[name='radioSpicy']").on("change", function () {
+            // 获取当前选中的辣度
+            TheDegreeOfSpiciness = $(this).parent().text().trim();
+            console.log("辣度:", TheDegreeOfSpiciness);
+        });
+
+        var PickUpOrDeliverAttheStore = "到店自取";
+        // 监听单选按钮的变化
+        $("input[name='radioOptionsExample']").on("change", function () {
+            // 获取当前选中的辣度
+            PickUpOrDeliverAttheStore = $(this).parent().text().trim();
+            console.log("配送方式:", TheDegreeOfSpiciness);
+        });
+
+
         // 添加微信按钮
-        $("#copyWechatData").on("click", function () {
+        $("[name='copyWechatData']").on("click", function () {
+            var totalP = SumTotalPrice();
+            if (totalP[0] < 1) {
+                new $.zui.Messager('请选购商品之后发送', {
+                    type: 'warning', // 定义颜色主题
+                    icon: "warning-sign",
+                }).show();
+                return;
+            }
+
+
+            var magessData = `!!!来吃鸭!!!\n`;
+            magessData += `订单编号：${$.generateRandomString(5)} \n`;
+            magessData += `老板我要点下面这些\n`;
+            magessData += `===================== \n`;
+            var totalPrice = 0;
+            var totalUPrice = 0
+            $.each(LaiChiYaData, function (index, value) {
+                $.each(value.分类内容, function (inx, item) {
+                    if (item.购买数量 < 1 || item.已售罄)
+                        return true;
+                    magessData += `${item.标题} ￥${item.售价} X${item.购买数量}\n`
+                    totalPrice += item.售价 * item.购买数量;
+                    totalUPrice += item.划线价格 * item.购买数量;
+                });
+            });
+
+            totalPrice = Math.round(totalPrice * 10) / 10;
+            totalUPrice = Math.round(totalUPrice * 10) / 10;
+
+            magessData += `===================== \n`;
+            if (PickUpOrDeliverAttheStore == "需要配送")
+                magessData += `共计 ${totalPrice} 元 (不含配送费)\n\n\n`
+            else if (PickUpOrDeliverAttheStore == "到店自取")
+                magessData += `共计 ${totalPrice} 元\n\n\n`
+
+            magessData += `--------------------- \n`;
+            magessData += `辣度：${TheDegreeOfSpiciness}\n`
+            if ($("#OrderRemarks").val() != "") {
+                magessData += `备注：${$("#OrderRemarks").val()}\n`
+            }
+            magessData += `--------------------- \n`;
+            magessData += `是否配送：${PickUpOrDeliverAttheStore}\n`
+            if (PickUpOrDeliverAttheStore == "需要配送") {
+                magessData += `联系电话：${$("#locationPone").val()}\n`
+                magessData += `配送地址：${$("#detailedAddress").val()}\n`
+            }
+
+
             // 使用 clipboard API 复制
-            navigator.clipboard.writeText("来吃鸭订单\n详细信息:\n鸭架子 x2 \n共计￥100").then(function () {
-                console.log("复制订单信息成功");
+            navigator.clipboard.writeText(magessData).then(function () {
+                //使用参数对象来初始化 发送订单 对话框
+                $('#SendOrderModal').modal({
+                    scrollInside: true,
+                    show: true
+                })
+                //console.log("复制订单信息成功");
                 //new $.zui.Messager('复制订单信息成功!', {
                 //    type: 'success',// 定义颜色主题
                 //    close: true,
