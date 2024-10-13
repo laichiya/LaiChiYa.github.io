@@ -907,6 +907,12 @@
             });
 
 
+            $.zui.store.set('name', 'catouse');                      // 使用本地存储设置'name'值为'catouse'
+            $.zui.store.set('date', { year: 2014, month: 8, day: 6 }); // 将一个对象存储到本地存储
+
+            console.log($.zui.store.get('name'));                    // 从本地存储获取'name'的值
+            console.log($.zui.store.get('date').year);               // 从本地存储获取'date'值的year属性
+
         });
 
 
