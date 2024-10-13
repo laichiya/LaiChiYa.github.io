@@ -1077,7 +1077,7 @@
                 $.each(value.分类内容, function (inx, item) {
                     if (item.购买数量 < 1 || item.已售罄)
                         return true;
-                    magessData += `${item.标题}  ￥${item.售价}  X${item.购买数量}\n`
+                    magessData += `${item.标题}  ￥${item.售价}  x${item.购买数量}\n`
                     totalPrice += item.售价 * item.购买数量;
                     totalUPrice += item.划线价格 * item.购买数量;
                     ProductSimDataList.push({ 商品标题: item.标题, 购买数量: item.购买数量});
