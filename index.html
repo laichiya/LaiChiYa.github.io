@@ -601,6 +601,21 @@
 
     <script>
         $(document).ready(function () {
+            var CarouselImageHtml = `<div class="carousel-inner">`
+            $.each(CarouselImage.轮播图列表, function (inx, item) {
+                CarouselImageHtml += `<div class="${CarouselImage.默认图片-1 == inx ?'item active':'item'}">
+                                        <img style="border-radius:5px" alt="First slide" src="${item}">
+                                        <div class="carousel-caption">
+                                        </div>
+                                    </div>`
+
+                console.log("????",inx, item);
+
+            });
+            CarouselImageHtml += ` </div>`
+            $("#myNiceCarousel").html(CarouselImageHtml)
+            console.log(CarouselImageHtml);
+
             //填充数据  商品分类
             var ClassConHtml = "";
             var tabContentDes = "";
@@ -635,7 +650,10 @@
                     } else {
                         spanText2 = `<span class="label">${spanText2}</span>`
                     }
-                    var spanText3 = item.标签3;
+
+                    //折扣价
+                    var discountedPrice = (item.售价 / item.划线价格 * 10);
+                    var spanText3 = item.标签3 + " " + (Math.round(discountedPrice * 10) / 10) + "折";
                     if (spanText3.indexOf(" ") !== -1) {
                         spanText3 = spanText3.split(" ");
                         spanText3 = spanText3.map(text => `<span class="label label-danger">${text}</span>`).join(" ");
@@ -774,7 +792,10 @@
                         } else {
                             spanText2 = `<span class="label">${spanText2}</span>`
                         }
-                        var spanText3 = item.标签3;
+
+                        //折扣价
+                        var discountedPrice = (item.售价 / item.划线价格 * 10);
+                        var spanText3 = item.标签3 + " " + (Math.round(discountedPrice * 10) / 10) +"折";
                         if (spanText3.indexOf(" ") !== -1) {
                             spanText3 = spanText3.split(" ");
                             spanText3 = spanText3.map(text => `<span class="label label-danger">${text}</span>`).join(" ");
