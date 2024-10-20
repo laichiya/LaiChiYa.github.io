@@ -135,7 +135,7 @@
             </div>
             <div class="col-xs-9">
                 <div id="tabContentSen" class="tab-content" style="max-height: 80vh; overflow-y: auto; ">
-                    <div class="tab-pane fade active in" id="tab3Content1">
+                    <!--<div class="tab-pane fade active in" id="tab3Content1">
 
                         <table border="1" cellspacing="0" style="padding: 0; " width="100%">
                             <tbody>
@@ -375,7 +375,7 @@
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
+                    </div>-->
                 </div>
             </div>
         </div>
@@ -678,40 +678,40 @@
             var StoreDetailsData = "";
             if (AboutTheStoreData.店铺介绍) {
                 StoreDetailsData += `<section class="abstract">
-                                        <p>
-                                            <strong>店铺介绍：</strong>
-                                            ${AboutTheStoreData.店铺介绍}
-                                        </p>
-                                    </section>`
+                                            <p>
+                                                <strong>店铺介绍：</strong>
+                                                ${AboutTheStoreData.店铺介绍}
+                                            </p>
+                                        </section>`
             }
             if (AboutTheStoreData.店铺地址) {
                 StoreDetailsData += `<section class="abstract">
-                                        <p><strong>店铺地址：</strong>${AboutTheStoreData.店铺地址}</p>
-                                    </section>`
+                                            <p><strong>店铺地址：</strong>${AboutTheStoreData.店铺地址}</p>
+                                        </section>`
 
                 StoreDetailsData += `<button id="copyStoreLocation" type="button" style="border-radius:5px"  >
-                                        <i class="icon icon-copy"> </i> 复制店铺地址
-                                    </button>
-                                    <br /><br />`
+                                            <i class="icon icon-copy"> </i> 复制店铺地址
+                                        </button>
+                                        <br /><br />`
             }
             if (AboutTheStoreData.出摊营业时间) {
                 StoreDetailsData += `<section class="abstract">
-                                        <p><strong>出摊营业时间：</strong>${AboutTheStoreData.出摊营业时间}</p>
-                                    </section>`
+                                            <p><strong>出摊营业时间：</strong>${AboutTheStoreData.出摊营业时间}</p>
+                                        </section>`
             }
             if (AboutTheStoreData.配送服务时间) {
                 StoreDetailsData += `<section class="abstract">
-                                        <p><strong>配送服务时间：</strong>${AboutTheStoreData.配送服务时间}</p>
-                                    </section>`
+                                            <p><strong>配送服务时间：</strong>${AboutTheStoreData.配送服务时间}</p>
+                                        </section>`
             }
             if (AboutTheStoreData.配送说明) {
                 StoreDetailsData += `<section class="abstract">
-                                        <p><strong>配送说明：</strong>${AboutTheStoreData.配送说明}</p>
-                                    </section>`
+                                            <p><strong>配送说明：</strong>${AboutTheStoreData.配送说明}</p>
+                                        </section>`
             }
             if (AboutTheStoreData.店铺拍照 && AboutTheStoreData.店铺拍照.length > 0) {
                 StoreDetailsData += `<section class="abstract">
-                                        <p><strong>店铺拍照：</strong>`
+                                            <p><strong>店铺拍照：</strong>`
                 $.each(AboutTheStoreData.店铺拍照, function (inx, item) {
                     StoreDetailsData += `<img style="border-radius: 10px;" src="${item}" alt="微信号:wxid_no0ncx4wbxwr12" /><br/><br/>`
 
@@ -747,10 +747,10 @@
             var CarouselImageHtml = `<div class="carousel-inner">`
             $.each(CarouselImage.轮播图列表, function (inx, item) {
                 CarouselImageHtml += `<div class="${CarouselImage.默认图片 - 1 == inx ? 'item active' : 'item'}">
-                                                        <img style="border-radius:5px" alt="First slide" src="${item}">
-                                                        <div class="carousel-caption">
-                                                        </div>
-                                                    </div>`
+                                                            <img style="border-radius:5px" alt="First slide" src="${item}">
+                                                            <div class="carousel-caption">
+                                                            </div>
+                                                        </div>`
             });
             CarouselImageHtml += ` </div>`
             $("#myNiceCarousel").html(CarouselImageHtml)
@@ -804,37 +804,37 @@
                     }
 
                     tableList += `<table border="0" cellspacing="0" style="padding: 0; " width="100%">
-                                                                                    <tbody>
-                                                                                        <tr>
-                                                                                            <td rowspan="5" width="45%" height="auto" style="aspect-ratio: 1 / 1;">
-                                                                                                <img data-toggle="lightbox" data-group="image-group-${index}-${inx}" data-caption="${item.标题}" data-image="${item.高清图}" src="${item.缩略图}" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="${item.标题}">
-                                                                                            </td>
-                                                                                            <td colspan="2" class="whmax"><strong>${item.标题}</strong></td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td colspan="2" class="whmax">${spanText1}</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td colspan="2" class="whmax">${spanText2}</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td colspan="2" class="whmax">${spanText3}</td>
-                                                                                        </tr>
-                                                                                        <tr>
-                                                                                            <td class="whmax" style="color: red;" width="28%">
-                                                                                                <strong>￥${item.售价}</strong>
-                                                                                                <del style="color: gray;font-size: 0.7em;">￥${item.划线价格}</del>
-                                                                                            </td>
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td rowspan="5" width="45%" height="auto" style="aspect-ratio: 1 / 1;">
+                                                                                                    <img data-toggle="lightbox" data-group="image-group-${index}-${inx}" data-caption="${item.标题}" data-image="${item.高清图}" src="${item.缩略图}" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="${item.标题}">
+                                                                                                </td>
+                                                                                                <td colspan="2" class="whmax"><strong>${item.标题}</strong></td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td colspan="2" class="whmax">${spanText1}</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td colspan="2" class="whmax">${spanText2}</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td colspan="2" class="whmax">${spanText3}</td>
+                                                                                            </tr>
+                                                                                            <tr>
+                                                                                                <td class="whmax" style="color: red;" width="28%">
+                                                                                                    <strong>￥${item.售价}</strong>
+                                                                                                    <del style="color: gray;font-size: 0.7em;">￥${item.划线价格}</del>
+                                                                                                </td>
 
-                                                                                            <td style="padding:0px;"  name="AddOrderDesTd" coninx="${index}" tabinx="${inx}" width="65%">
+                                                                                                <td style="padding:0px;"  name="AddOrderDesTd" coninx="${index}" tabinx="${inx}" width="65%">
 
-                                                                                                <button name="AddOrderDes" class="btn btn-sm btn-warning" style="float:right; margin-right:1px;"  coninx="${index}" tabinx="${inx}"><i class="icon icon-plus"></i></button>
+                                                                                                    <button name="AddOrderDes" class="btn btn-sm btn-warning" style="float:right; margin-right:1px;"  coninx="${index}" tabinx="${inx}"><i class="icon icon-plus"></i></button>
 
-                                                                                            </td>
-                                                                                        </tr>
-                                                                                    </tbody>
-                                                                                </table>
-                                                                                <br />`
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                    <br />`
 
                 });
                 tableList += `<br/><span style="display: flex; justify-content: center; align-items: center; height: 100px;">已经到底啦~</span><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>`;
@@ -843,7 +843,9 @@
             $("#tabContentSen").html(tableList);
         }
 
+    </script>
 
+    <script>
         $(document).ready(function () {
             //关于店铺
             LoadAboutTheStore();
@@ -867,10 +869,10 @@
                 LaiChiYaData[coninx].分类内容[tabinx].购买数量 = 1;
                 $(`td[name="AddOrderDesTd"][coninx="${coninx}"][tabinx="${tabinx}"]`).html(
                     `<div class="btn-group">
-                                                                    <button name="DelOrderDes" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-minus-sign"></i></button>
-                                                                    <button name="NumOrderDes" class="btn btn-mini" coninx="${coninx}" tabinx="${tabinx}" > 1 </button>
-                                                                    <button name="AddOrderDesEd" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-plus-sign"></i></button>
-                                                                </div>`
+                                                                        <button name="DelOrderDes" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-minus-sign"></i></button>
+                                                                        <button name="NumOrderDes" class="btn btn-mini" coninx="${coninx}" tabinx="${tabinx}" > 1 </button>
+                                                                        <button name="AddOrderDesEd" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-plus-sign"></i></button>
+                                                                    </div>`
                 );
 
                 LaiChiYaData[coninx].订单商品数量 += 1;
@@ -960,39 +962,39 @@
                         totalUPrice += item.划线价格 * item.购买数量;
 
                         tableList += `<table id="Order-${index}-${inx}" border="0" cellspacing="0" style="padding: 0;margin-top:1.5em;" width="100%">
-                                                                            <tbody>
-                                                                                <tr class="whmax">
-                                                                                    <td rowspan="5" width="35%" height="auto" style="aspect-ratio: 1 / 1;">
-                                                                                        <img data-toggle="lightbox" data-group="ord-image-group-${index}-${inx}" data-caption="${item.标题}" data-image="${item.高清图}" src="${item.缩略图}" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="${item.标题}">
-                                                                                    </td>
-                                                                                    <td colspan="2" class="whmax"><strong>${item.标题}</strong></td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td colspan="2" class="whmax">${spanText1}</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td colspan="2" class="whmax">${spanText2}</td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <td colspan="2" class="whmax">${spanText3}</td>
-                                                                                </tr>
-                                                                                <tr class="whmax">
-                                                                                    <td style="color: red;" width="30%">
-                                                                                        <strong>￥${item.售价}</strong>
-                                                                                        <del style="color: gray;font-size: 0.7em;">￥${item.划线价格}</del>
-                                                                                    </td>
+                                                                                <tbody>
+                                                                                    <tr class="whmax">
+                                                                                        <td rowspan="5" width="35%" height="auto" style="aspect-ratio: 1 / 1;">
+                                                                                            <img data-toggle="lightbox" data-group="ord-image-group-${index}-${inx}" data-caption="${item.标题}" data-image="${item.高清图}" src="${item.缩略图}" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="${item.标题}">
+                                                                                        </td>
+                                                                                        <td colspan="2" class="whmax"><strong>${item.标题}</strong></td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td colspan="2" class="whmax">${spanText1}</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td colspan="2" class="whmax">${spanText2}</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td colspan="2" class="whmax">${spanText3}</td>
+                                                                                    </tr>
+                                                                                    <tr class="whmax">
+                                                                                        <td style="color: red;" width="30%">
+                                                                                            <strong>￥${item.售价}</strong>
+                                                                                            <del style="color: gray;font-size: 0.7em;">￥${item.划线价格}</del>
+                                                                                        </td>
 
-                                                                                    <td style="padding:0px;"  coninx="${index}" tabinx="${inx}">
-                                                                                        <div class="btn-group">
-                                                                                            <button name = "DelOrderDesPro" class="btn btn-sm btn-warning" coninx="${index}" tabinx="${inx}"><i class="icon icon-minus-sign"></i></button>
-                                                                                            <button name = "NumOrderDes" class="btn btn-sm" coninx="${index}" tabinx="${inx}">${item.购买数量}</button>
-                                                                                            <button name = "AddOrderDesEdPro" class="btn btn-sm btn-warning" coninx="${index}" tabinx="${inx}"><i class="icon icon-plus-sign"></i></button>
-                                                                                        </div>
+                                                                                        <td style="padding:0px;"  coninx="${index}" tabinx="${inx}">
+                                                                                            <div class="btn-group">
+                                                                                                <button name = "DelOrderDesPro" class="btn btn-sm btn-warning" coninx="${index}" tabinx="${inx}"><i class="icon icon-minus-sign"></i></button>
+                                                                                                <button name = "NumOrderDes" class="btn btn-sm" coninx="${index}" tabinx="${inx}">${item.购买数量}</button>
+                                                                                                <button name = "AddOrderDesEdPro" class="btn btn-sm btn-warning" coninx="${index}" tabinx="${inx}"><i class="icon icon-plus-sign"></i></button>
+                                                                                            </div>
 
-                                                                                    </td>
-                                                                                </tr>
-                                                                            </tbody>
-                                                                        </table>`
+                                                                                        </td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>`
 
 
                     });
