@@ -434,14 +434,12 @@
                                                     <button class="btn btn-sm">2</button>
                                                     <button class="btn btn-sm btn-warning"><i class="icon icon-plus-sign"></i></button>
                                                 </div>-->
-
-                                                <!--<div class="btn-group">
-                                                    <button name="DelOrderDes" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-minus-sign"></i></button>
-                                                    <button name="NumOrderDes" class="btn btn-mini" coninx="${coninx}" tabinx="${tabinx}"> 1 </button>
-                                                    <button name="AddOrderDesEd" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-plus-sign"></i></button>
-                                                </div>-->
-
-                                            <!--</td>
+                                <!--<div class="btn-group">
+                                    <button name="DelOrderDes" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-minus-sign"></i></button>
+                                    <button name="NumOrderDes" class="btn btn-mini" coninx="${coninx}" tabinx="${tabinx}"> 1 </button>
+                                    <button name="AddOrderDesEd" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-plus-sign"></i></button>
+                                </div>-->
+                                <!--</td>
                                         </tr>
                                     </tbody>
                                 </table>-->
@@ -497,7 +495,7 @@
 
 
                     <div class="modal-footer">
-                        <div style="float: left; text-align: center; font-size: 1.2em; margin-top: 0.28em;">
+                        <div id="ToSumtotalUPrice" style="float: left; text-align: center; font-size: 1.2em; margin-top: 0.28em;">
                             <strong>总计：</strong>
                             <strong id="totalPrice" style="color: red;">￥13.7</strong>
                             <del id="totalUPrice" style="color: gray;font-size: 0.7em;">￥15.8</del>
@@ -678,40 +676,40 @@
             var StoreDetailsData = "";
             if (AboutTheStoreData.店铺介绍) {
                 StoreDetailsData += `<section class="abstract">
-                                            <p>
-                                                <strong>店铺介绍：</strong>
-                                                ${AboutTheStoreData.店铺介绍}
-                                            </p>
-                                        </section>`
+                                                <p>
+                                                    <strong>店铺介绍：</strong>
+                                                    ${AboutTheStoreData.店铺介绍}
+                                                </p>
+                                            </section>`
             }
             if (AboutTheStoreData.店铺地址) {
                 StoreDetailsData += `<section class="abstract">
-                                            <p><strong>店铺地址：</strong>${AboutTheStoreData.店铺地址}</p>
-                                        </section>`
+                                                <p><strong>店铺地址：</strong>${AboutTheStoreData.店铺地址}</p>
+                                            </section>`
 
                 StoreDetailsData += `<button id="copyStoreLocation" type="button" style="border-radius:5px"  >
-                                            <i class="icon icon-copy"> </i> 复制店铺地址
-                                        </button>
-                                        <br /><br />`
+                                                <i class="icon icon-copy"> </i> 复制店铺地址
+                                            </button>
+                                            <br /><br />`
             }
             if (AboutTheStoreData.出摊营业时间) {
                 StoreDetailsData += `<section class="abstract">
-                                            <p><strong>出摊营业时间：</strong>${AboutTheStoreData.出摊营业时间}</p>
-                                        </section>`
+                                                <p><strong>出摊营业时间：</strong>${AboutTheStoreData.出摊营业时间}</p>
+                                            </section>`
             }
             if (AboutTheStoreData.配送服务时间) {
                 StoreDetailsData += `<section class="abstract">
-                                            <p><strong>配送服务时间：</strong>${AboutTheStoreData.配送服务时间}</p>
-                                        </section>`
+                                                <p><strong>配送服务时间：</strong>${AboutTheStoreData.配送服务时间}</p>
+                                            </section>`
             }
             if (AboutTheStoreData.配送说明) {
                 StoreDetailsData += `<section class="abstract">
-                                            <p><strong>配送说明：</strong>${AboutTheStoreData.配送说明}</p>
-                                        </section>`
+                                                <p><strong>配送说明：</strong>${AboutTheStoreData.配送说明}</p>
+                                            </section>`
             }
             if (AboutTheStoreData.店铺拍照 && AboutTheStoreData.店铺拍照.length > 0) {
                 StoreDetailsData += `<section class="abstract">
-                                            <p><strong>店铺拍照：</strong>`
+                                                <p><strong>店铺拍照：</strong>`
                 $.each(AboutTheStoreData.店铺拍照, function (inx, item) {
                     StoreDetailsData += `<img style="border-radius: 10px;" src="${item}" alt="微信号:wxid_no0ncx4wbxwr12" /><br/><br/>`
 
@@ -747,10 +745,10 @@
             var CarouselImageHtml = `<div class="carousel-inner">`
             $.each(CarouselImage.轮播图列表, function (inx, item) {
                 CarouselImageHtml += `<div class="${CarouselImage.默认图片 - 1 == inx ? 'item active' : 'item'}">
-                                                            <img style="border-radius:5px" alt="First slide" src="${item}">
-                                                            <div class="carousel-caption">
-                                                            </div>
-                                                        </div>`
+                                                                <img style="border-radius:5px" alt="First slide" src="${item}">
+                                                                <div class="carousel-caption">
+                                                                </div>
+                                                            </div>`
             });
             CarouselImageHtml += ` </div>`
             $("#myNiceCarousel").html(CarouselImageHtml)
@@ -804,45 +802,44 @@
                     }
 
                     tableList += `<table border="0" cellspacing="0" style="padding: 0; " width="100%">
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td rowspan="5" width="45%" height="auto" style="aspect-ratio: 1 / 1;">
-                                                                                                    <img data-toggle="lightbox" data-group="image-group-${index}-${inx}" data-caption="${item.标题}" data-image="${item.高清图}" src="${item.缩略图}" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="${item.标题}">
-                                                                                                </td>
-                                                                                                <td colspan="2" class="whmax"><strong>${item.标题}</strong></td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td colspan="2" class="whmax">${spanText1}</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td colspan="2" class="whmax">${spanText2}</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td colspan="2" class="whmax">${spanText3}</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td class="whmax" style="color: red;" width="28%">
-                                                                                                    <strong>￥${item.售价}</strong>
-                                                                                                    <del style="color: gray;font-size: 0.7em;">￥${item.划线价格}</del>
-                                                                                                </td>
+                                                                                            <tbody>
+                                                                                                <tr>
+                                                                                                    <td rowspan="5" width="45%" height="auto" style="aspect-ratio: 1 / 1;">
+                                                                                                        <img data-toggle="lightbox" data-group="image-group-${index}-${inx}" data-caption="${item.标题}" data-image="${item.高清图}" src="${item.缩略图}" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="${item.标题}">
+                                                                                                    </td>
+                                                                                                    <td colspan="2" class="whmax"><strong>${item.标题}</strong></td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td colspan="2" class="whmax">${spanText1}</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td colspan="2" class="whmax">${spanText2}</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td colspan="2" class="whmax">${spanText3}</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td class="whmax" style="color: red;" width="28%">
+                                                                                                        <strong>￥${item.售价}</strong>
+                                                                                                        <del style="color: gray;font-size: 0.7em;">￥${item.划线价格}</del>
+                                                                                                    </td>
 
-                                                                                                <td style="padding:0px;"  name="AddOrderDesTd" coninx="${index}" tabinx="${inx}" width="65%">
+                                                                                                    <td style="padding:0px;"  name="AddOrderDesTd" coninx="${index}" tabinx="${inx}" width="65%">
 
-                                                                                                    <button name="AddOrderDes" class="btn btn-sm btn-warning" style="float:right; margin-right:1px;"  coninx="${index}" tabinx="${inx}"><i class="icon icon-plus"></i></button>
+                                                                                                        <button name="AddOrderDes" class="btn btn-sm btn-warning" style="float:right; margin-right:1px;"  coninx="${index}" tabinx="${inx}"><i class="icon icon-plus"></i></button>
 
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                    </table>
-                                                                                    <br />`
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                        <br />`
 
                 });
                 tableList += `<br/><span style="display: flex; justify-content: center; align-items: center; height: 100px;">已经到底啦~</span><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>`;
             });
             $("#tabAllContent").html(ClassConHtml);
 
-            if (AboutTheStoreData.商品全部售罄)
-            {
+            if (AboutTheStoreData.商品全部售罄) {
                 tableList = `<br/><span style="display: flex; justify-content: center; align-items: center; height: 100px;">${AboutTheStoreData.售罄提示内容}</span><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>`;
             }
 
@@ -860,7 +857,7 @@
             //填充数据  商品分类
             LoadProductData()
 
-            $("#tabAllContent").on("click","li",  function () {
+            $("#tabAllContent").on("click", "li", function () {
                 $('#tabContentSen').animate({ scrollTop: 0 }, 300);
             })
 
@@ -879,10 +876,10 @@
                 LaiChiYaData[coninx].分类内容[tabinx].购买数量 = 1;
                 $(`td[name="AddOrderDesTd"][coninx="${coninx}"][tabinx="${tabinx}"]`).html(
                     `<div class="btn-group">
-                                                                        <button name="DelOrderDes" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-minus-sign"></i></button>
-                                                                        <button name="NumOrderDes" class="btn btn-mini" coninx="${coninx}" tabinx="${tabinx}" > 1 </button>
-                                                                        <button name="AddOrderDesEd" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-plus-sign"></i></button>
-                                                                    </div>`
+                                                                            <button name="DelOrderDes" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-minus-sign"></i></button>
+                                                                            <button name="NumOrderDes" class="btn btn-mini" coninx="${coninx}" tabinx="${tabinx}" > 1 </button>
+                                                                            <button name="AddOrderDesEd" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-plus-sign"></i></button>
+                                                                        </div>`
                 );
 
                 LaiChiYaData[coninx].订单商品数量 += 1;
@@ -972,39 +969,39 @@
                         totalUPrice += item.划线价格 * item.购买数量;
 
                         tableList += `<table id="Order-${index}-${inx}" border="0" cellspacing="0" style="padding: 0;margin-top:1.5em;" width="100%">
-                                                                                <tbody>
-                                                                                    <tr class="whmax">
-                                                                                        <td rowspan="5" width="35%" height="auto" style="aspect-ratio: 1 / 1;">
-                                                                                            <img data-toggle="lightbox" data-group="ord-image-group-${index}-${inx}" data-caption="${item.标题}" data-image="${item.高清图}" src="${item.缩略图}" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="${item.标题}">
-                                                                                        </td>
-                                                                                        <td colspan="2" class="whmax"><strong>${item.标题}</strong></td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td colspan="2" class="whmax">${spanText1}</td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td colspan="2" class="whmax">${spanText2}</td>
-                                                                                    </tr>
-                                                                                    <tr>
-                                                                                        <td colspan="2" class="whmax">${spanText3}</td>
-                                                                                    </tr>
-                                                                                    <tr class="whmax">
-                                                                                        <td style="color: red;" width="30%">
-                                                                                            <strong>￥${item.售价}</strong>
-                                                                                            <del style="color: gray;font-size: 0.7em;">￥${item.划线价格}</del>
-                                                                                        </td>
+                                                                                    <tbody>
+                                                                                        <tr class="whmax">
+                                                                                            <td rowspan="5" width="35%" height="auto" style="aspect-ratio: 1 / 1;">
+                                                                                                <img data-toggle="lightbox" data-group="ord-image-group-${index}-${inx}" data-caption="${item.标题}" data-image="${item.高清图}" src="${item.缩略图}" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="${item.标题}">
+                                                                                            </td>
+                                                                                            <td colspan="2" class="whmax"><strong>${item.标题}</strong></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td colspan="2" class="whmax">${spanText1}</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td colspan="2" class="whmax">${spanText2}</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td colspan="2" class="whmax">${spanText3}</td>
+                                                                                        </tr>
+                                                                                        <tr class="whmax">
+                                                                                            <td style="color: red;" width="30%">
+                                                                                                <strong>￥${item.售价}</strong>
+                                                                                                <del style="color: gray;font-size: 0.7em;">￥${item.划线价格}</del>
+                                                                                            </td>
 
-                                                                                        <td style="padding:0px;"  coninx="${index}" tabinx="${inx}">
-                                                                                            <div class="btn-group">
-                                                                                                <button name = "DelOrderDesPro" class="btn btn-sm btn-warning" coninx="${index}" tabinx="${inx}"><i class="icon icon-minus-sign"></i></button>
-                                                                                                <button name = "NumOrderDes" class="btn btn-sm" coninx="${index}" tabinx="${inx}">${item.购买数量}</button>
-                                                                                                <button name = "AddOrderDesEdPro" class="btn btn-sm btn-warning" coninx="${index}" tabinx="${inx}"><i class="icon icon-plus-sign"></i></button>
-                                                                                            </div>
+                                                                                            <td style="padding:0px;"  coninx="${index}" tabinx="${inx}">
+                                                                                                <div class="btn-group">
+                                                                                                    <button name = "DelOrderDesPro" class="btn btn-sm btn-warning" coninx="${index}" tabinx="${inx}"><i class="icon icon-minus-sign"></i></button>
+                                                                                                    <button name = "NumOrderDes" class="btn btn-sm" coninx="${index}" tabinx="${inx}">${item.购买数量}</button>
+                                                                                                    <button name = "AddOrderDesEdPro" class="btn btn-sm btn-warning" coninx="${index}" tabinx="${inx}"><i class="icon icon-plus-sign"></i></button>
+                                                                                                </div>
 
-                                                                                        </td>
-                                                                                    </tr>
-                                                                                </tbody>
-                                                                            </table>`
+                                                                                            </td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>`
 
 
                     });
@@ -1016,6 +1013,23 @@
                 $("#tabOrderProductDetails").html(tableList);
                 $("#totalPrice").text("￥" + totalPrice);
                 $("#totalUPrice").text("￥" + totalUPrice);
+
+                //提示起送差价
+                if (AboutTheStoreData.起送价格 - totalPrice > 0) {
+                    if ($('#ToSumtotalUPrice2').length) {
+                        $('#ToSumtotalUPrice2').remove();
+                    }
+
+                    var StartingPrice = Math.round((AboutTheStoreData.起送价格 - totalPrice) * 10) / 10;
+                    $("#ToSumtotalUPrice").after(`<div id="ToSumtotalUPrice2" style="float: left; text-align: center; font-size: 1em; margin-top: 0.5em; margin-left: 1em; ">
+                                <strong>(差</strong>
+                                <strong id="totalPrice2" style="color: red;">￥${StartingPrice}</strong>
+                                <strong>起送)</strong>
+                            </div>`);
+                }
+                else if ($('#ToSumtotalUPrice2').length) {
+                    $('#ToSumtotalUPrice2').remove();
+                }
 
                 if (totalPrice > 0) {
                     //使用参数对象来初始化 订单详细内容 对话框
@@ -1053,6 +1067,23 @@
                 var totalP = SumTotalPrice();
                 $("#totalPrice").text("￥" + totalP[0]);
                 $("#totalUPrice").text("￥" + totalP[1]);
+
+                //提示起送差价
+                if (AboutTheStoreData.起送价格 - totalP[0] > 0) {
+                    if ($('#ToSumtotalUPrice2').length) {
+                        $('#ToSumtotalUPrice2').remove();
+                    }
+
+                    var StartingPrice = Math.round((AboutTheStoreData.起送价格 - totalP[0]) * 10) / 10;
+                    $("#ToSumtotalUPrice").after(`<div id="ToSumtotalUPrice2" style="float: left; text-align: center; font-size: 1em; margin-top: 0.5em; margin-left: 1em; ">
+                                <strong>(差</strong>
+                                <strong id="totalPrice2" style="color: red;">￥${StartingPrice}</strong>
+                                <strong>起送)</strong>
+                            </div>`);
+                }
+                else if ($('#ToSumtotalUPrice2').length) {
+                    $('#ToSumtotalUPrice2').remove();
+                }
             });
 
             //订单商品数量 减少（订单页面）
@@ -1090,6 +1121,23 @@
                 var totalP = SumTotalPrice();
                 $("#totalPrice").text("￥" + totalP[0]);
                 $("#totalUPrice").text("￥" + totalP[1]);
+
+                //提示起送差价
+                if (AboutTheStoreData.起送价格 - totalP[0] > 0) {
+                    if ($('#ToSumtotalUPrice2').length) {
+                        $('#ToSumtotalUPrice2').remove();
+                    }
+
+                    var StartingPrice = Math.round((AboutTheStoreData.起送价格 - totalP[0]) * 10) / 10;
+                    $("#ToSumtotalUPrice").after(`<div id="ToSumtotalUPrice2" style="float: left; text-align: center; font-size: 1em; margin-top: 0.5em; margin-left: 1em; ">
+                                <strong>(差</strong>
+                                <strong id="totalPrice2" style="color: red;">￥${StartingPrice}</strong>
+                                <strong>起送)</strong>
+                            </div>`);
+                }
+                else if ($('#ToSumtotalUPrice2').length) {
+                    $('#ToSumtotalUPrice2').remove();
+                }
             });
         });
 
