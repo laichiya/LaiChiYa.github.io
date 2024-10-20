@@ -134,7 +134,7 @@
                 </ul>
             </div>
             <div class="col-xs-9">
-                <div id="tabContentSen" class="tab-content" style="max-height: 98vh; overflow-y: auto; ">
+                <div id="tabContentSen" class="tab-content" style="max-height: 90vh; overflow-y: auto; ">
                     <!--<div class="tab-pane fade active in" id="tab3Content1">
 
                         <table border="1" cellspacing="0" style="padding: 0; " width="100%">
@@ -404,7 +404,7 @@
                         <!--订单商品明细内容-->
                         <div class="tab-content">
                             <div class="tab-pane active" id="tabOrderProductDetails">
-                                <br />
+                                <!--<br />
                                 <table border="0" cellspacing="0" style="padding: 0;" width="100%">
                                     <tbody>
                                         <tr class="whmax">
@@ -433,7 +433,7 @@
                                                     <button class="btn btn-sm btn-warning"><i class="icon icon-minus-sign"></i></button>
                                                     <button class="btn btn-sm">2</button>
                                                     <button class="btn btn-sm btn-warning"><i class="icon icon-plus-sign"></i></button>
-                                                </div>
+                                                </div>-->
 
                                                 <!--<div class="btn-group">
                                                     <button name="DelOrderDes" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-minus-sign"></i></button>
@@ -441,10 +441,10 @@
                                                     <button name="AddOrderDesEd" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-plus-sign"></i></button>
                                                 </div>-->
 
-                                            </td>
+                                            <!--</td>
                                         </tr>
                                     </tbody>
-                                </table>
+                                </table>-->
                             </div>
 
                             <div class="tab-pane" id="tabFoodNotes">
@@ -853,6 +853,10 @@
             LoadCarouselLmage();
             //填充数据  商品分类
             LoadProductData()
+
+            $("#tabAllContent").on("click","li",  function () {
+                $('#tabContentSen').animate({ scrollTop: 0 }, 300);
+            })
 
 
             //重新初始化浏览图片
