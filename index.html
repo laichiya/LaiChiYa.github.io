@@ -840,6 +840,12 @@
                 tableList += `<br/><span style="display: flex; justify-content: center; align-items: center; height: 100px;">已经到底啦~</span><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>`;
             });
             $("#tabAllContent").html(ClassConHtml);
+
+            if (AboutTheStoreData.商品全部售罄)
+            {
+                tableList = `<br/><span style="display: flex; justify-content: center; align-items: center; height: 100px;">${AboutTheStoreData.售罄提示内容}</span><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>`;
+            }
+
             $("#tabContentSen").html(tableList);
         }
 
