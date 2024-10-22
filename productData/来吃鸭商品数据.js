@@ -6,7 +6,7 @@ var LaiChiYaData =
             "订单商品数量": 0,
             "分类内容": [
                 {
-                    "缩略图CDN": "https://i-360.wwentua.com:446/10222000205195953bb/2024/10/22/9360cf555861b8220c8d2464b3279941.zip?st=CNDIBwjP7coSoOkn8b3xaA&e=1729602933&b=BL8IsAWoBeYCyQXlCncHMlJYCrFU6Vf4UeVYwFPxBeJRmFnnBStWKVVpXng_c&fi=205195953&pid=27-45-212-64&up=2&mp=0&co=0",
+                    "缩略图CDN": "https://cn-beijing-data.aliyundrive.net/J6D1kFCa%2F683643023%2F6717b1d69b7dbb3f4bb44b8e89cb9c61dd2e7a4a%2F6717b1d6f371ab158e1b4c1f8e07e86af51dcdb8?security-token=CAISvgJ1q6Ft5B2yfSjIr5b0Ko3muelr3pe5dB7Shjg2TvVfq6PdrDz2IHhMf3NpBOkZvvQ1lGlU6%2Fcalq5rR4QAXlDfNSrxZCCUq1HPWZHInuDox55m4cTXNAr%2BIhr%2F29CoEIedZdjBe%2FCrRknZnytou9XTfimjWFrXWv%2Fgy%2BQQDLItUxK%2FcCBNCfpPOwJms7V6D3bKMuu3OROY6Qi5TmgQ41Uh1jgjtPzkkpfFtkGF1GeXkLFF%2B97DRbG%2FdNRpMZtFVNO44fd7bKKp0lQLs0ARrv4r1fMUqW2X543AUgFLhy2KKMPY99xpFgh9a7j0iCbSGyUu%2FhcRm5sw9%2Byfo34lVYne0%2FBNSzaii4IClLcc%2BmqdsRIvJzWstJ7Gf9LWqChvSgk4TxhhcNFKSTQrInFCB0%2BcRObJl16i7taPy%2FXtuMkagAE1pkllLh0P9wQxBtXFx7uZoUfHiYGZ4XCRwRsR%2BgIz%2Fu66xzhcn8mFVGKJEw%2BiH0%2BeS9xsmdbpEPMPdFjcajoY5WQTrZx7hkVk9%2BEnbWR6i5QHSWP4aUH%2FRhGLhT56AdzBY82enDn48FO%2Bmu0LxOUPmPvkpZNDibfI%2FFCqLsQt6CAA&x-oss-access-key-id=STS.NUAa7RT6JiURv8cb8cBzsDfvN&x-oss-expires=1729608012&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cjpeg&x-oss-signature=YRUcTR5yTU5g998eG%2BGd1eiWsf1EYBcm37dmF5JsBZ8%3D&x-oss-signature-version=OSS2",
                     "缩略图": "img/商品列表图/鸭架-1_缩略图.jpg",
                     "高清图": "img/商品列表图/鸭架-1.jpg",
                     "标题": "黑鸭锁骨【盒装】（经典甜辣味）",
@@ -18,7 +18,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "https://i-590.wwentua.com:446/10222100205195945bb/2024/10/22/e6bf6f66b693e21a0df2d463a534dc28.zip?st=QCGlHbrarNVceawoYCmGZg&e=1729606125&b=Br0KsgarA_b5ZiFOTUi9VYFFbDbYMsVb5U_bcLk1PxV7BWn13jUnxQLwQ4ACY_c&fi=205195945&pid=27-45-212-64&up=2&mp=0&co=0",
+                    "缩略图CDN": "https://cn-beijing-data.aliyundrive.net/qMjCycIO%2F683643023%2F6717b1d8b18c231feeb54f7b8e331e59e91be69f%2F6717b1d8e61b4275a607490786ce0fc38a234666?security-token=CAISvgJ1q6Ft5B2yfSjIr5bWB9n4q7JV7fOBaEPjsVMZfdpki4f4uDz2IHhMf3NpBOkZvvQ1lGlU6%2Fcalq5rR4QAXlDfNUPvRiGUq1HPWZHInuDox55m4cTXNAr%2BIhr%2F29CoEIedZdjBe%2FCrRknZnytou9XTfimjWFrXWv%2Fgy%2BQQDLItUxK%2FcCBNCfpPOwJms7V6D3bKMuu3OROY6Qi5TmgQ41Uh1jgjtPzkkpfFtkGF1GeXkLFF%2B97DRbG%2FdNRpMZtFVNO44fd7bKKp0lQLs0ARrv4r1fMUqW2X543AUgFLhy2KKMPY99xpFgh9a7j0iCbSGyUu%2FhcRm5sw9%2Byfo34lVYneQ7xP%2BhQd7uHwufJ7FxfIREfquk63pvSlHLcLPe0Kjzzleo2k1XRPVFF%2B535IaHXuToXDnvSi3jWUNfXtuMkagAEfu%2BK8ZZJ2FsQJowOKXOjDgiQemVtMRuSJ0ZKrPJdNx1KdFG%2B09Xuj3QTFX8QIpo52hr4x2l46fM5Nd6nCUMO4mvliHhWj0CuuP%2BKCqMSlY4UBGdd8muZWPyUhC1gkYv1CV%2F0ZwQCbfEFdccsS2yZhSGImS6bUFsVfAMOClG3EryAA&x-oss-access-key-id=STS.NUcLcLFmtZ1jjeRUSLqUHdBSZ&x-oss-expires=1729608036&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cjpeg&x-oss-signature=V4z6IcgZUysnae8RFsX1qHW0Ix2ascGCbfjZ89Cm%2BwE%3D&x-oss-signature-version=OSS2",
                     "缩略图": "img/商品列表图/鸭脖-1_缩略图.jpg",
                     "高清图": "img/商品列表图/鸭脖-1.jpg",
                     "标题": "黑鸭鸭脖【盒装】（经典甜辣味）",
@@ -30,7 +30,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "https://i-590.wwentua.com:446/10222100205195955bb/2024/10/22/c9cc2fda5f3beeb386cfd890a34892b1.zip?st=vnaUeixcWwNZ1SGOV7KoeQ&e=1729606487&b=CLMKslP_bUbFVpAXnVyoDNlFbWeIFuAOsBrJdxV3_aUbYJwF7gVHpRLlVpXng_c&fi=205195955&pid=27-45-212-64&up=2&mp=0&co=0",
+                    "缩略图CDN": "https://cn-beijing-data.aliyundrive.net/sUJN4Du6%2F683643023%2F6717b1d66ab06429fed643d6a47edd9d7d7fb47a%2F6717b1d6f4924b0ef658450297055e0f9fd228c0?security-token=CAISvgJ1q6Ft5B2yfSjIr5beDfGCvOtS7aqFVxPb1UUUectOpfHphjz2IHhMf3NpBOkZvvQ1lGlU6%2Fcalq5rR4QAXlDfNUbOIiGUq1HPWZHInuDox55m4cTXNAr%2BIhr%2F29CoEIedZdjBe%2FCrRknZnytou9XTfimjWFrXWv%2Fgy%2BQQDLItUxK%2FcCBNCfpPOwJms7V6D3bKMuu3OROY6Qi5TmgQ41Uh1jgjtPzkkpfFtkGF1GeXkLFF%2B97DRbG%2FdNRpMZtFVNO44fd7bKKp0lQLs0ARrv4r1fMUqW2X543AUgFLhy2KKMPY99xpFgh9a7j0iCbSGyUu%2FhcRm5sw9%2Byfo34lVYneQzbf8xQd7uHwufJ7FxfIREfquk63pvSlHLcLPe0Kjzzleo2k1XRPVFF%2B535IaHXuToXDnvSiCg9wWPXtuMkagAF6bsjdnmLuUzsRHSMT1OXZVDg2uAZbhGm7wNt8zxdszJBAaYuEfBg1Qzrgzgjq7vQx5GWzcSvtfoGSxivyi0CMif%2BLiUCvcPm1IyV%2BGmhRBeO53mc%2BM4mUN0Qar076PM4V8dKPI6FG3sCzSA2%2Bv%2FKPtoW6yJz2kKCTlen7ViJHNiAA&x-oss-access-key-id=STS.NUkFK6Q4sZhnU5j1EAuDbJ4Bd&x-oss-expires=1729608063&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cjpeg&x-oss-signature=jZ43Zi1iojX9bKdeng8AYjSEki9NSGFWh3j8PY%2FuSOc%3D&x-oss-signature-version=OSS2",
                     "缩略图": "img/商品列表图/鸭头-1_缩略图.jpg",
                     "高清图": "img/商品列表图/鸭头-1.jpg",
                     "标题": "黑鸭鸭头【盒装】（经典甜辣味）",
@@ -42,7 +42,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "https://i-640.wwentua.com:446/10222100205195956bb/2024/10/22/2a1b86a257c9d713fde4c93354a6e772.zip?st=eYlqvhF5NzoKA4PfGmFlOQ&e=1729606518&b=Bb4MtAOuVbYE3wPZVlkG5QDpW64E4lPAUqQL41bKVOhWKgpwAWgCdw_c_c&fi=205195956&pid=27-45-212-64&up=2&mp=0&co=0",
+                    "缩略图CDN": "https://cn-beijing-data.aliyundrive.net/kqwJ50AZ%2F683643023%2F6717b1d64383649104e6471b9dd559daa3f39c3b%2F6717b1d6c79d4e2f79c54024b8ad782ca2e75200?security-token=CAISvgJ1q6Ft5B2yfSjIr5bgB%2BvGq7dO%2B7uyV2KJs2oROrpEuofNlzz2IHhMf3NpBOkZvvQ1lGlU6%2Fcalq5rR4QAXlDfNRKjbyGUq1HPWZHInuDox55m4cTXNAr%2BIhr%2F29CoEIedZdjBe%2FCrRknZnytou9XTfimjWFrXWv%2Fgy%2BQQDLItUxK%2FcCBNCfpPOwJms7V6D3bKMuu3OROY6Qi5TmgQ41Uh1jgjtPzkkpfFtkGF1GeXkLFF%2B97DRbG%2FdNRpMZtFVNO44fd7bKKp0lQLs0ARrv4r1fMUqW2X543AUgFLhy2KKMPY99xpFgh9a7j0iCbSGyUu%2FhcRm5sw9%2Byfo34lVYne4%2FQLVSmii4IClLcc%2BmqdsRIvJzWstJ7Gf9LWqChvSgk4TxhhcNFKSTQrInFCB0%2BcRObJl16ixds9N%2FXtuMkagAFW2SoqFzNECVLW0fpJq2ItIUIwOzFLAdkz8UdyYsfHP8MCeFpeP9WBEgUpo5Jnu9R3ANv%2FVpSZwLDZME0pLGl%2FUDoLVuY2PkECceUgB5l7GyOT%2BbuAeLIwH81A4tP%2FUFfg%2F%2ByeMV22rfYbWNwwIS4lcUpY7s9nWXQoaQ0yKf4TsiAA&x-oss-access-key-id=STS.NUULQrFhoLyYUD8WjD65hUBfu&x-oss-expires=1729608154&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cjpeg&x-oss-signature=GjaYhnZxpK8tWxiA0gcMQHyLmvUm%2Fd3qgeDz9QXHM7A%3D&x-oss-signature-version=OSS2",
                     "缩略图": "img/商品列表图/鸭掌_缩略图.jpg",
                     "高清图": "img/商品列表图/鸭掌.jpg",
                     "标题": "黑鸭鸭掌【盒装】（经典甜辣味）",
@@ -54,7 +54,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "https://i-220.wwentua.com:446/10222000205195952bb/2024/10/22/f14b52514decaa0472847bcf12c3734f.zip?st=g2nyIWHZwoNbC6WdVeVgLQ&e=1729603985&b=ALsMtAilVbdRuwDTUuRSwFazCwgC5AK4AvhasAaUAqUIvwyXU_b1WfQAvUm0LKw_c_c&fi=205195952&pid=27-45-212-64&up=2&mp=0&co=0",
+                    "缩略图CDN": "src="https://cn-beijing-data.aliyundrive.net/RTZIbsJ0%2F683643023%2F6717b1d72871e3e39b2e4f3ebd2113adf87eb923%2F6717b1d72a7415a32c1745fca370d31f8d1f565a?security-token=CAISvgJ1q6Ft5B2yfSjIr5WGJtLTjrtij%2FCfcUXLp2o8SsRHjobGsjz2IHhMf3NpBOkZvvQ1lGlU6%2Fcalq5rR4QAXlDfNUeiZB6Uq1HPWZHInuDox55m4cTXNAr%2BIhr%2F29CoEIedZdjBe%2FCrRknZnytou9XTfimjWFrXWv%2Fgy%2BQQDLItUxK%2FcCBNCfpPOwJms7V6D3bKMuu3OROY6Qi5TmgQ41Uh1jgjtPzkkpfFtkGF1GeXkLFF%2B97DRbG%2FdNRpMZtFVNO44fd7bKKp0lQLs0ARrv4r1fMUqW2X543AUgFLhy2KKMPY99xpFgh9a7j0iCbSGyUu%2FhcRm5sw9%2Byfo34lVYneQ%2F5b43od7uHwufJ7FxfIREfquk63pvSlHLcLPe0Kjzzleo2k1XRPVFF%2B535IaHXuToXDnvSiqLHzIfXtuMkagAEB%2BcofBDOlBJe6xfOs7RxLpawvfED9N3cmUbDZ4MeZJTXJt6pbsNBdTx%2BfFC46Ie6QNTYaLkxcN6gplFRRL2lXcbkdZMDW1dXzPCqQEW4u8SCjf%2FNas59z%2FWjsGYYY4N5eqvqNdZKvVhH8SUGVLTbxybCrsYjTqQ9XpqMJirH%2BVCAA&x-oss-access-key-id=STS.NV3mhgcdC82tsczCjiFKkaCmP&x-oss-expires=1729608198&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cjpeg&x-oss-signature=dZ6IB2idR5jmSeItHWPoP%2FiVde2YlF5rBTbgee6jUTo%3D&x-oss-signature-version=OSS2"",
                     "缩略图": "img/商品列表图/鸭翅新_缩略图.jpg",
                     "高清图": "img/商品列表图/鸭翅新.jpg",
                     "标题": "黑鸭鸭翅【盒装】（经典甜辣味）",
@@ -67,7 +67,7 @@ var LaiChiYaData =
                 },
 
                 {
-                    "缩略图CDN": "https://i-820.wwentua.com:446/10222100205195958bb/2024/10/22/1b64fdb5ca97836ef83a72c08321baff.zip?st=subXMEjsYthl7XN0rFoeYg&e=1729604022&b=BL9b4wmkAu9Qhl_beBwgA41W8D_aoE4gCTAfcM5AGdUOxVKQtxAWgFcA_c_c&fi=205195958&pid=27-45-212-64&up=2&mp=0&co=0",
+                    "缩略图CDN": "https://cn-beijing-data.aliyundrive.net/556ASnvJ%2F683643023%2F6717b1d79c1301de28ef4668926079045b247dee%2F6717b1d71c3c29da0776400cbf664ccf7e7c9c1c?security-token=CAISvgJ1q6Ft5B2yfSjIr5WGIdjNhK9X%2BoO9dhfbiWYfPedvhZSS0Dz2IHhMf3NpBOkZvvQ1lGlU6%2Fcalq5rR4QAXlDfNTCGKSGUq1HPWZHInuDox55m4cTXNAr%2BIhr%2F29CoEIedZdjBe%2FCrRknZnytou9XTfimjWFrXWv%2Fgy%2BQQDLItUxK%2FcCBNCfpPOwJms7V6D3bKMuu3OROY6Qi5TmgQ41Uh1jgjtPzkkpfFtkGF1GeXkLFF%2B97DRbG%2FdNRpMZtFVNO44fd7bKKp0lQLs0ARrv4r1fMUqW2X543AUgFLhy2KKMPY99xpFgh9a7j0iCbSGyUu%2FhcRm5sw9%2Byfo34lVYneo5DCXhaii4IClLcc%2BmqdsRIvJzWstJ7Gf9LWqChvSgk4TxhhcNFKSTQrInFCB0%2BcRObJl16iecXvcPXtuMkagAFCshjKgqUlfwfiPUPwz0kwC4v8IQGbsHovt2V0X%2Fp8T2bpnT%2FgKOTbz%2F9%2BybYDuujA0NHZ2B5Ruu5kzI%2Bu5K25zFfRHru36ZfKOX%2BskLj5UxvT%2BzVx3XvKpmBsIRvdXefhx39EJ%2Bzr5XgjK1hTli30PLagogUy5%2BurjRHxQkU1pSAA&x-oss-access-key-id=STS.NV3jbyipvMAVt1jmfJ1hCjQ92&x-oss-expires=1729608226&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cjpeg&x-oss-signature=SJ%2BAa7bljVnN2fUOhdyTUqJteRk7pkTPhDohB5FOFck%3D&x-oss-signature-version=OSS2",
                     "缩略图": "img/商品列表图/鸭胗_缩略图.jpg",
                     "高清图": "img/商品列表图/鸭胗.jpg",
                     "标题": "黑鸭鸭胗【盒装】（经典甜辣味）",
@@ -79,7 +79,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "https://i-820.wwentua.com:446/10222100205195948bb/2024/10/22/ab802b497a0df5c6e872359a31e32b34.zip?st=iGFaSPoEEnnlklK4g7qeFg&e=1729604044&b=Uuld5VL_aA_b4D1AfxBHkDNlZcD7QFuFP8AbULk13_aVbICyw_bxUH4HeAA8VHI_c&fi=205195948&pid=27-45-212-64&up=2&mp=0&co=0",
+                    "缩略图CDN": "https://cn-beijing-data.aliyundrive.net/kS3ftOmL%2F683643023%2F6717b1d7fe5ff009ec1644cb95210d02c480d9ad%2F6717b1d75c2c8f0cbe2c4068928329f04e502f82?security-token=CAISvgJ1q6Ft5B2yfSjIr5DAHMznu4t0j5eAaF7gpnoAY%2Bh7tvPAijz2IHhMf3NpBOkZvvQ1lGlU6%2Fcalq5rR4QAXlDfNQKaHyGUq1HPWZHInuDox55m4cTXNAr%2BIhr%2F29CoEIedZdjBe%2FCrRknZnytou9XTfimjWFrXWv%2Fgy%2BQQDLItUxK%2FcCBNCfpPOwJms7V6D3bKMuu3OROY6Qi5TmgQ41Uh1jgjtPzkkpfFtkGF1GeXkLFF%2B97DRbG%2FdNRpMZtFVNO44fd7bKKp0lQLs0ARrv4r1fMUqW2X543AUgFLhy2KKMPY99xpFgh9a7j0iCbSGyUu%2FhcRm5sw9%2Byfo34lVYneY7TZ%2FxQd7uHwufJ7FxfIREfquk63pvSlHLcLPe0Kjzzleo2k1XRPVFF%2B535IaHXuToXDnvSix3KTWPXtuMkagAFhzH24eahZN8A%2Flui%2FwcTCTR%2BuoRo8Ma0YCnt1CdA5SuWxzwLxl7otLf%2F152QVZxpRIqJ9Q072%2F2om6fuPSr1rqPN8J1i1OW%2FzgB%2BOxAzaKQznViUSCSWsblR%2FDbTFx%2Fb552zs5tf9P2QB57hBV%2Fd4%2F5A7f6N4aiouHQnE7PB%2FgCAA&x-oss-access-key-id=STS.NSuWvSVTU8UkjxQBzUogWY6kh&x-oss-expires=1729608310&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cjpeg&x-oss-signature=WDPQkM48ngJvvcCjFlFlt%2FNgFv0JkCIEJBkVcyduWGQ%3D&x-oss-signature-version=OSS2",
                     "缩略图": "img/商品列表图/鸭肠-1_缩略图.jpg",
                     "高清图": "img/商品列表图/鸭肠-1.jpg",
                     "标题": "黑鸭鸭肠【盒装】（经典甜辣味）",
@@ -91,7 +91,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "https://i-360.wwentua.com:446/10222100205195963bb/2024/10/22/4e80ba99191a292c08698c79ac793251.zip?st=bQgonpN8ZnLqH8bsr3q_rQ&e=1729604074&b=B7xd5VT1V7UH2lSoUV4F5lK7DvsN61PAAvQI4FbKAr4Df1ogBm8AdQ_c_c&fi=205195963&pid=27-45-212-64&up=2&mp=0&co=0",
+                    "缩略图CDN": "https://cn-beijing-data.aliyundrive.net/w0Yi5WCS%2F683643023%2F6717b1d639f668f96fff45ada9953f52ea46f02e%2F6717b1d650cbb68979ef4e9f8e82ac52f64da2cc?security-token=CAISvgJ1q6Ft5B2yfSjIr5fCHP6HnKtI9quRRUzftzEDR7pFgKvxqjz2IHhMf3NpBOkZvvQ1lGlU6%2Fcalq5rR4QAXlDfNTrpUSGUq1HPWZHInuDox55m4cTXNAr%2BIhr%2F29CoEIedZdjBe%2FCrRknZnytou9XTfimjWFrXWv%2Fgy%2BQQDLItUxK%2FcCBNCfpPOwJms7V6D3bKMuu3OROY6Qi5TmgQ41Uh1jgjtPzkkpfFtkGF1GeXkLFF%2B97DRbG%2FdNRpMZtFVNO44fd7bKKp0lQLs0ARrv4r1fMUqW2X543AUgFLhy2KKMPY99xpFgh9a7j0iCbSGyUu%2FhcRm5sw9%2Byfo34lVYneozVAzxQd7uHwufJ7FxfIREfquk63pvSlHLcLPe0Kjzzleo2k1XRPVFF%2B535IaHXuToXDnvSiTQsnivXtuMkagAFS2SzBZNQXECfbREVhUPoMgGEHSZNdQzViOheLx8dC1iFUQ%2B1sdW4iI0ArArtsswETr1gltr0gtRdAOawMyceZFSTJU2FM3h0rVt9TmEoK6BwSQkr%2Fdw1shJuVEz4Z9YrmrdZSvT7xP8V%2FLU9Mlar1NKme%2Fs7WZZ0XXEATrbS1YiAA&x-oss-access-key-id=STS.NTwWD3qtiAizGjnS1VK5ionZH&x-oss-expires=1729608336&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cjpeg&x-oss-signature=TaRtHx4IYRPhGl90tIwbS31May9aYfgHFSYBja2BiMw%3D&x-oss-signature-version=OSS2",
                     "缩略图": "img/商品列表图/鸡爪_缩略图.jpg",
                     "高清图": "img/商品列表图/鸡爪.jpg",
                     "标题": "卤鸡爪【盒装】（经典甜辣味）",
@@ -450,8 +450,8 @@ var LaiChiYaData =
 var CarouselImage = {
     "默认图片": 1,
     "轮播图列表CDN": [
-        "https://i-590.wwentua.com:446/10222100205196245bb/2024/10/22/fe2a6c1b311cb3621073dec3d038aa42.zip?st=vjdvyrHhpVKX62E5q9zAHA&e=1729606558&b=U_bhb3gOOVLhUgQTTCr9X6gLoDrcCklTYUV1YsFfeBYxT5gm1CKEC4lKXVIwKdAV7U28NIQ_c_c&fi=205196245&pid=27-45-212-64&up=2&mp=0&co=0",
-        "https://i-460.wwentua.com:446/10222100205196244bb/2024/10/22/dc793e9fe286a655db852a8178422872.zip?st=o8M0CY2oMTEvnSdmTwuMuQ&e=1729606601&b=VeBe4wiZBOhZrVOwCrIFggPaCLIDm1P6CGlaCAHjVdkH3g7pVelS_alPjBMIE2gErCSYKP1Eg&fi=205196244&pid=27-45-212-64&up=2&mp=0&co=0",
+        "https://cn-beijing-data.aliyundrive.net/hWQPP64r%2F683643023%2F6717b1d98a7f2e76c9404ec9a45ae929af8f0ff0%2F6717b1d99f1b3c572959401ab1e45e9e7f6e1911?security-token=CAISvgJ1q6Ft5B2yfSjIr5DAO87btL5p2YWZaETWnnQPf9Z7nLecqjz2IHhMf3NpBOkZvvQ1lGlU6%2Fcalq5rR4QAXlDfNRWyaSCUq1HPWZHInuDox55m4cTXNAr%2BIhr%2F29CoEIedZdjBe%2FCrRknZnytou9XTfimjWFrXWv%2Fgy%2BQQDLItUxK%2FcCBNCfpPOwJms7V6D3bKMuu3OROY6Qi5TmgQ41Uh1jgjtPzkkpfFtkGF1GeXkLFF%2B97DRbG%2FdNRpMZtFVNO44fd7bKKp0lQLs0ARrv4r1fMUqW2X543AUgFLhy2KKMPY99xpFgh9a7j0iCbSGyUu%2FhcRm5sw9%2Byfo34lVYne43oaXxaii4IClLcc%2BmqdsRIvJzWstJ7Gf9LWqChvSgk4TxhhcNFKSTQrInFCB0%2BcRObJl16it%2FmJ5fXtuMkagAGkmqHpO1qXGpUIS6lcFcf6YxUrrH5pDXb5qyAZeOnaILwI6EAWpv3IseHPYVPmQO9sGvS4u%2FBDl7POHejiyxJsAgiVpHO%2FZjecMerbcvJWmkqiexc%2BryIxlKiaKZWZlHcWRcb3adb5x5ZEVLY3U4qP229A4eqeMc%2BNdSqXlZ%2BJwCAA&x-oss-access-key-id=STS.NSuptoYaHnGrjbgztZsYWsr7H&x-oss-expires=1729607851&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cjpeg&x-oss-signature=gfX4gBylajiPPjXJXyHzg%2Bdu9E8IB%2BdgNOh%2FYiNlp1w%3D&x-oss-signature-version=OSS2",
+        "https://cn-beijing-data.aliyundrive.net/BIbZDLMM%2F683643023%2F6717b1d91966f68305db4b3b8752ff02e85861f4%2F6717b1d98415472ede0d4f148a5b82b3d8ccb45f?security-token=CAISvgJ1q6Ft5B2yfSjIr5aCH8DFmu1pwfCoV1zUqUMvR8F6iLTCrjz2IHhMf3NpBOkZvvQ1lGlU6%2Fcalq5rR4QAXlDfNRaPFCGUq1HPWZHInuDox55m4cTXNAr%2BIhr%2F29CoEIedZdjBe%2FCrRknZnytou9XTfimjWFrXWv%2Fgy%2BQQDLItUxK%2FcCBNCfpPOwJms7V6D3bKMuu3OROY6Qi5TmgQ41Uh1jgjtPzkkpfFtkGF1GeXkLFF%2B97DRbG%2FdNRpMZtFVNO44fd7bKKp0lQLs0ARrv4r1fMUqW2X543AUgFLhy2KKMPY99xpFgh9a7j0iCbSGyUu%2FhcRm5sw9%2Byfo34lVYne45YLShaii4IClLcc%2BmqdsRIvJzWstJ7Gf9LWqChvSgk4TxhhcNFKSTQrInFCB0%2BcRObJl16iSt0wu%2FXtuMkagAEKZLYJQgJFzaxRyLrvrWsD8KX%2Fz%2BIKibUxRfaspesNBRAHOTG6j7pyZcU9lwAvgQMrNf%2FgL91AAwrNIsByEhy9VI5GZZR6uhcn1dtoNUC81SWxs8MAllFoSz3k%2FhaukkxPNsMduEAaGn2pJky%2BH0qZGoohl9UHt9ASVyX9a%2BwssCAA&x-oss-access-key-id=STS.NU7Tzqw2Hv2CUzeMCzKNVgqiL&x-oss-expires=1729607904&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cjpeg&x-oss-signature=su49xhDXNSFXevzAKNwV25COk9UxXVM409XSjt4WuMs%3D&x-oss-signature-version=OSS2",
     ],
     "轮播图列表": [
         "img/轮播图/配送广告_压缩后.jpg",
@@ -476,8 +476,8 @@ var AboutTheStoreData = {
     "配送服务时间": "16:00 - 24:00",
     "配送说明": "以店铺地址为中心，周围1公里范围内 满25元起配送 超过1公里范围以内暂不提供配送服务",
     "店铺拍照CDN": [
-        "https://i-820.wwentua.com:446/10222100205199998bb/2024/10/22/b18fb793d35d73f92e4867b882c8ab46.zip?st=WNX7wW9HzvU1q6B0Ledkdw&e=1729604388&b=BbEJlAShWLgAxVGEUegCvgP7DA8C6weBBdddtl3HBLlS5Qu1VftRsFG7UqUCDVOwBO0O_b1C2AJMG8F_b3Us4HuwV5CXMEbVgt&fi=205199998&pid=27-45-212-64&up=2&mp=0&co=0",
-        "https://i-820.wwentua.com:446/10222100205199998bb/2024/10/22/b18fb793d35d73f92e4867b882c8ab46.zip?st=WNX7wW9HzvU1q6B0Ledkdw&e=1729604388&b=BbEJlAShWLgAxVGEUegCvgP7DA8C6weBBdddtl3HBLlS5Qu1VftRsFG7UqUCDVOwBO0O_b1C2AJMG8F_b3Us4HuwV5CXMEbVgt&fi=205199998&pid=27-45-212-64&up=2&mp=0&co=0",
+        "https://cn-beijing-data.aliyundrive.net/zaYfLeof%2F683643023%2F6717b1d99a6952e6c2134fb99750ac440e829435%2F6717b1d94e61b0bc613e4882b9af56a5fe0460b9?security-token=CAISvgJ1q6Ft5B2yfSjIr5bvOs7AvKhA8Km6ZUDZnGIvdfdvnJfJkjz2IHhMf3NpBOkZvvQ1lGlU6%2Fcalq5rR4QAXlDfNSyUWSCUq1HPWZHInuDox55m4cTXNAr%2BIhr%2F29CoEIedZdjBe%2FCrRknZnytou9XTfimjWFrXWv%2Fgy%2BQQDLItUxK%2FcCBNCfpPOwJms7V6D3bKMuu3OROY6Qi5TmgQ41Uh1jgjtPzkkpfFtkGF1GeXkLFF%2B97DRbG%2FdNRpMZtFVNO44fd7bKKp0lQLs0ARrv4r1fMUqW2X543AUgFLhy2KKMPY99xpFgh9a7j0iCbSGyUu%2FhcRm5sw9%2Byfo34lVYne07NGTzaii4IClLcc%2BmqdsRIvJzWstJ7Gf9LWqChvSgk4TxhhcNFKSTQrInFCB0%2BcRObJl16i8ASOgfXtuMkagAEfhh9jAbVrQ8wHCfrhOuZ2DGgwWCrYbJsFsr83PIdFSez03y28A7%2FvTah4Xa%2B%2FJpHsW3H43ofbpvuYbaG%2FyAB%2BxfRWw5h%2B25ipDVSaT%2BTHqr1T9UJuv7LHqugi2MoMn%2FjNxpoKwj7LqNY0bIRl656m9BX1Dh4cwx9my5VB5CoIWyAA&x-oss-access-key-id=STS.NUZqttQwaGkQgfhxbzyxCsRbp&x-oss-expires=1729607968&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cjpeg&x-oss-signature=dheSxxKl187ad1IDc%2Fn%2BPGLRYHPWNCyyE72hYko9VgY%3D&x-oss-signature-version=OSS2",
+        "https://cn-beijing-data.aliyundrive.net/zaYfLeof%2F683643023%2F6717b1d99a6952e6c2134fb99750ac440e829435%2F6717b1d94e61b0bc613e4882b9af56a5fe0460b9?security-token=CAISvgJ1q6Ft5B2yfSjIr5bvOs7AvKhA8Km6ZUDZnGIvdfdvnJfJkjz2IHhMf3NpBOkZvvQ1lGlU6%2Fcalq5rR4QAXlDfNSyUWSCUq1HPWZHInuDox55m4cTXNAr%2BIhr%2F29CoEIedZdjBe%2FCrRknZnytou9XTfimjWFrXWv%2Fgy%2BQQDLItUxK%2FcCBNCfpPOwJms7V6D3bKMuu3OROY6Qi5TmgQ41Uh1jgjtPzkkpfFtkGF1GeXkLFF%2B97DRbG%2FdNRpMZtFVNO44fd7bKKp0lQLs0ARrv4r1fMUqW2X543AUgFLhy2KKMPY99xpFgh9a7j0iCbSGyUu%2FhcRm5sw9%2Byfo34lVYne07NGTzaii4IClLcc%2BmqdsRIvJzWstJ7Gf9LWqChvSgk4TxhhcNFKSTQrInFCB0%2BcRObJl16i8ASOgfXtuMkagAEfhh9jAbVrQ8wHCfrhOuZ2DGgwWCrYbJsFsr83PIdFSez03y28A7%2FvTah4Xa%2B%2FJpHsW3H43ofbpvuYbaG%2FyAB%2BxfRWw5h%2B25ipDVSaT%2BTHqr1T9UJuv7LHqugi2MoMn%2FjNxpoKwj7LqNY0bIRl656m9BX1Dh4cwx9my5VB5CoIWyAA&x-oss-access-key-id=STS.NUZqttQwaGkQgfhxbzyxCsRbp&x-oss-expires=1729607968&x-oss-process=image%2Fresize%2Cw_1920%2Fformat%2Cjpeg&x-oss-signature=dheSxxKl187ad1IDc%2Fn%2BPGLRYHPWNCyyE72hYko9VgY%3D&x-oss-signature-version=OSS2",
     ],
     "店铺拍照": [
         "img/微信二维码/来吃鸭_老板微信_缩略图.jpg",
