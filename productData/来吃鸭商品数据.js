@@ -113,7 +113,7 @@ var LaiChiYaData =
             "订单商品数量": 0,
             "分类内容": [
                 {
-                    "缩略图CDN": "https://i-930.wwentua.com:446/10222100205195929bb/2024/10/22/317df126632f1cbbf626d0ad6e1d57ce.zip?st=t9BOZuHuz-9F0-wZqAy_8Q&e=1729604187&b=ALUMjwOuULAC2laWAbhQ7AD4XuRWyQu7U19ctga9AKtR5AueCK0A4FeZV78AflUrAz9bdw_c_c&fi=205195929&pid=27-45-212-64&up=2&mp=0&co=0",
+                    "缩略图CDN": "https://i-930.wwentua.com:446/10222100205195929bb/2024/10/22/317df126632f1cbbf626d0ad6e1d57ce.zip?st=76dqR38J25dwBsMGU3k6Iw&e=1729607236&b=BrMAg1X4UrJRiQfHCrMDvwnxDLYCnQCwCARbsQe8Vf4JvFnMUPVTs1WbBOxWKA9xBDhadg_c_c&fi=205195929&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/热卖鸭架_缩略图.jpg",
                     "高清图": "img/商品列表图/热卖鸭架.jpg",
                     "标题": "鸭锁骨（经典甜辣味）",
@@ -411,7 +411,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "https://i-590.wwentua.com:446/10222100205195965bb/2024/10/22/b3a659b8d2f27fa7ed490828cccc099b.zip?st=JYvJihuUp8ahu6FgMchzow&e=1729605077&b=A7Rb1AapUbEF31ajUOUEjwL4XOQNtQqcCLwMklPiAugA8QyJVQpWtFC5X6AGsVTFU6MMtQyWB78EeVssVDpfLQ_c_c&fi=205195965&pid=27-45-212-64&up=2&mp=0&co=0",
+                    "缩略图CDN": "https://i-590.wwentua.com:446/10222100205195965bb/2024/10/22/b3a659b8d2f27fa7ed490828cccc099b.zip?st=nX9fnyOjBN5HVQTd_qmkzQ&e=1729607265&b=VeJe0QCvU7NXjVGkAbQEj1WvDrYBuVfBCb0BnwCxV71ToguOAl1YulK7VaoEsw6fA_aNd5ACaALhVKFgvAmwFdw_c_c&fi=205195965&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/可口可乐瓶装_缩略图.jpg",
                     "高清图": "img/商品列表图/可口可乐瓶装.jpg",
                     "标题": "可口可乐",
