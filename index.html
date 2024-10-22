@@ -1413,8 +1413,13 @@
                 totalUPrice = Math.round(totalUPrice * 10) / 10;
 
                 magessData += `===================== \n`;
-                if (PickUpOrDeliverAttheStore == "需要配送")
-                    magessData += `共计 ${totalPrice} 元 (不含配送费)\n\n\n`
+                if (PickUpOrDeliverAttheStore == "需要配送" )
+                {
+                    if (totalPrice < AboutTheStoreData.起送价格)
+                        magessData += `共计 ${totalPrice} 元 (不含配送费)\n\n\n`
+                    else
+                        magessData += `共计 ${totalPrice} 元\n\n\n`
+                }
                 else if (PickUpOrDeliverAttheStore == "到店自取")
                     magessData += `共计 ${totalPrice} 元\n\n\n`
 
