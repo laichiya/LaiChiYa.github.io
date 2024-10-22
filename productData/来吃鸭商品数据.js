@@ -30,7 +30,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "https://i-590.wwentua.com:446/10222000205195955bb/2024/10/22/c9cc2fda5f3beeb386cfd890a34892b1.zip?st=jolDKTeQiNJ7wlC4VZgCcw&e=1729603912&b=UukIsFX4UrIE9Ve1AH0EMVNZCrEGuweoArYAmAakVrEIwVnnVHpTLAM_aVHI_c&fi=205195955&pid=27-45-212-64&up=2&mp=0&co=0",
+                    "缩略图CDN": "https://i-590.wwentua.com:446/10222100205195955bb/2024/10/22/c9cc2fda5f3beeb386cfd890a34892b1.zip?st=vnaUeixcWwNZ1SGOV7KoeQ&e=1729606487&b=CLMKslP_bUbFVpAXnVyoDNlFbWeIFuAOsBrJdxV3_aUbYJwF7gVHpRLlVpXng_c&fi=205195955&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/鸭头-1_缩略图.jpg",
                     "高清图": "img/商品列表图/鸭头-1.jpg",
                     "标题": "黑鸭鸭头【盒装】（经典甜辣味）",
@@ -42,7 +42,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "https://i-640.wwentua.com:446/10222000205195956bb/2024/10/22/2a1b86a257c9d713fde4c93354a6e772.zip?st=0Xa6aqcE8Cg05Y44F0_Ijg&e=1729603931&b=Br0Pt1f6B_bRSiVSOV1gC4QDpXqtXsQeUAfdft1XJB7sCfl4kVTxTJg_c_c&fi=205195956&pid=27-45-212-64&up=2&mp=0&co=0",
+                    "缩略图CDN": "https://i-640.wwentua.com:446/10222100205195956bb/2024/10/22/2a1b86a257c9d713fde4c93354a6e772.zip?st=eYlqvhF5NzoKA4PfGmFlOQ&e=1729606518&b=Bb4MtAOuVbYE3wPZVlkG5QDpW64E4lPAUqQL41bKVOhWKgpwAWgCdw_c_c&fi=205195956&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/鸭掌_缩略图.jpg",
                     "高清图": "img/商品列表图/鸭掌.jpg",
                     "标题": "黑鸭鸭掌【盒装】（经典甜辣味）",
@@ -126,7 +126,7 @@ var LaiChiYaData =
                 },
                 {
                     "缩略图CDN": "",
-                    "缩略图": "https://i-640.wwentua.com:446/10222100205195926bb/2024/10/22/5d93874c8969256c8434e245d7263434.zip?st=iWLzNxE_Hj4NmGac-Qa7qw&e=1729604214&b=A7Zc31L_aVbVZgVGRBbxQ7AP7XuoFgAqaAg4J41XuBa4HslvOBqNXtwLMBOwEegd5VmpZdQ_c_c&fi=205195926&pid=27-45-212-64&up=2&mp=0&co=0",
+                    "缩略图": "https://i-640.wwentua.com:446/10222100205195926bb/2024/10/22/5d93874c8969256c8434e245d7263434.zip?st=JgX6bYz0ptISkvdbGLS4Xg&e=1729606699&b=VuMPjFT5AOAD2wTEArsAvFauDbkAhQCQBwsM5lTvUfpW41vOAKVTs1KcULhVKwd5BTkOIg_c_c&fi=205195926&pid=27-45-212-64&up=2&mp=0&co=0",
                     "高清图": "img/商品列表图/热卖鸭脖.jpg",
                     "标题": "鸭脖（经典甜辣味）",
                     "标签1": "肉质紧实",
@@ -450,8 +450,8 @@ var LaiChiYaData =
 var CarouselImage = {
     "默认图片": 1,
     "轮播图列表CDN": [
-        "https://i-590.wwentua.com:446/10222000205196245bb/2024/10/22/fe2a6c1b311cb3621073dec3d038aa42.zip?st=fAbcV-vNejSNY5B8VPclpw&e=1729602463&b=CbJb3gSJWbUF0AfQALVQ7QDqDLUElAqGVVlbswCJBI0FsAu3UvtRsVOWUIgCfAN9VmoBLQ_c_c&fi=205196245&pid=27-45-212-64&up=2&mp=0&co=0",
-        "https://i-460.wwentua.com:446/10222000205196244bb/2024/10/22/dc793e9fe286a655db852a8178422872.zip?st=fsDA1JlKR8UdKA33X2pwZw&e=1729602526&b=VeBd4AGQBOhYrFOwAbkChQnQCrADmwqjUjMBU1KwAIxWjwrtAb1U_bFLiBMJWiFB6Ai0JPAFw&fi=205196244&pid=27-45-212-64&up=2&mp=0&co=0",
+        "https://i-590.wwentua.com:446/10222100205196245bb/2024/10/22/fe2a6c1b311cb3621073dec3d038aa42.zip?st=vjdvyrHhpVKX62E5q9zAHA&e=1729606558&b=U_bhb3gOOVLhUgQTTCr9X6gLoDrcCklTYUV1YsFfeBYxT5gm1CKEC4lKXVIwKdAV7U28NIQ_c_c&fi=205196245&pid=27-45-212-64&up=2&mp=0&co=0",
+        "https://i-460.wwentua.com:446/10222100205196244bb/2024/10/22/dc793e9fe286a655db852a8178422872.zip?st=o8M0CY2oMTEvnSdmTwuMuQ&e=1729606601&b=VeBe4wiZBOhZrVOwCrIFggPaCLIDm1P6CGlaCAHjVdkH3g7pVelS_alPjBMIE2gErCSYKP1Eg&fi=205196244&pid=27-45-212-64&up=2&mp=0&co=0",
     ],
     "轮播图列表": [
         "img/轮播图/配送广告_压缩后.jpg",
