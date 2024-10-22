@@ -7,7 +7,7 @@ var LaiChiYaData =
             "订单商品数量": 0,
             "分类内容": [
                 {
-                    "缩略图": "img/商品列表图/鸭架-1_缩略图.jpg",
+                    "缩略图": "https://i-040.wwentua.com:446/10222000205192730bb/2024/10/22/960af0be0fc3f2634e8e247c4f13badb.zip?st=ly6vo6YkT9h7QApRm2UH8A&e=1729601312&b=ALsKj1faAu4H0l6JBLFS7wftXeQFlVPfCQVaslPaVdxU4Q2xUvsD41SRV48CfFAuCDRadg_c_c&fi=205192730&pid=27-45-212-64&up=2&mp=0&co=0",
                     "高清图": "img/商品列表图/鸭架-1.jpg",
                     "标题": "黑鸭锁骨【盒装】（经典甜辣味）",
                     "标签1": "软骨弹韧 味美耐嚼",
