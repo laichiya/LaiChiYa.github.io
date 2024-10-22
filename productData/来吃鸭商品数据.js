@@ -18,7 +18,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "https://i-590.wwentua.com:446/10222000205195945bb/2024/10/22/e6bf6f66b693e21a0df2d463a534dc28.zip?st=fc5nc_JY00jQyQjoDBS-jQ&e=1729603200&b=A7gOtlT5B_bpTglOTCndSZwQOXOcMsQukBrIOlgKgVbJRmAC_bAC4AfwA8VXM_c&fi=205195945&pid=27-45-212-64&up=2&mp=0&co=0",
+                    "缩略图CDN": "https://i-590.wwentua.com:446/10222100205195945bb/2024/10/22/e6bf6f66b693e21a0df2d463a534dc28.zip?st=QCGlHbrarNVceawoYCmGZg&e=1729606125&b=Br0KsgarA_b5ZiFOTUi9VYFFbDbYMsVb5U_bcLk1PxV7BWn13jUnxQLwQ4ACY_c&fi=205195945&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/鸭脖-1_缩略图.jpg",
                     "高清图": "img/商品列表图/鸭脖-1.jpg",
                     "标题": "黑鸭鸭脖【盒装】（经典甜辣味）",
