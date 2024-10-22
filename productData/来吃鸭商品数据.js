@@ -30,7 +30,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-590.wwentua.com:446/10222000205195955bb/2024/10/22/c9cc2fda5f3beeb386cfd890a34892b1.zip?st=jolDKTeQiNJ7wlC4VZgCcw&e=1729603912&b=UukIsFX4UrIE9Ve1AH0EMVNZCrEGuweoArYAmAakVrEIwVnnVHpTLAM_aVHI_c&fi=205195955&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/鸭头-1_缩略图.jpg",
                     "高清图": "img/商品列表图/鸭头-1.jpg",
                     "标题": "黑鸭鸭头【盒装】（经典甜辣味）",
@@ -42,7 +42,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-640.wwentua.com:446/10222000205195956bb/2024/10/22/2a1b86a257c9d713fde4c93354a6e772.zip?st=0Xa6aqcE8Cg05Y44F0_Ijg&e=1729603931&b=Br0Pt1f6B_bRSiVSOV1gC4QDpXqtXsQeUAfdft1XJB7sCfl4kVTxTJg_c_c&fi=205195956&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/鸭掌_缩略图.jpg",
                     "高清图": "img/商品列表图/鸭掌.jpg",
                     "标题": "黑鸭鸭掌【盒装】（经典甜辣味）",
@@ -54,7 +54,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-220.wwentua.com:446/10222000205195952bb/2024/10/22/f14b52514decaa0472847bcf12c3734f.zip?st=g2nyIWHZwoNbC6WdVeVgLQ&e=1729603985&b=ALsMtAilVbdRuwDTUuRSwFazCwgC5AK4AvhasAaUAqUIvwyXU_b1WfQAvUm0LKw_c_c&fi=205195952&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/鸭翅新_缩略图.jpg",
                     "高清图": "img/商品列表图/鸭翅新.jpg",
                     "标题": "黑鸭鸭翅【盒装】（经典甜辣味）",
@@ -67,7 +67,7 @@ var LaiChiYaData =
                 },
 
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-820.wwentua.com:446/10222100205195958bb/2024/10/22/1b64fdb5ca97836ef83a72c08321baff.zip?st=subXMEjsYthl7XN0rFoeYg&e=1729604022&b=BL9b4wmkAu9Qhl_beBwgA41W8D_aoE4gCTAfcM5AGdUOxVKQtxAWgFcA_c_c&fi=205195958&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/鸭胗_缩略图.jpg",
                     "高清图": "img/商品列表图/鸭胗.jpg",
                     "标题": "黑鸭鸭胗【盒装】（经典甜辣味）",
@@ -79,7 +79,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-820.wwentua.com:446/10222100205195948bb/2024/10/22/ab802b497a0df5c6e872359a31e32b34.zip?st=iGFaSPoEEnnlklK4g7qeFg&e=1729604044&b=Uuld5VL_aA_b4D1AfxBHkDNlZcD7QFuFP8AbULk13_aVbICyw_bxUH4HeAA8VHI_c&fi=205195948&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/鸭肠-1_缩略图.jpg",
                     "高清图": "img/商品列表图/鸭肠-1.jpg",
                     "标题": "黑鸭鸭肠【盒装】（经典甜辣味）",
@@ -91,7 +91,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-360.wwentua.com:446/10222100205195963bb/2024/10/22/4e80ba99191a292c08698c79ac793251.zip?st=bQgonpN8ZnLqH8bsr3q_rQ&e=1729604074&b=B7xd5VT1V7UH2lSoUV4F5lK7DvsN61PAAvQI4FbKAr4Df1ogBm8AdQ_c_c&fi=205195963&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/鸡爪_缩略图.jpg",
                     "高清图": "img/商品列表图/鸡爪.jpg",
                     "标题": "卤鸡爪【盒装】（经典甜辣味）",
@@ -113,7 +113,7 @@ var LaiChiYaData =
             "订单商品数量": 0,
             "分类内容": [
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-930.wwentua.com:446/10222100205195929bb/2024/10/22/317df126632f1cbbf626d0ad6e1d57ce.zip?st=t9BOZuHuz-9F0-wZqAy_8Q&e=1729604187&b=ALUMjwOuULAC2laWAbhQ7AD4XuRWyQu7U19ctga9AKtR5AueCK0A4FeZV78AflUrAz9bdw_c_c&fi=205195929&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/热卖鸭架_缩略图.jpg",
                     "高清图": "img/商品列表图/热卖鸭架.jpg",
                     "标题": "鸭锁骨（经典甜辣味）",
@@ -126,58 +126,54 @@ var LaiChiYaData =
                 },
                 {
                     "缩略图CDN": "",
-                    "缩略图": "img/商品列表图/热卖鸭脖_缩略图.jpg",
+                    "缩略图": "https://i-640.wwentua.com:446/10222100205195926bb/2024/10/22/5d93874c8969256c8434e245d7263434.zip?st=iWLzNxE_Hj4NmGac-Qa7qw&e=1729604214&b=A7Zc31L_aVbVZgVGRBbxQ7AP7XuoFgAqaAg4J41XuBa4HslvOBqNXtwLMBOwEegd5VmpZdQ_c_c&fi=205195926&pid=27-45-212-64&up=2&mp=0&co=0",
                     "高清图": "img/商品列表图/热卖鸭脖.jpg",
                     "标题": "鸭脖（经典甜辣味）",
                     "标签1": "肉质紧实",
                     "标签2": "共1条",
                     "标签3": "约100g ",
-
                     "售价": 7,
                     "划线价格": 9,
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-040.wwentua.com:446/10222100205195930bb/2024/10/22/682c11ba6edb53da947bbb96968fb11e.zip?st=ZJyljL5qfMRXWCi3BT28RA&e=1729604247&b=B7ILiFX4BeVTiwPDBr9S7gX9AbhQ9VflAAxbsVbtX_aRS5w2YA6ZRsVSaXrZXKQJ8Az8BLQ_c_c&fi=205195930&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/热卖鸭头_缩略图.jpg",
                     "高清图": "img/商品列表图/热卖鸭头.jpg",
                     "标题": "鸭头（经典甜辣味）",
                     "标签1": "个大鲜美 入味深髓",
                     "标签2": "共1个",
                     "标签3": "约100g",
-
                     "售价": 7,
                     "划线价格": 9,
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-160.wwentua.com:446/10222100205195931bb/2024/10/22/79469a087d97c4592d233defd12b39da.zip?st=sLQ8hJmf7Px1rdtfXRh5Vg&e=1729604524&b=UeQAg1L_aV7cF3QLCCrMOsgL6CLMEjQKuVlpasAG6XvUHsgidAKUC4gTKV79SLFMtVmoALA_c_c&fi=205195931&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/热卖鸭爪_缩略图.jpg",
                     "高清图": "img/商品列表图/热卖鸭爪.jpg",
                     "标题": "鸭掌（经典甜辣味）",
                     "标签1": "饱满Q弹 嚼劲十足",
                     "标签2": "共1个",
                     "标签3": "约100g",
-
                     "售价": 3,
                     "划线价格": 5.5,
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-220.wwentua.com:446/10222100205195952bb/2024/10/22/f14b52514decaa0472847bcf12c3734f.zip?st=CW0GQYJDEfThFnNyobe0Cg&e=1729604562&b=Ve4MtAmkUbMF71SHCrwBkwXgWlkA5gK4A_akJ4wWXAKcFsgyXU_b1Rell2AzwAIA_c_c&fi=205195952&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/鸭翅新_缩略图.jpg",
                     "高清图": "img/商品列表图/鸭翅新.jpg",
                     "标题": "鸭翅（经典甜辣味）",
                     "标签1": "饱满紧致 口口满足",
                     "标签2": "共1个",
                     "标签3": "约100g",
-
                     "售价": 3,
                     "划线价格": 6,
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-220.wwentua.com:446/10222100205195932bb/2024/10/22/3c2b81d453d964106e3970911d03e60a.zip?st=xa-0FesFUy-xILVkA322eQ&e=1729604606&b=UeQLiAKvUbFQiADAAbhX61GpCb1R0wOSCQUB6we8AKsFsACVCK0F5VSaX7dQLgN9Um4PIw_c_c&fi=205195932&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/热卖鸭胗_缩略图.jpg",
                     "高清图": "img/商品列表图/热卖鸭胗.jpg",
                     "标题": "鸭胗（经典甜辣味）",
@@ -189,7 +185,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-720.wwentua.com:446/10222100205195927bb/2024/10/22/1f4698cb43efe63f20d894fcb4aaa16a.zip?st=m5xEqb5lax_rd16PDwSd8Q&e=1729604621&b=CbwLiAeqV7dRiV6eC7JU6FauDblQ0wagU19asF3mX_aRU4QyZVfBRsVWbA_btXKQ9xVmoKJg_c_c&fi=205195927&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/热卖鸭肠_缩略图.jpg",
                     "高清图": "img/商品列表图/热卖鸭肠.jpg",
                     "标题": "鸭肠（经典甜辣味）",
@@ -201,7 +197,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-590.wwentua.com:446/10222100205195925bb/2024/10/22/03cfc1755eb179eeb201ea78579dfde3.zip?st=lbIiazojizMHWRlMhA-sBQ&e=1729604636&b=AbRe3VX4V7cC2lKSVuMCiwHwXegHvlH2BrJY3VL_aBFkAtQG9A6oE5gPDV6QAtVPMVb4PfQd8UD9TcA_c_c&fi=205195925&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/热卖卤鸡爪_缩略图.jpg",
                     "高清图": "img/商品列表图/热卖卤鸡爪.jpg",
                     "标题": "卤鸡爪（经典甜辣味）",
@@ -220,7 +216,7 @@ var LaiChiYaData =
             "订单商品数量": 0,
             "分类内容": [
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-930.wwentua.com:446/10222100205195969bb/2024/10/22/1c0492416f57f64cd62ed09dd49fe6be.zip?st=xSCNswIQ1xD0hEvfLkRTfQ&e=1729604663&b=AbUNogadU74E4ALSBXgGMwAKCrEBvFf4B7MJkVz_bBeJWnwq0AC4CfVVpBSM_c&fi=205195969&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/毛豆-1_缩略图.jpg",
                     "高清图": "img/商品列表图/毛豆-1.jpg",
                     "标题": "毛豆（经典甜辣味）",
@@ -232,7 +228,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-040.wwentua.com:446/10222100205195960bb/2024/10/22/c03260e02f03d8a494cb8292cddbdf16.zip?st=sTOLUjtYRguLKwkTbcZqAg&e=1729604686&b=CLJe2weXVbcC_aFa5UjMAWwm7D_b8AqFGwVZMOply_bVM1UuAknUCoFaQAl&fi=205195960&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/腐竹1_缩略图.jpg",
                     "高清图": "img/商品列表图/腐竹1.jpg",
                     "标题": "腐竹（经典甜辣味）",
@@ -244,7 +240,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-640.wwentua.com:446/10222100205195966bb/2024/10/22/384395bc0676c865778257a601cdd45e.zip?st=vOSeHwS49ZF_utlixz_nvA&e=1729604716&b=B70OgAi6Ur9QklOQAwwA4wPqC_a4F4waVAPYB6VfLB7sCfghyBWxYLQ_c_c&fi=205195966&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/莲藕_缩略图.jpg",
                     "高清图": "img/商品列表图/莲藕.jpg",
                     "标题": "莲藕（经典甜辣味）",
@@ -256,7 +252,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-220.wwentua.com:446/10222100205195962bb/2024/10/22/d5cfa8be9dfb0f23fa18998b71b08563.zip?st=TbFZMDZhg9lzNzVYaCa6Bw&e=1729604731&b=VeEPugi_aVrYD7l_bvUSxTZgQOW_bBT7gqlU_bcIkAKgV7BUnV3jAC5RLgI_bVHI_c&fi=205195962&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/海带-1_缩略图.jpg",
                     "高清图": "img/商品列表图/海带-1.jpg",
                     "标题": "海带（经典甜辣味）",
@@ -268,7 +264,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-720.wwentua.com:446/10222100205195937bb/2024/10/22/a7f4172cab4eef39806ea93ce3918b92.zip?st=ZA0ZpoSWEySkGH-O9tJNvg&e=1729604867&b=UeYOkgKdVQ9X5QLoCvMD4ADAAPkE4AOeVLkPLFUoBW5Vdw_c_c&fi=205195937&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/土豆片_缩略图.jpg",
                     "高清图": "img/商品列表图/土豆片.jpg",
                     "标题": "土豆（经典甜辣味）",
@@ -287,7 +283,7 @@ var LaiChiYaData =
             "订单商品数量": 0,
             "分类内容": [
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-040.wwentua.com:446/10222100205195940bb/2024/10/22/11273f28199f95e9a988845f317f462a.zip?st=_h37XEUDJfrThS8mVQj-aA&e=1729604893&b=VO8NtVT5A_b5Wh1KSAXEG6wXoWahUs1bOA_bYIWle3ArxUrw7pApdX91DgB8oC7AYsCCcBNFYn&fi=205195940&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/鸭脖+鸭架_缩略图.jpg",
                     "高清图": "img/商品列表图/鸭脖+鸭架.jpg",
                     "标题": "2条鸭脖+3个鸭锁骨（经典甜辣味）",
@@ -299,7 +295,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-460.wwentua.com:446/10222100205195954bb/2024/10/22/20d90b49561454d0b4d76cb4e066a840.zip?st=WYBkej-h8m5ZVBh99Rg3iw&e=1729604911&b=VO8JsVP_bAOMAyATzBL1Q7FauWexQxQaBBb8Ir1T7Vr0I4g6jAeYAulKCXu4BxwO3VlxZ4ge6C6RS5g6WAaNXsFSdCbdTfQB_aADwEIg_c_c&fi=205195954&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/鸭条鸭锁骨鸭翅新_缩略图.jpg",
                     "高清图": "img/商品列表图/鸭脖+鸭锁骨+鸭翅新.jpg",
                     "标题": "1条鸭脖+3个鸭锁骨+4个鸭翅（经典甜辣味）",
@@ -319,7 +315,7 @@ var LaiChiYaData =
             "订单商品数量": 0,
             "分类内容": [
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-820.wwentua.com:446/10222100205195968bb/2024/10/22/90522efb0d32cbd12c08c48b33a99cd3.zip?st=LR_-IX41ZPsu0r1JHTj0Gw&e=1729604931&b=BLAMo1LJVrtVsVSEC3sP7QnpAOsD5wO9BfAPIgLtA48E5A7mApVYyFJYUuMA7ASpALJbklP3C_bgEzA2_bUHkDewQ_aDHw_c&fi=205195968&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/毛豆+海带+莲藕_缩略图.jpg",
                     "高清图": "img/商品列表图/毛豆+海带+莲藕.jpg",
                     "标题": "毛豆+莲藕+海带",
@@ -331,7 +327,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-930.wwentua.com:446/10222100205195959bb/2024/10/22/1b66afc157ba412e2bb1e0b4d767630f.zip?st=WaJv1EZbGSCZrhBFqA0F_Q&e=1729604953&b=BrxZ3ACQUbMD_aQTrVycC7gjTCOZQuQaXU5UMIVGwUeYD5ly5CbEHpFIqB2BVWgHiA_bpZrFC2ApEE8gzkUMwEuAZ6WSMAaVEk&fi=205195959&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/腐竹+莲藕+海带-1_缩略图.jpg",
                     "高清图": "img/商品列表图/腐竹+莲藕+海带-1.jpg",
                     "标题": "莲藕+海带+腐竹",
@@ -343,7 +339,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-930.wwentua.com:446/10222100205195959bb/2024/10/22/1b66afc157ba412e2bb1e0b4d767630f.zip?st=fvfHt4RlGfzsBb_ui9tqwg&e=1729604972&b=UugNiFDAULIF_b1_bwAXED7wLZCuQE7VDBA8UOIwHgVONVsAvuCLBY_bwd_aUTZRXgXmAegB9AXjAZII_aluzBZlW6lIuDXdQOVAl&fi=205195959&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/腐竹+莲藕+海带-1_缩略图.jpg",
                     "高清图": "img/商品列表图/腐竹+莲藕+海带-1.jpg",
                     "标题": "土豆+毛豆+腐竹",
@@ -362,7 +358,7 @@ var LaiChiYaData =
             "订单商品数量": 0,
             "分类内容": [
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-160.wwentua.com:446/10222100205195941bb/2024/10/22/40123cad814afa4c98d7d31e07b3fc47.zip?st=pWr_5ZJc1-y1E3uCFm7glA&e=1729604997&b=BL8NtVT5VrsH1lKSUSEB7FK_aD_a4F4lPLVbBYdVa3BahRmAriAbBU11InBLoE2g64Uu9elQOXByxWN10PVrYFuwT_aDepUwVb2B7dSn1G_aAStSfQ86BXQ_c&fi=205195941&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/鸭脖+鸭架+毛豆+莲藕-2_缩略图.jpg",
                     "高清图": "img/商品列表图/鸭脖+鸭架+毛豆+莲藕-2.jpg",
                     "标题": "3个鸭锁骨+1条鸭脖+毛豆200g+莲藕200G",
@@ -374,7 +370,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-220.wwentua.com:446/10222100205195942bb/2024/10/22/5a91ee799b33de144dc87500823aa206.zip?st=ZuiY_dHiY9N8AIsYfD2Pkg&e=1729605019&b=Br0MtAarAu9VhAfHAHBQvVK_aAPFUsFb0VrEALVe2AK1VnAnhV_bYFhlMmArIL7lDjCblduQKlVH8Iag1fAeFX6Qb9DOsGkwKiVeUHygDuUHpSfQA1VCU_c&fi=205195942&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/鸭脖+鸭头+毛豆+海带-1_缩略图.jpg",
                     "高清图": "img/商品列表图/鸭脖+鸭头+毛豆+海带-1.jpg",
                     "标题": "1条鸭脖+2个鸭头+毛豆200g+海带200g",
@@ -386,7 +382,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-360.wwentua.com:446/10222100205195943bb/2024/10/22/9c623c7107700aad8c40eb414ef68275.zip?st=gUYJr7Gr-5n__zuJ4yvisw&e=1729605034&b=CbINtQmkAu9UhVWVA3MD7gXoDP1TtwWnCO9bdgfpArgI9127CJZW5VAlVOQG_bVTLB7oI5VDXBCIJvA62V_bcC5QnjDasJKQLvVI9VsQO7A5AFxQxhUw0F5AjnW_a8H5wKVCP9duAiTVu1QK1R4Bj9UIA_c_c&fi=205195943&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/鸭脖+鸭头+鸭架+毛豆+海带+莲藕1_缩略图.jpg",
                     "高清图": "img/商品列表图/鸭脖+鸭头+鸭架+毛豆+海带+莲藕1.jpg",
                     "标题": "2条鸭脖+2个鸭头+3个鸭锁骨+毛豆200g+海带200g+莲藕200g",
@@ -403,7 +399,7 @@ var LaiChiYaData =
             "订单商品数量": 0,
             "分类内容": [
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-930.wwentua.com:446/10222100205195939bb/2024/10/22/209ef19f138c36aa4566acd8667fe3e9.zip?st=o2Lc3T8vHzjGVGin-xX02A&e=1729605061&b=U_bhawVL4VbdXoFSlVuEEkwfkCb0FpwKBVFhYsgC7UfoBtFvOVfAD4wfJULgDfQB_bVGgLJw_c_c&fi=205195939&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/雪碧瓶装_缩略图.jpg",
                     "高清图": "img/商品列表图/雪碧瓶装.jpg",
                     "标题": "雪碧",
@@ -415,7 +411,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-590.wwentua.com:446/10222100205195965bb/2024/10/22/b3a659b8d2f27fa7ed490828cccc099b.zip?st=JYvJihuUp8ahu6FgMchzow&e=1729605077&b=A7Rb1AapUbEF31ajUOUEjwL4XOQNtQqcCLwMklPiAugA8QyJVQpWtFC5X6AGsVTFU6MMtQyWB78EeVssVDpfLQ_c_c&fi=205195965&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/可口可乐瓶装_缩略图.jpg",
                     "高清图": "img/商品列表图/可口可乐瓶装.jpg",
                     "标题": "可口可乐",
@@ -427,7 +423,7 @@ var LaiChiYaData =
                     "购买数量": 0
                 },
                 {
-                    "缩略图CDN": "",
+                    "缩略图CDN": "https://i-590.wwentua.com:446/10222100205195965bb/2024/10/22/b3a659b8d2f27fa7ed490828cccc099b.zip?st=JYvJihuUp8ahu6FgMchzow&e=1729605077&b=A7Rb1AapUbEF31ajUOUEjwL4XOQNtQqcCLwMklPiAugA8QyJVQpWtFC5X6AGsVTFU6MMtQyWB78EeVssVDpfLQ_c_c&fi=205195965&pid=27-45-212-64&up=2&mp=0&co=0",
                     "缩略图": "img/商品列表图/可口可乐瓶装_缩略图.jpg",
                     "高清图": "img/商品列表图/可口可乐瓶装.jpg",
                     "标题": "可口可乐",
@@ -479,9 +475,13 @@ var AboutTheStoreData = {
     "出摊营业时间": "16:00 - 23:00",
     "配送服务时间": "16:00 - 24:00",
     "配送说明": "以店铺地址为中心，周围1公里范围内 满25元起配送 超过1公里范围以内暂不提供配送服务",
+    "店铺拍照CDN": [
+        "https://i-820.wwentua.com:446/10222100205199998bb/2024/10/22/b18fb793d35d73f92e4867b882c8ab46.zip?st=WNX7wW9HzvU1q6B0Ledkdw&e=1729604388&b=BbEJlAShWLgAxVGEUegCvgP7DA8C6weBBdddtl3HBLlS5Qu1VftRsFG7UqUCDVOwBO0O_b1C2AJMG8F_b3Us4HuwV5CXMEbVgt&fi=205199998&pid=27-45-212-64&up=2&mp=0&co=0",
+        "https://i-820.wwentua.com:446/10222100205199998bb/2024/10/22/b18fb793d35d73f92e4867b882c8ab46.zip?st=WNX7wW9HzvU1q6B0Ledkdw&e=1729604388&b=BbEJlAShWLgAxVGEUegCvgP7DA8C6weBBdddtl3HBLlS5Qu1VftRsFG7UqUCDVOwBO0O_b1C2AJMG8F_b3Us4HuwV5CXMEbVgt&fi=205199998&pid=27-45-212-64&up=2&mp=0&co=0",
+    ],
     "店铺拍照": [
-        "img/微信二维码/来吃鸭_老板微信.jpg",
-        "img/微信二维码/来吃鸭_老板微信.jpg"
+        "img/微信二维码/来吃鸭_老板微信_缩略图.jpg",
+        "img/微信二维码/来吃鸭_老板微信_缩略图.jpg"
     ],
     "起送价格": 25,
     "商品全部售罄": false,
