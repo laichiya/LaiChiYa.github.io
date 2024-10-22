@@ -794,7 +794,7 @@
                         placement: 'top',
                         //template: `<div class="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>`,
                         title: function () {
-                            return '<i class="icon icon-times"></i> 复制失败: 请授于剪贴板权限';
+                            return '<i class="icon icon-times"></i> 复制失败: 请授于剪贴板权限' + e;
                             //var CopyMegData = '<i class="icon icon-check"></i> 复制成功'
                             //// 使用 clipboard API 复制 这个是异步执行
                             //navigator.clipboard.writeText(AboutTheStoreData.店铺地址).then(function () {
@@ -1511,6 +1511,7 @@
             }
         });
 
+        //剪贴板 写入成功
         clipboardComm.on('success', function (e) {
             //alert('指定文本已复制到剪贴板！');
             //e.clearSelection() 的作用是取消选中的文本，清除用户选择的内容。在剪贴板操作后调用这个方法可以让用户界面更加整洁，避免留下选择状态。
@@ -1522,8 +1523,9 @@
             //}).show();
         });
 
+        //剪贴板 写入失败
         clipboardComm.on('error', function (e) {
-            new $.zui.Messager("复制失败: 请授于剪贴板权限" + err, {
+            new $.zui.Messager("复制失败: 请授于剪贴板权限" + e, {
                 type: 'danger',// 定义颜色主题
                 close: true,
                 icon: ' exclamation-sign',
