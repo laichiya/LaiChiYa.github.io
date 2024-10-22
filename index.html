@@ -690,41 +690,41 @@
             var StoreDetailsData = "";
             if (AboutTheStoreData.店铺介绍) {
                 StoreDetailsData += `<section class="abstract">
-                                                    <p>
-                                                        <strong>店铺介绍：</strong>
-                                                        ${AboutTheStoreData.店铺介绍}
-                                                    </p>
-                                                </section>`
+                                                        <p>
+                                                            <strong>店铺介绍：</strong>
+                                                            ${AboutTheStoreData.店铺介绍}
+                                                        </p>
+                                                    </section>`
             }
             if (AboutTheStoreData.店铺地址) {
                 StoreDetailsData += `<section class="abstract">
-                                                    <p><strong>店铺地址：</strong>${AboutTheStoreData.店铺地址}</p>
-                                                </section>`
+                                                        <p><strong>店铺地址：</strong>${AboutTheStoreData.店铺地址}</p>
+                                                    </section>`
 
                 StoreDetailsData += `<button id="copyStoreLocation" type="button" style="border-radius:5px"  >
-                                                    <i class="icon icon-copy"> </i> 复制店铺地址
-                                                </button>
-                                                <br /><br />`
+                                                        <i class="icon icon-copy"> </i> 复制店铺地址
+                                                    </button>
+                                                    <br /><br />`
             }
             if (AboutTheStoreData.出摊营业时间) {
                 StoreDetailsData += `<section class="abstract">
-                                                    <p><strong>出摊营业时间：</strong>${AboutTheStoreData.出摊营业时间}</p>
-                                                </section>`
+                                                        <p><strong>出摊营业时间：</strong>${AboutTheStoreData.出摊营业时间}</p>
+                                                    </section>`
             }
             if (AboutTheStoreData.配送服务时间) {
                 StoreDetailsData += `<section class="abstract">
-                                                    <p><strong>配送服务时间：</strong>${AboutTheStoreData.配送服务时间}</p>
-                                                </section>`
+                                                        <p><strong>配送服务时间：</strong>${AboutTheStoreData.配送服务时间}</p>
+                                                    </section>`
             }
             if (AboutTheStoreData.配送说明) {
                 StoreDetailsData += `<section class="abstract">
-                                                    <p><strong>配送说明：</strong>${AboutTheStoreData.配送说明}</p>
-                                                </section>`
+                                                        <p><strong>配送说明：</strong>${AboutTheStoreData.配送说明}</p>
+                                                    </section>`
             }
 
             if (AboutTheStoreData.店铺拍照CDN && AboutTheStoreData.店铺拍照CDN.length > 0) {
                 StoreDetailsData += `<section class="abstract">
-                                                    <p><strong>店铺拍照：</strong>`
+                                                        <p><strong>店铺拍照：</strong>`
                 $.each(AboutTheStoreData.店铺拍照CDN, function (inx, item) {
                     StoreDetailsData += `<img style="border-radius: 10px;" src="${item}" alt="微信号:wxid_no0ncx4wbxwr12" /><br/><br/>`
 
@@ -733,7 +733,7 @@
             }
             else if (AboutTheStoreData.店铺拍照 && AboutTheStoreData.店铺拍照.length > 0) {
                 StoreDetailsData += `<section class="abstract">
-                                                    <p><strong>店铺拍照：</strong>`
+                                                        <p><strong>店铺拍照：</strong>`
                 $.each(AboutTheStoreData.店铺拍照, function (inx, item) {
                     StoreDetailsData += `<img style="border-radius: 10px;" src="${item}" alt="微信号:wxid_no0ncx4wbxwr12" /><br/><br/>`
 
@@ -742,25 +742,69 @@
             }
 
             $("#StoreDetails").html(StoreDetailsData);
+
             if (AboutTheStoreData.店铺地址) {
-                //初始化工具提示
-                $('#copyStoreLocation').tooltip({
-                    tipClass: 'tooltip-success',
-                    html: true,
-                    trigger: 'click',
-                    placement: 'top',
-                    //template: `<div class="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>`,
-                    title: function () {
-                        var CopyMegData = '<i class="icon icon-check"></i> 复制成功'
-                        // 使用 clipboard API 复制 这个是异步执行
-                        navigator.clipboard.writeText(AboutTheStoreData.店铺地址).then(function () {
-                            CopyMegData = '<i class="icon icon-check"></i> 复制成功'
-                        }).catch(function (err) {
-                            CopyMegData = '<i class="icon icon-times"></i> 复制失败: 请授于剪贴板权限';
-                        });
-                        return CopyMegData;
-                    },
+                var StoreAttrCjs = new ClipboardJS('#copyStoreLocation', {
+                    text: function () {
+                        return AboutTheStoreData.店铺地址; // 返回要复制的字符串
+                    }
                 });
+
+                StoreAttrCjs.on('success', function (e) {
+                    //alert('指定文本已复制到剪贴板！');
+                    //e.clearSelection() 的作用是取消选中的文本，清除用户选择的内容。在剪贴板操作后调用这个方法可以让用户界面更加整洁，避免留下选择状态。
+                    e.clearSelection();
+                    //new $.zui.Messager('复制订单信息成功!', {
+                    //    type: 'success',// 定义颜色主题
+                    //    close: true,
+                    //    icon: 'ok-sign',
+                    //}).show();
+
+                    //初始化工具提示
+                    $('#copyStoreLocation').tooltip({
+                        tipClass: 'tooltip-success',
+                        html: true,
+                        trigger: 'click',
+                        placement: 'top',
+                        //template: `<div class="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>`,
+                        title: function () {
+                            return '<i class="icon icon-check"></i> 复制成功';
+                            //var CopyMegData = '<i class="icon icon-check"></i> 复制成功'
+                            //// 使用 clipboard API 复制 这个是异步执行
+                            //navigator.clipboard.writeText(AboutTheStoreData.店铺地址).then(function () {
+                            //    CopyMegData = '<i class="icon icon-check"></i> 复制成功'
+                            //}).catch(function (err) {
+                            //    CopyMegData = '<i class="icon icon-times"></i> 复制失败: 请授于剪贴板权限';
+                            //});
+                            //return CopyMegData;
+                        },
+                    });
+
+                });
+
+                StoreAttrCjs.on('error', function (e) {
+                    //初始化工具提示
+                    $('#copyStoreLocation').tooltip({
+                        tipClass: 'tooltip-success',
+                        html: true,
+                        trigger: 'click',
+                        placement: 'top',
+                        //template: `<div class="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>`,
+                        title: function () {
+                            return '<i class="icon icon-times"></i> 复制失败: 请授于剪贴板权限';
+                            //var CopyMegData = '<i class="icon icon-check"></i> 复制成功'
+                            //// 使用 clipboard API 复制 这个是异步执行
+                            //navigator.clipboard.writeText(AboutTheStoreData.店铺地址).then(function () {
+                            //    CopyMegData = '<i class="icon icon-check"></i> 复制成功'
+                            //}).catch(function (err) {
+                            //    CopyMegData = '<i class="icon icon-times"></i> 复制失败: 请授于剪贴板权限';
+                            //});
+                            //return CopyMegData;
+                        },
+                    });
+                });
+
+                
             }
         }
 
@@ -773,10 +817,10 @@
             }
             $.each(CarouselImageList, function (inx, item) {
                 CarouselImageHtml += `<div class="${CarouselImage.默认图片 - 1 == inx ? 'item active' : 'item'}">
-                                                                    <img style="border-radius:5px" alt="First slide" src="${item}">
-                                                                    <div class="carousel-caption">
-                                                                    </div>
-                                                                </div>`
+                                                                        <img style="border-radius:5px" alt="First slide" src="${item}">
+                                                                        <div class="carousel-caption">
+                                                                        </div>
+                                                                    </div>`
             });
             CarouselImageHtml += ` </div>`
             $("#myNiceCarousel").html(CarouselImageHtml)
@@ -830,37 +874,37 @@
                     }
 
                     tableList += `<table border="0" cellspacing="0" style="padding: 0; " width="100%">
-                                                                                                <tbody>
-                                                                                                    <tr>
-                                                                                                        <td rowspan="5" width="45%" height="auto" style="aspect-ratio: 1 / 1;">
-                                                                                                            <img data-toggle="lightbox" data-group="image-group-${index}-${inx}" data-caption="${item.标题}" data-image="${item.高清图CDN ? item.高清图CDN : item.高清图}" src="${item.缩略图CDN ? item.缩略图CDN : item.缩略图}" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="${item.标题}">
-                                                                                                        </td>
-                                                                                                        <td colspan="2" class="whmax"><strong>${item.标题}</strong></td>
-                                                                                                    </tr>
-                                                                                                    <tr>
-                                                                                                        <td colspan="2" class="whmax">${spanText1}</td>
-                                                                                                    </tr>
-                                                                                                    <tr>
-                                                                                                        <td colspan="2" class="whmax">${spanText2}</td>
-                                                                                                    </tr>
-                                                                                                    <tr>
-                                                                                                        <td colspan="2" class="whmax">${spanText3}</td>
-                                                                                                    </tr>
-                                                                                                    <tr>
-                                                                                                        <td class="whmax" style="color: red;" width="28%">
-                                                                                                            <strong>￥${item.售价}</strong>
-                                                                                                            <del style="color: gray;font-size: 0.7em;">￥${item.划线价格}</del>
-                                                                                                        </td>
+                                                                                                    <tbody>
+                                                                                                        <tr>
+                                                                                                            <td rowspan="5" width="45%" height="auto" style="aspect-ratio: 1 / 1;">
+                                                                                                                <img data-toggle="lightbox" data-group="image-group-${index}-${inx}" data-caption="${item.标题}" data-image="${item.高清图CDN ? item.高清图CDN : item.高清图}" src="${item.缩略图CDN ? item.缩略图CDN : item.缩略图}" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="${item.标题}">
+                                                                                                            </td>
+                                                                                                            <td colspan="2" class="whmax"><strong>${item.标题}</strong></td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td colspan="2" class="whmax">${spanText1}</td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td colspan="2" class="whmax">${spanText2}</td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td colspan="2" class="whmax">${spanText3}</td>
+                                                                                                        </tr>
+                                                                                                        <tr>
+                                                                                                            <td class="whmax" style="color: red;" width="28%">
+                                                                                                                <strong>￥${item.售价}</strong>
+                                                                                                                <del style="color: gray;font-size: 0.7em;">￥${item.划线价格}</del>
+                                                                                                            </td>
 
-                                                                                                        <td style="padding:0px;"  name="AddOrderDesTd" coninx="${index}" tabinx="${inx}" width="65%">
+                                                                                                            <td style="padding:0px;"  name="AddOrderDesTd" coninx="${index}" tabinx="${inx}" width="65%">
 
-                                                                                                            <button name="AddOrderDes" class="btn btn-sm btn-warning" style="float:right; margin-right:1px;"  coninx="${index}" tabinx="${inx}"><i class="icon icon-plus"></i></button>
+                                                                                                                <button name="AddOrderDes" class="btn btn-sm btn-warning" style="float:right; margin-right:1px;"  coninx="${index}" tabinx="${inx}"><i class="icon icon-plus"></i></button>
 
-                                                                                                        </td>
-                                                                                                    </tr>
-                                                                                                </tbody>
-                                                                                            </table>
-                                                                                            <br />`
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                    </tbody>
+                                                                                                </table>
+                                                                                                <br />`
 
                 });
                 tableList += `<br/><span style="display: flex; justify-content: center; align-items: center; height: 100px;">已经到底啦~</span><br/><br/><br/><br/><br/><br/><br/><br/><br/></div>`;
@@ -904,10 +948,10 @@
                 LaiChiYaData[coninx].分类内容[tabinx].购买数量 = 1;
                 $(`td[name="AddOrderDesTd"][coninx="${coninx}"][tabinx="${tabinx}"]`).html(
                     `<div class="btn-group">
-                                                                                <button name="DelOrderDes" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-minus-sign"></i></button>
-                                                                                <button name="NumOrderDes" class="btn btn-mini" coninx="${coninx}" tabinx="${tabinx}" > 1 </button>
-                                                                                <button name="AddOrderDesEd" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-plus-sign"></i></button>
-                                                                            </div>`
+                                                                                    <button name="DelOrderDes" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-minus-sign"></i></button>
+                                                                                    <button name="NumOrderDes" class="btn btn-mini" coninx="${coninx}" tabinx="${tabinx}" > 1 </button>
+                                                                                    <button name="AddOrderDesEd" class="btn btn-mini btn-warning" coninx="${coninx}" tabinx="${tabinx}"><i class="icon icon-plus-sign"></i></button>
+                                                                                </div>`
                 );
 
                 LaiChiYaData[coninx].订单商品数量 += 1;
@@ -997,39 +1041,39 @@
                         totalUPrice += item.划线价格 * item.购买数量;
 
                         tableList += `<table id="Order-${index}-${inx}" border="0" cellspacing="0" style="padding: 0;margin-top:1.5em;" width="100%">
-                                                                                        <tbody>
-                                                                                            <tr class="whmax">
-                                                                                                <td rowspan="5" width="35%" height="auto" style="aspect-ratio: 1 / 1;">
-                                                                                                    <img data-toggle="lightbox" data-group="ord-image-group-${index}-${inx}" data-caption="${item.标题}" data-image="${item.高清图CDN ? item.高清图CDN : item.高清图}" src="${item.缩略图CDN ? item.缩略图CDN : item.缩略图}" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="${item.标题}">
-                                                                                                </td>
-                                                                                                <td colspan="2" class="whmax"><strong>${item.标题}</strong></td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td colspan="2" class="whmax">${spanText1}</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td colspan="2" class="whmax">${spanText2}</td>
-                                                                                            </tr>
-                                                                                            <tr>
-                                                                                                <td colspan="2" class="whmax">${spanText3}</td>
-                                                                                            </tr>
-                                                                                            <tr class="whmax">
-                                                                                                <td style="color: red;" width="30%">
-                                                                                                    <strong>￥${item.售价}</strong>
-                                                                                                    <del style="color: gray;font-size: 0.7em;">￥${item.划线价格}</del>
-                                                                                                </td>
+                                                                                            <tbody>
+                                                                                                <tr class="whmax">
+                                                                                                    <td rowspan="5" width="35%" height="auto" style="aspect-ratio: 1 / 1;">
+                                                                                                        <img data-toggle="lightbox" data-group="ord-image-group-${index}-${inx}" data-caption="${item.标题}" data-image="${item.高清图CDN ? item.高清图CDN : item.高清图}" src="${item.缩略图CDN ? item.缩略图CDN : item.缩略图}" width="100%" height="auto" style="aspect-ratio:1/1;" class="img-rounded" alt="${item.标题}">
+                                                                                                    </td>
+                                                                                                    <td colspan="2" class="whmax"><strong>${item.标题}</strong></td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td colspan="2" class="whmax">${spanText1}</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td colspan="2" class="whmax">${spanText2}</td>
+                                                                                                </tr>
+                                                                                                <tr>
+                                                                                                    <td colspan="2" class="whmax">${spanText3}</td>
+                                                                                                </tr>
+                                                                                                <tr class="whmax">
+                                                                                                    <td style="color: red;" width="30%">
+                                                                                                        <strong>￥${item.售价}</strong>
+                                                                                                        <del style="color: gray;font-size: 0.7em;">￥${item.划线价格}</del>
+                                                                                                    </td>
 
-                                                                                                <td style="padding:0px;"  coninx="${index}" tabinx="${inx}">
-                                                                                                    <div class="btn-group">
-                                                                                                        <button name = "DelOrderDesPro" class="btn btn-sm btn-warning" coninx="${index}" tabinx="${inx}"><i class="icon icon-minus-sign"></i></button>
-                                                                                                        <button name = "NumOrderDes" class="btn btn-sm" coninx="${index}" tabinx="${inx}">${item.购买数量}</button>
-                                                                                                        <button name = "AddOrderDesEdPro" class="btn btn-sm btn-warning" coninx="${index}" tabinx="${inx}"><i class="icon icon-plus-sign"></i></button>
-                                                                                                    </div>
+                                                                                                    <td style="padding:0px;"  coninx="${index}" tabinx="${inx}">
+                                                                                                        <div class="btn-group">
+                                                                                                            <button name = "DelOrderDesPro" class="btn btn-sm btn-warning" coninx="${index}" tabinx="${inx}"><i class="icon icon-minus-sign"></i></button>
+                                                                                                            <button name = "NumOrderDes" class="btn btn-sm" coninx="${index}" tabinx="${inx}">${item.购买数量}</button>
+                                                                                                            <button name = "AddOrderDesEdPro" class="btn btn-sm btn-warning" coninx="${index}" tabinx="${inx}"><i class="icon icon-plus-sign"></i></button>
+                                                                                                        </div>
 
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                    </table>`
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>`
 
 
                     });
@@ -1050,10 +1094,10 @@
 
                     var StartingPrice = Math.round((AboutTheStoreData.起送价格 - totalPrice) * 10) / 10;
                     $("#ToSumtotalUPrice").after(`<div id="ToSumtotalUPrice2" style="float: left; text-align: center; font-size: 1em; margin-top: 0.5em; margin-left: 1em; ">
-                                    <strong>(差</strong>
-                                    <strong id="totalPrice2" style="color: red;">￥${StartingPrice}</strong>
-                                    <strong>起送)</strong>
-                                </div>`);
+                                        <strong>(差</strong>
+                                        <strong id="totalPrice2" style="color: red;">￥${StartingPrice}</strong>
+                                        <strong>起送)</strong>
+                                    </div>`);
                 }
                 else if ($('#ToSumtotalUPrice2').length) {
                     $('#ToSumtotalUPrice2').remove();
@@ -1104,10 +1148,10 @@
 
                     var StartingPrice = Math.round((AboutTheStoreData.起送价格 - totalP[0]) * 10) / 10;
                     $("#ToSumtotalUPrice").after(`<div id="ToSumtotalUPrice2" style="float: left; text-align: center; font-size: 1em; margin-top: 0.5em; margin-left: 1em; ">
-                                    <strong>(差</strong>
-                                    <strong id="totalPrice2" style="color: red;">￥${StartingPrice}</strong>
-                                    <strong>起送)</strong>
-                                </div>`);
+                                        <strong>(差</strong>
+                                        <strong id="totalPrice2" style="color: red;">￥${StartingPrice}</strong>
+                                        <strong>起送)</strong>
+                                    </div>`);
                 }
                 else if ($('#ToSumtotalUPrice2').length) {
                     $('#ToSumtotalUPrice2').remove();
@@ -1158,10 +1202,10 @@
 
                     var StartingPrice = Math.round((AboutTheStoreData.起送价格 - totalP[0]) * 10) / 10;
                     $("#ToSumtotalUPrice").after(`<div id="ToSumtotalUPrice2" style="float: left; text-align: center; font-size: 1em; margin-top: 0.5em; margin-left: 1em; ">
-                                    <strong>(差</strong>
-                                    <strong id="totalPrice2" style="color: red;">￥${StartingPrice}</strong>
-                                    <strong>起送)</strong>
-                                </div>`);
+                                        <strong>(差</strong>
+                                        <strong id="totalPrice2" style="color: red;">￥${StartingPrice}</strong>
+                                        <strong>起送)</strong>
+                                    </div>`);
                 }
                 else if ($('#ToSumtotalUPrice2').length) {
                     $('#ToSumtotalUPrice2').remove();
@@ -1330,8 +1374,8 @@
             console.log("配送方式:", TheDegreeOfSpiciness);
         });
 
-
-        var clipboard = new ClipboardJS("[name='copyWechatData']", {
+        // 发送到微信 按钮  剪贴板 监听
+        var clipboardComm = new ClipboardJS("[name='copyWechatData']", {
             text: function () {
                 var totalP = SumTotalPrice();
                 if (totalP[0] < 1) {
@@ -1463,18 +1507,18 @@
             }
         });
 
-        clipboard.on('success', function (e) {
+        clipboardComm.on('success', function (e) {
             //alert('指定文本已复制到剪贴板！');
             //e.clearSelection() 的作用是取消选中的文本，清除用户选择的内容。在剪贴板操作后调用这个方法可以让用户界面更加整洁，避免留下选择状态。
             e.clearSelection();
-            new $.zui.Messager('复制订单信息成功!', {
-                type: 'success',// 定义颜色主题
-                close: true,
-                icon: 'ok-sign',
-            }).show();
+            //new $.zui.Messager('复制订单信息成功!', {
+            //    type: 'success',// 定义颜色主题
+            //    close: true,
+            //    icon: 'ok-sign',
+            //}).show();
         });
 
-        clipboard.on('error', function (e) {
+        clipboardComm.on('error', function (e) {
             new $.zui.Messager("复制失败: 请授于剪贴板权限" + err, {
                 type: 'danger',// 定义颜色主题
                 close: true,
@@ -1482,136 +1526,136 @@
             }).show();
         });
 
-            // 发送到微信 按钮
-            //$("[name='copyWechatData']").on("click", function () {
-            //    var totalP = SumTotalPrice();
-            //    if (totalP[0] < 1) {
-            //        new $.zui.Messager('请选购商品之后发送', {
-            //            type: 'warning', // 定义颜色主题
-            //            icon: "warning-sign",
-            //        }).show();
-            //        return;
-            //    }
+                // 发送到微信 按钮
+                //$("[name='copyWechatData']").on("click", function () {
+                //    var totalP = SumTotalPrice();
+                //    if (totalP[0] < 1) {
+                //        new $.zui.Messager('请选购商品之后发送', {
+                //            type: 'warning', // 定义颜色主题
+                //            icon: "warning-sign",
+                //        }).show();
+                //        return;
+                //    }
 
 
-            //    var magessData = `----- 来吃鸭 -----\n`;
-            //    magessData += `订单编号：${$.generateRandomString(5)} \n`;
-            //    magessData += `老板我要点下面这些\n\n`;
-            //    magessData += `===================== \n`;
-            //    var totalPrice = 0;
-            //    var totalUPrice = 0
-            //    var ProductSimDataList = [];
-            //    $.each(LaiChiYaData, function (index, value) {
-            //        $.each(value.分类内容, function (inx, item) {
-            //            if (item.购买数量 < 1 || item.已售罄)
-            //                return true;
-            //            magessData += `${item.标题}  ￥${item.售价}  x${item.购买数量}\n`
-            //            totalPrice += item.售价 * item.购买数量;
-            //            totalUPrice += item.划线价格 * item.购买数量;
-            //            ProductSimDataList.push({ 商品标题: item.标题, 购买数量: item.购买数量 });
-            //        });
-            //    });
+                //    var magessData = `----- 来吃鸭 -----\n`;
+                //    magessData += `订单编号：${$.generateRandomString(5)} \n`;
+                //    magessData += `老板我要点下面这些\n\n`;
+                //    magessData += `===================== \n`;
+                //    var totalPrice = 0;
+                //    var totalUPrice = 0
+                //    var ProductSimDataList = [];
+                //    $.each(LaiChiYaData, function (index, value) {
+                //        $.each(value.分类内容, function (inx, item) {
+                //            if (item.购买数量 < 1 || item.已售罄)
+                //                return true;
+                //            magessData += `${item.标题}  ￥${item.售价}  x${item.购买数量}\n`
+                //            totalPrice += item.售价 * item.购买数量;
+                //            totalUPrice += item.划线价格 * item.购买数量;
+                //            ProductSimDataList.push({ 商品标题: item.标题, 购买数量: item.购买数量 });
+                //        });
+                //    });
 
-            //    totalPrice = Math.round(totalPrice * 10) / 10;
-            //    totalUPrice = Math.round(totalUPrice * 10) / 10;
+                //    totalPrice = Math.round(totalPrice * 10) / 10;
+                //    totalUPrice = Math.round(totalUPrice * 10) / 10;
 
-            //    magessData += `===================== \n`;
-            //    if (PickUpOrDeliverAttheStore == "需要配送")
-            //        magessData += `共计 ${totalPrice} 元 (不含配送费)\n\n\n`
-            //    else if (PickUpOrDeliverAttheStore == "到店自取")
-            //        magessData += `共计 ${totalPrice} 元\n\n\n`
+                //    magessData += `===================== \n`;
+                //    if (PickUpOrDeliverAttheStore == "需要配送")
+                //        magessData += `共计 ${totalPrice} 元 (不含配送费)\n\n\n`
+                //    else if (PickUpOrDeliverAttheStore == "到店自取")
+                //        magessData += `共计 ${totalPrice} 元\n\n\n`
 
-            //    magessData += `--------------------- \n`;
-            //    magessData += `辣度：${TheDegreeOfSpiciness}\n`
-            //    if ($("#OrderRemarks").val() != "") {
-            //        magessData += `备注：${$("#OrderRemarks").val()}\n`
-            //    }
-            //    magessData += `--------------------- \n`;
-            //    magessData += `是否配送：${PickUpOrDeliverAttheStore}\n`
-            //    if (PickUpOrDeliverAttheStore == "需要配送") {
-            //        magessData += `联系电话：${$("#locationPone").val()}\n`
-            //        magessData += `配送地址：${$("#detailedAddress").val()}\n`
-            //    }
-
-
-            //    // 使用 clipboard API 复制
-            //    navigator.clipboard.writeText(magessData).then(function () {
-            //        //使用参数对象来初始化 发送订单 对话框
-            //        $('#SendOrderModal').modal({
-            //            scrollInside: true,
-            //            show: true
-            //        })
-            //        //console.log("复制订单信息成功");
-            //        //new $.zui.Messager('复制订单信息成功!', {
-            //        //    type: 'success',// 定义颜色主题
-            //        //    close: true,
-            //        //    icon: 'ok-sign',
-            //        //}).show();
-            //        //new $.zui.Messager('可前往微信发送订单消息!', {
-            //        //    type: 'success',// 定义颜色主题
-            //        //    close: true,
-            //        //    icon: 'ok-sign',
-            //        //}).show();
-            //    }).catch(function (err) {
-            //        new $.zui.Messager("复制失败: 请授于剪贴板权限" + err, {
-            //            type: 'danger',// 定义颜色主题
-            //            close: true,
-            //            icon: ' exclamation-sign',
-            //        }).show();
-            //        return;
-            //    });
+                //    magessData += `--------------------- \n`;
+                //    magessData += `辣度：${TheDegreeOfSpiciness}\n`
+                //    if ($("#OrderRemarks").val() != "") {
+                //        magessData += `备注：${$("#OrderRemarks").val()}\n`
+                //    }
+                //    magessData += `--------------------- \n`;
+                //    magessData += `是否配送：${PickUpOrDeliverAttheStore}\n`
+                //    if (PickUpOrDeliverAttheStore == "需要配送") {
+                //        magessData += `联系电话：${$("#locationPone").val()}\n`
+                //        magessData += `配送地址：${$("#detailedAddress").val()}\n`
+                //    }
 
 
-
+                //    // 使用 clipboard API 复制
+                //    navigator.clipboard.writeText(magessData).then(function () {
+                //        //使用参数对象来初始化 发送订单 对话框
+                //        $('#SendOrderModal').modal({
+                //            scrollInside: true,
+                //            show: true
+                //        })
+                //        //console.log("复制订单信息成功");
+                //        //new $.zui.Messager('复制订单信息成功!', {
+                //        //    type: 'success',// 定义颜色主题
+                //        //    close: true,
+                //        //    icon: 'ok-sign',
+                //        //}).show();
+                //        //new $.zui.Messager('可前往微信发送订单消息!', {
+                //        //    type: 'success',// 定义颜色主题
+                //        //    close: true,
+                //        //    icon: 'ok-sign',
+                //        //}).show();
+                //    }).catch(function (err) {
+                //        new $.zui.Messager("复制失败: 请授于剪贴板权限" + err, {
+                //            type: 'danger',// 定义颜色主题
+                //            close: true,
+                //            icon: ' exclamation-sign',
+                //        }).show();
+                //        return;
+                //    });
 
 
 
-            //    //写入浏览器本地存储
-            //    $.zui.store.set('ProductOrderData', {
-            //        辣度: TheDegreeOfSpiciness,
-            //        是否配送: PickUpOrDeliverAttheStore,
-            //        备注: $("#OrderRemarks").val(),
-            //        联系电话: $("#locationPone").val(),
-            //        配送地址: $("#detailedAddress").val(),
-            //        商品列表: ProductSimDataList,
-            //    });
-
-            //    //如果是苹果Safari浏览器，跳转打开微信客户端
-            //    if (isSafari()) {
-            //        $("#OrderData3").html("添加到“照片” 添加微信好友");
-            //        $("#OpenWechatClient").show();
-            //    }
-            //    //如果是微信内置浏览器
-            //    else if (isWeChatBrowser()) {
-            //        $("#OpenWechatClient").hide();
-            //    }
-            //    //如果是第三方浏览器，跳转打开微信客户端
-            //    else {
-            //        $("#OrderData3").html("保存图片 添加微信好友");
-            //        $("#OpenWechatClient").show();
-            //    }
 
 
-            //    $('#SendOrderModal').modal('toggle'); // 点击左边区域时，模态框弹出或关闭
 
-            //    //if (isWeChatBrowser()) {
-            //    //    new $.zui.Messager('10秒后自动关闭页面', {
-            //    //        type: 'warning',// 定义颜色主题
-            //    //        close: true,
-            //    //        icon: 'warning-sign',
-            //    //    }).show();
-            //    //    setTimeout(function () {
-            //    //        // 这里是延迟 10 秒后执行的代码
-            //    //        console.log("10秒后执行的操作");
-            //    //    }, 10000);
-            //    //    // 如果是微信内置浏览器，关闭当前页面
-            //    //    closeWeChatPage();
-            //    //} else {
-            //    //    // 如果是第三方浏览器，跳转打开微信客户端
-            //    //    openWeChatApp();
-            //    //}
+                //    //写入浏览器本地存储
+                //    $.zui.store.set('ProductOrderData', {
+                //        辣度: TheDegreeOfSpiciness,
+                //        是否配送: PickUpOrDeliverAttheStore,
+                //        备注: $("#OrderRemarks").val(),
+                //        联系电话: $("#locationPone").val(),
+                //        配送地址: $("#detailedAddress").val(),
+                //        商品列表: ProductSimDataList,
+                //    });
 
-            //});
+                //    //如果是苹果Safari浏览器，跳转打开微信客户端
+                //    if (isSafari()) {
+                //        $("#OrderData3").html("添加到“照片” 添加微信好友");
+                //        $("#OpenWechatClient").show();
+                //    }
+                //    //如果是微信内置浏览器
+                //    else if (isWeChatBrowser()) {
+                //        $("#OpenWechatClient").hide();
+                //    }
+                //    //如果是第三方浏览器，跳转打开微信客户端
+                //    else {
+                //        $("#OrderData3").html("保存图片 添加微信好友");
+                //        $("#OpenWechatClient").show();
+                //    }
+
+
+                //    $('#SendOrderModal').modal('toggle'); // 点击左边区域时，模态框弹出或关闭
+
+                //    //if (isWeChatBrowser()) {
+                //    //    new $.zui.Messager('10秒后自动关闭页面', {
+                //    //        type: 'warning',// 定义颜色主题
+                //    //        close: true,
+                //    //        icon: 'warning-sign',
+                //    //    }).show();
+                //    //    setTimeout(function () {
+                //    //        // 这里是延迟 10 秒后执行的代码
+                //    //        console.log("10秒后执行的操作");
+                //    //    }, 10000);
+                //    //    // 如果是微信内置浏览器，关闭当前页面
+                //    //    closeWeChatPage();
+                //    //} else {
+                //    //    // 如果是第三方浏览器，跳转打开微信客户端
+                //    //    openWeChatApp();
+                //    //}
+
+                //});
 
     </script>
 
