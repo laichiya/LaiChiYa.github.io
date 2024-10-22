@@ -744,6 +744,8 @@
             $("#StoreDetails").html(StoreDetailsData);
 
             if (AboutTheStoreData.店铺地址) {
+
+                //剪贴板工具
                 var StoreAttrCjs = new ClipboardJS('#copyStoreLocation', {
                     text: function () {
                         return AboutTheStoreData.店铺地址; // 返回要复制的字符串
@@ -779,6 +781,7 @@
                             //return CopyMegData;
                         },
                     });
+                    $('#copyStoreLocation').tooltip('show');
 
                 });
 
@@ -802,6 +805,7 @@
                             //return CopyMegData;
                         },
                     });
+                    $('#copyStoreLocation').tooltip('show');
                 });
 
                 
