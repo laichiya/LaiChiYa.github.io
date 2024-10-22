@@ -524,7 +524,7 @@
                     </div>
 
                     <div id="StoreDetails" class="modal-body">
-                        <section class="abstract">
+                        <!--<section class="abstract">
                             <p>
                                 <strong>店铺介绍：</strong>
                                 欢迎来到我们的卤鸭摊位！我们致力于为您提供新鲜、美味的卤鸭食品，让每一口都充满满足感。
@@ -560,7 +560,7 @@
 
                         <section class="abstract">
                             <p><strong>店铺拍照：</strong> <img style="border-radius: 10px;" src="img/微信二维码/来吃鸭_老板微信.jpg" alt="微信号:wxid_no0ncx4wbxwr12" /></p>
-                        </section>
+                        </section>-->
 
 
 
@@ -710,7 +710,17 @@
                                                 <p><strong>配送说明：</strong>${AboutTheStoreData.配送说明}</p>
                                             </section>`
             }
-            if (AboutTheStoreData.店铺拍照 && AboutTheStoreData.店铺拍照.length > 0) {
+
+            if (AboutTheStoreData.店铺拍照CDN && AboutTheStoreData.店铺拍照CDN.length > 0) {
+                StoreDetailsData += `<section class="abstract">
+                                                <p><strong>店铺拍照：</strong>`
+                $.each(AboutTheStoreData.店铺拍照CDN, function (inx, item) {
+                    StoreDetailsData += `<img style="border-radius: 10px;" src="${item}" alt="微信号:wxid_no0ncx4wbxwr12" /><br/><br/>`
+
+                });
+                StoreDetailsData += `</p></section>`
+            }
+            else if (AboutTheStoreData.店铺拍照 && AboutTheStoreData.店铺拍照.length > 0) {
                 StoreDetailsData += `<section class="abstract">
                                                 <p><strong>店铺拍照：</strong>`
                 $.each(AboutTheStoreData.店铺拍照, function (inx, item) {
