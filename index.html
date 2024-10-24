@@ -89,6 +89,7 @@
             background-color: red; /* 红色背景 */
             border-radius: 50%; /* 圆形 */
             animation: breathing 1.5s infinite alternate; /* 呼吸动画 */
+            animation-delay: 0s; /* 第一个红点不延迟 */
         }
 
         @keyframes breathing {
@@ -98,28 +99,29 @@
             }
 
             100% {
-                transform: scale(1); /* 放大1.5倍 */
+                transform: scale(1); /* 放大1倍 */
                 opacity: 0; /* 透明 */
             }
         }
 
         #ReceivingAddress {
             position: absolute;
-            margin-top: -3em;
+            margin-top: 0.2em;
             margin-left: 4.5em;
             background-color: red; /* 红色背景 */
             border-radius: 50%; /* 圆形 */
-            animation: breathing 1.5s infinite alternate; /* 呼吸动画 */
+            animation: breathing2 1.5s infinite alternate; /* 呼吸动画 */
+            animation-delay: 0.75s; /* 第一个红点不延迟 */
         }
 
-        @keyframes breathing {
+        @keyframes breathing2 {
             0% {
                 transform: scale(0.5); /* 正常大小 */
                 opacity: 1; /* 不透明 */
             }
 
             100% {
-                transform: scale(1); /* 放大1.5倍 */
+                transform: scale(1); /* 放大1倍 */
                 opacity: 0; /* 透明 */
             }
         }
@@ -451,13 +453,13 @@
                             <li id="FoodNotesLi">
                                 <a data-tab href="#tabFoodNotes">
                                     <h5>美食备注</h5>
-                                    <span id="FoodNotes" class="label label-dot label-danger" style="position: absolute; margin-top: -3em; margin-left: 4.5em;">红点</span>
+                                    <span id="FoodNotes" class="label label-dot label-danger" >红点</span>
                                 </a>
                             </li>
 
                             <li id="ReceivingAddressLi">
                                 <a data-tab href="#tabOrderDeliveryAddress">
-                                    <span id="ReceivingAddress" class="label label-dot label-danger" style="position: absolute; margin-top: 0.2em; margin-left: 4.5em; ">红点</span>
+                                    <span id="ReceivingAddress" class="label label-dot label-danger" >红点</span>
                                     <h5>收货地址</h5>
 
                                 </a>
